@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ChaserDead : MonoBehaviour {
+public class ChaserDead : EnemiesBaseState
+{
 
 	// Use this for initialization
 	void Start () {

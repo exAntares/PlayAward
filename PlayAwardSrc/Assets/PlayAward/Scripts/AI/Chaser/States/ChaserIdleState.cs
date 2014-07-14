@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ChaserIdleState : MonoBehaviour {
+public class ChaserIdleState : EnemiesBaseState
+{
 
 	// Use this for initialization
 	void Start () {
@@ -9,7 +10,26 @@ public class ChaserIdleState : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-	
+	void FixedUpdate ()
+    {
+        if(Player)
+        {
+            float Rotation = Quaternion.Dot(Player.transform.rotation, transform.rotation);
+            if (Mathf.Abs(Rotation) <= 0.1)
+            {
+                StartChasing();
+            }
+        }
 	}
+
+    [ContextMenu("StartChasing")]
+    void StartChasing()
+    {
+        if (!enabled) return;
+
+        if(CanGoToState("Chasing"))
+        {
+            GoToState("Chasing");
+        }
+    }
 }

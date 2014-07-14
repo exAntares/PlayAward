@@ -1,15 +1,25 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ChaserChasing : MonoBehaviour {
+public class ChaserChasing : EnemiesBaseState
+{
+    public float Speed = 0.01f;
+    public CharacterController Controller;
 
 	// Use this for initialization
-	void Start () {
-	
-	}
+    override protected void InitState()
+    {
+        base.InitState();
+        Controller = GetComponent<CharacterController>();
+    }
 	
 	// Update is called once per frame
-	void Update () {
-	
+	void FixedUpdate ()
+    {
+        if(Player)
+        {
+            Vector3 Direction = Player.transform.position - transform.position;
+            CollisionFlags CF = Controller.Move(Direction.normalized * Speed);
+        }
 	}
 }
