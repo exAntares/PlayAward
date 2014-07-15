@@ -3,7 +3,9 @@ using System.Collections;
 
 public class EnemiesBaseState : StateBase
 {
+	public Animator myAnimator;
     protected GameObject Player;
+
 	// Use this for initialization
     override protected void InitState()
     {

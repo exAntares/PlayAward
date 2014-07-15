@@ -3,21 +3,22 @@ using System.Collections;
 
 public class ChaserIdleState : EnemiesBaseState
 {
-
-	// Use this for initialization
-	void Start () {
-	
-	}
+	public bool StartChase = false;
 	
 	// Update is called once per frame
 	void FixedUpdate ()
     {
-        if(Player)
+		if(Player && !StartChase)
         {
             float Rotation = Quaternion.Dot(Player.transform.rotation, transform.rotation);
             if (Mathf.Abs(Rotation) <= 0.1)
             {
-                StartChasing();
+				StartChase = true;
+				if(myAnimator)
+				{
+					myAnimator.Play("StartChasing");
+				}
+				Invoke("StartChasing", 2.0f);
             }
         }
 	}
