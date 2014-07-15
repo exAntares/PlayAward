@@ -104,7 +104,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.5, y: -1, z: 0}
+  m_LocalPosition: {x: .5, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400002}
@@ -116,7 +116,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .5, y: -1, z: -0}
+  m_LocalPosition: {x: -.5, y: -1, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400002}
@@ -241,7 +241,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c32fe047b7e636540a54de7b77a56944, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FootStepProjector: {fileID: 100000, guid: 524746438ff753e4b88e8e9feaec5f46, type: 2}
+  LeftFootStepProjector: {fileID: 100000, guid: 524746438ff753e4b88e8e9feaec5f46,
+    type: 2}
+  RightFootStepProjector: {fileID: 100000, guid: cd22226bceb1b1e4bb733a1eec509ded,
+    type: 2}
   RightFootPosition: {fileID: 400004}
   LeftFootPosition: {fileID: 400006}
 --- !u!143 &14300000
