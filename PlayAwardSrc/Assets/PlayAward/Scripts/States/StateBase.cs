@@ -64,7 +64,7 @@ public class StateBase : MonoBehaviour {
         }
         else
         {
-            Debug.LogError("StateBase CANT RegisterState NO StatesController");
+            Debug.LogError(gameObject + " StateBase CANT RegisterState NO StatesController");
         }
     }
 }
