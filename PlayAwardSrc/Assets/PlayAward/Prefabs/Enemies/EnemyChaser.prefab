@@ -229,7 +229,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sounds:
   - {fileID: 8300000, guid: e11054bb5cc24c542a492b36f10e799b, type: 3}
-  - {fileID: 8300000, guid: 31cc203bb1eca93498d6118629459d2b, type: 3}
 --- !u!114 &11400010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -247,6 +246,7 @@ MonoBehaviour:
     type: 2}
   RightFootPosition: {fileID: 400004}
   LeftFootPosition: {fileID: 400006}
+  FootStepSound: {fileID: 8300000, guid: 31cc203bb1eca93498d6118629459d2b, type: 3}
 --- !u!143 &14300000
 CharacterController:
   m_ObjectHideFlags: 1

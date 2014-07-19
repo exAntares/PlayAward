@@ -179,7 +179,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aa05a1f1339cb2241ad745ca1459ddfd, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: aa05a1f1339cb2241ad745ca1459ddfd, type: 2}
       propertyPath: m_Enabled
@@ -2297,6 +2297,8 @@ GameObject:
   - 114: {fileID: 546747531}
   - 114: {fileID: 546747535}
   - 114: {fileID: 546747530}
+  - 114: {fileID: 546747537}
+  - 114: {fileID: 546747536}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2434,6 +2436,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DefaultStateName: Normal
+--- !u!114 &546747536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400012, guid: b0828de0cfae43e45b410674f3c29cc0,
+    type: 2}
+  m_PrefabInternal: {fileID: 447661601}
+  m_GameObject: {fileID: 546747529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6049f80a2dc3b814a85ff7de02f7fba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StateName: Dead
+--- !u!114 &546747537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400010, guid: b0828de0cfae43e45b410674f3c29cc0,
+    type: 2}
+  m_PrefabInternal: {fileID: 447661601}
+  m_GameObject: {fileID: 546747529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9397e2d093693ef48884379fc07bd394, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StateName: Inventory
 --- !u!1 &555346246
 GameObject:
   m_ObjectHideFlags: 0
@@ -9204,7 +9232,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sounds:
   - {fileID: 8300000, guid: e11054bb5cc24c542a492b36f10e799b, type: 3}
-  - {fileID: 8300000, guid: 31cc203bb1eca93498d6118629459d2b, type: 3}
 --- !u!114 &1981529022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9223,6 +9250,8 @@ MonoBehaviour:
     type: 2}
   RightFootPosition: {fileID: 59104598}
   LeftFootPosition: {fileID: 193513188}
+  FootStepSound: {fileID: 8300000, guid: 31cc203bb1eca93498d6118629459d2b, type: 3}
+  FootStepVolume: 1
 --- !u!1001 &1991059449
 Prefab:
   m_ObjectHideFlags: 0
