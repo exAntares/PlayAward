@@ -19,7 +19,7 @@ public class ChaserChasing : EnemiesBaseState
         if(Player)
         {
             Vector3 Direction = Player.transform.position - transform.position;
-            CollisionFlags CF = Controller.Move(Direction.normalized * Speed);
+            Controller.Move(Direction.normalized * Speed);
         }
 	}
 }
