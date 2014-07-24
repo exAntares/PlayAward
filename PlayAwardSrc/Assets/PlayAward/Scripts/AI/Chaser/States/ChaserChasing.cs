@@ -20,6 +20,18 @@ public class ChaserChasing : EnemiesBaseState
         {
             Vector3 Direction = Player.transform.position - transform.position;
             Controller.Move(Direction.normalized * Speed);
+
+			transform.LookAt(Player.transform, Vector3.up);
+			transform.eulerAngles = new Vector3(0,transform.eulerAngles.y,0);
         }
+	}
+
+	void OnTriggerEnter(Collider other)
+	{
+		if(other.gameObject.tag == "Player")
+		{
+			//print("collision " + other.gameObject);
+			other.gameObject.SendMessage("Die");
+		}
 	}
 }

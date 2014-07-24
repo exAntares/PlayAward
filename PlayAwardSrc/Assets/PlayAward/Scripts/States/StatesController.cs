@@ -38,7 +38,13 @@ public class StatesController : MonoBehaviour {
                 state.Value.enabled = true;
             }
         }
+
+		Init();
     }
+
+	public virtual void Init()
+	{
+	}
 
 	public void GoToState(string newStateName)
 	{

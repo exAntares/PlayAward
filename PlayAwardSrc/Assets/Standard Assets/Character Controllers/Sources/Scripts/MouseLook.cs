@@ -30,7 +30,27 @@ public class MouseLook : MonoBehaviour {
 
 	float rotationY = 0F;
 
+	bool InputEnabled = true;
+
 	void Update ()
+	{
+		if(InputEnabled)
+		{
+			UpdateRotation();
+		}
+	}
+
+	public virtual void EnableInput()
+	{
+		InputEnabled = true;
+	}
+	
+	public virtual void DisableInput()
+	{
+		InputEnabled = false;
+	}
+
+	void UpdateRotation()
 	{
 		if (axes == RotationAxes.MouseXAndY)
 		{
@@ -53,7 +73,7 @@ public class MouseLook : MonoBehaviour {
 			transform.localEulerAngles = new Vector3(-rotationY, transform.localEulerAngles.y, 0);
 		}
 	}
-	
+
 	void Start ()
 	{
 		// Make the rigid body not change rotation

@@ -4,7 +4,20 @@ using System.Collections;
 public class ChaserIdleState : EnemiesBaseState
 {
 	public bool StartChase = false;
+
+	public override void BeginState()
+	{
+		StartChase = false;
+		if(myAnimator)
+		{
+			myAnimator.Play("Idle");
+		}
+	}
 	
+	public override void EndState()
+	{
+	}
+
 	// Update is called once per frame
 	void FixedUpdate ()
     {

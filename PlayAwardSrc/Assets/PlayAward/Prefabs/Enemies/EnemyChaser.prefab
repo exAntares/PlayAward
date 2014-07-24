@@ -9,10 +9,12 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 143: {fileID: 14300000}
-  - 114: {fileID: 11400006}
+  - 114: {fileID: 11400014}
   - 114: {fileID: 11400004}
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400000}
+  - 135: {fileID: 13500000}
+  - 114: {fileID: 11400012}
   m_Layer: 0
   m_Name: EnemyChaser
   m_TagString: Untagged
@@ -204,18 +206,6 @@ MonoBehaviour:
   StateName: Idle
   myAnimator: {fileID: 9500000}
   StartChase: 0
---- !u!114 &11400006
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fefac2d13fa14c34daea2a6f63ebd856, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DefaultStateName: Idle
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -240,14 +230,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c32fe047b7e636540a54de7b77a56944, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LeftFootStepProjector: {fileID: 100000, guid: 524746438ff753e4b88e8e9feaec5f46,
+  LeftFootStepProjector: {fileID: 100002, guid: 524746438ff753e4b88e8e9feaec5f46,
     type: 2}
-  RightFootStepProjector: {fileID: 100000, guid: cd22226bceb1b1e4bb733a1eec509ded,
+  RightFootStepProjector: {fileID: 100002, guid: cd22226bceb1b1e4bb733a1eec509ded,
     type: 2}
   RightFootPosition: {fileID: 400004}
   LeftFootPosition: {fileID: 400006}
   FootStepSound: {fileID: 8300000, guid: 31cc203bb1eca93498d6118629459d2b, type: 3}
   FootStepVolume: 1
+--- !u!114 &11400012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cd2dc06fad9225418db6a7b4279030d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11400014
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40f86080712c1b64ba69236dbb5fec6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DefaultStateName: Idle
+--- !u!135 &13500000
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!143 &14300000
 CharacterController:
   m_ObjectHideFlags: 1

@@ -5,6 +5,7 @@ using System.Collections;
 public class PlayerStateBase : StateBase
 {
 	private CharacterMotor motor;
+	private bool InputEnabled = true;
 
 	override protected void InitState()
 	{
@@ -14,7 +15,10 @@ public class PlayerStateBase : StateBase
 
 	void FixedUpdate ()
 	{
-		UpdateInput();
+		if(InputEnabled)
+		{
+			UpdateInput();
+		}
 	}
 
 	void UpdateInput()
@@ -44,4 +48,25 @@ public class PlayerStateBase : StateBase
 		motor.inputJump = Input.GetButton("Jump");
 	}
 
+	public virtual void EnableInput()
+	{
+		InputEnabled = true;
+	}
+
+	public virtual void DisableInput()
+	{
+		InputEnabled = false;
+		motor.inputMoveDirection = Vector3.zero;
+	}
+
+	public virtual void Die()
+	{
+		if(enabled)
+		{
+			if(CanGoToState("Dead"))
+			{
+				GoToState("Dead");
+			}
+		}
+	}
 }

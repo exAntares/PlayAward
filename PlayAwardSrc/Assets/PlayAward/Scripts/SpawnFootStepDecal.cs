@@ -15,17 +15,17 @@ public class SpawnFootStepDecal : MonoBehaviour {
 
 	public void SpawnLeftFootDecal()
 	{
-		doSpawnFootStepDecal(LeftFootStepProjector, LeftFootPosition.position);
+		doSpawnFootStepDecal(LeftFootStepProjector, LeftFootPosition);
 	}
 
 	public void SpawnRightFootDecal()
 	{
-		doSpawnFootStepDecal(RightFootStepProjector, RightFootPosition.position);
+		doSpawnFootStepDecal(RightFootStepProjector, RightFootPosition);
 	}
 
-	void doSpawnFootStepDecal(GameObject ProjectorPrefab, Vector3 newPosition)
+	void doSpawnFootStepDecal(GameObject ProjectorPrefab, Transform newTransform)
 	{
-		GameObject FootStep = GameObject.Instantiate(ProjectorPrefab, newPosition, ProjectorPrefab.transform.rotation) as GameObject;
+		GameObject FootStep = GameObject.Instantiate(ProjectorPrefab, newTransform.position, newTransform.rotation) as GameObject;
 		GameObject DynamicObjs = GameObject.Find("DynamicObjects");
 		DynamicObjs = DynamicObjs ? DynamicObjs: new GameObject("DynamicObjects");
 		if(DynamicObjs)
