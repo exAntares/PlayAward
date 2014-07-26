@@ -2463,7 +2463,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StateName: Dead
-  LastCheckPoint: {fileID: 0}
+  DeathSound: {fileID: 8300000, guid: adfeab6f9d1e2bf478945e18a27d991f, type: 3}
+  Fader: {fileID: 0}
 --- !u!114 &546747537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4275,6 +4276,66 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1948074103}
   m_GameObject: {fileID: 849395808}
   m_Mesh: {fileID: 4300000, guid: 6ae195f8fae31a34a8fc6cd575452c50, type: 3}
+--- !u!1 &883976764
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 883976766}
+  - 131: {fileID: 883976765}
+  - 114: {fileID: 883976767}
+  m_Layer: 0
+  m_Name: ScreenFader
+  m_TagString: Fader
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!131 &883976765
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 883976764}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: c3622cd7e1b6b0940b62e70ebcc4b498, type: 3}
+  m_Color: {r: .5, g: .5, b: .5, a: 0}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!4 &883976766
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 883976764}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+--- !u!114 &883976767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 883976764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc4c5357dc5ca714993bbac81e5f35f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeSpeed: .200000003
 --- !u!1 &884728926
 GameObject:
   m_ObjectHideFlags: 0
@@ -9290,7 +9351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Sounds:
-  - {fileID: 8300000, guid: e11054bb5cc24c542a492b36f10e799b, type: 3}
+  - {fileID: 8300000, guid: aaca3ff301ffe55469ecd99d823b6bed, type: 3}
 --- !u!114 &1981529022
 MonoBehaviour:
   m_ObjectHideFlags: 0

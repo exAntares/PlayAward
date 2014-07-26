@@ -3,12 +3,35 @@ using System.Collections;
 
 public class DeadState : PlayerStateBase
 {
-	public Transform LastCheckPoint;
+	public AudioClip DeathSound;
+	public ScreenFadeInOut Fader;
+	protected Transform LastCheckPoint;
+
+	protected override void InitState()
+	{
+		base.InitState();
+		GameObject GoFader = GameObject.FindGameObjectWithTag("Fader");
+		if(GoFader)
+		{
+			Fader = GoFader.GetComponent<ScreenFadeInOut>();
+		}
+
+	}
 
 	public override void BeginState()
 	{
 		gameObject.BroadcastMessage("DisableInput");
-		Invoke("Respawn", 2.5f);
+		if(DeathSound)
+		{
+			AudioSource.PlayClipAtPoint(DeathSound, transform.position);
+		}
+
+		if(Fader)
+		{
+			Fader.FadeInOut();
+		}
+
+		Invoke("Respawn", 6.0f);
 	}
 	
 	public override void EndState()
