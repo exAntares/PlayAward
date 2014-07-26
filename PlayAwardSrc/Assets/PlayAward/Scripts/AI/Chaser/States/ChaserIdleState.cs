@@ -4,10 +4,12 @@ using System.Collections;
 public class ChaserIdleState : EnemiesBaseState
 {
 	public bool StartChase = false;
+	public bool bCanStartChasing = false;
 
 	public override void BeginState()
 	{
 		StartChase = false;
+		bCanStartChasing = false;
 		if(myAnimator)
 		{
 			myAnimator.Play("Idle");
@@ -21,23 +23,38 @@ public class ChaserIdleState : EnemiesBaseState
 	// Update is called once per frame
 	void FixedUpdate ()
     {
-		if(Player && !StartChase)
+		if(Player && CanStartChasing() && !StartChase)
         {
             float Rotation = Quaternion.Dot(Player.transform.rotation, transform.rotation);
-            if (Mathf.Abs(Rotation) <= 0.1)
+            if (Mathf.Abs(Rotation) <= 0.4f)
             {
-				StartChase = true;
-				if(myAnimator)
-				{
-					myAnimator.Play("StartChasing");
-				}
-				Invoke("StartChasing", 2.0f);
+				StartChasing();
             }
         }
 	}
 
-    [ContextMenu("StartChasing")]
-    void StartChasing()
+	public void DelayedStartChasing(float TimeToStart)
+	{
+		if(!enabled) return;
+
+		Invoke("StartChasing", TimeToStart > 0 ? TimeToStart : 5.0f);
+	}
+
+	[ContextMenu("StartChasing")]
+	public void StartChasing()
+	{
+		if(!enabled) return;
+
+		StartChase = true;
+		if(myAnimator)
+		{
+			myAnimator.Play("StartChasing");
+		}
+
+		Invoke("Internal_StartChasing", 2.0f);
+	}
+
+    void Internal_StartChasing()
     {
         if (!enabled) return;
 
@@ -46,4 +63,11 @@ public class ChaserIdleState : EnemiesBaseState
             GoToState("Chasing");
         }
     }
+
+	bool CanStartChasing()
+	{
+		if(!enabled) return false;
+
+		return bCanStartChasing;
+	}
 }

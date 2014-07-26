@@ -32,6 +32,10 @@ public class ChaserChasing : EnemiesBaseState
 		{
 			//print("collision " + other.gameObject);
 			other.gameObject.SendMessage("Die");
+			if(CanGoToState("Idle"))
+			{
+				GoToState("Idle");
+			}
 		}
 	}
 }
