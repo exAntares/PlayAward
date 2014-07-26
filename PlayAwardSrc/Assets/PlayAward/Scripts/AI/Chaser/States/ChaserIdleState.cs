@@ -37,7 +37,20 @@ public class ChaserIdleState : EnemiesBaseState
 	{
 		if(!enabled) return;
 
-		Invoke("StartChasing", TimeToStart > 0 ? TimeToStart : 5.0f);
+		if(CanStartChasing())
+		{
+			Invoke("StartDelayedChasing", TimeToStart > 0 ? TimeToStart : 5.0f);
+		}
+	}
+
+	void StartDelayedChasing()
+	{
+		if(!enabled) return;
+
+		if(CanStartChasing())
+		{
+			StartChasing();
+		}
 	}
 
 	[ContextMenu("StartChasing")]
@@ -70,4 +83,5 @@ public class ChaserIdleState : EnemiesBaseState
 
 		return bCanStartChasing;
 	}
+
 }
