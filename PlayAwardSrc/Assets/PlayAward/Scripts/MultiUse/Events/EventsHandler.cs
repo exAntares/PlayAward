@@ -6,7 +6,9 @@ using System;
  * Use gameObject.SendMessage("BroadCastEvent","OnEvent")
  * where OnEvent its the event you want to let know
  * */
-public class EventsHandler : MonoBehaviour {
+public class EventsHandler : MonoBehaviour
+{
+
     #region variables
     //Effects for setting on UnityEditor
     public List<Effect> SpawnEffects;
@@ -29,6 +31,7 @@ public class EventsHandler : MonoBehaviour {
     #endregion
 
     #region EventsInterface
+
     protected void AddDoActionToTable(EventExecuterBase ef)
     {
         string newEventName;
@@ -73,6 +76,8 @@ public class EventsHandler : MonoBehaviour {
 
     public void BroadCastEvent(string eventName)
     {
+		//Debug.Log("Trying BroadCastingEvent: " + eventName);
+
         if (DelegatesByEventName.ContainsKey(eventName))
         {
             Action delegateAction = DelegatesByEventName[eventName];
@@ -84,7 +89,7 @@ public class EventsHandler : MonoBehaviour {
         }
         else
         {
-            Debug.Log("No hay delegados asignados para " + eventName);
+            Debug.Log(gameObject + " No hay delegados asignados para " + eventName);
         }
        
     }
@@ -92,6 +97,7 @@ public class EventsHandler : MonoBehaviour {
     #endregion
 
     #region GameObject Interface
+
     void Start()
     {
         //Add DoAction to its corresponding table value
@@ -116,9 +122,21 @@ public class EventsHandler : MonoBehaviour {
         MessagesToSend.Clear();
         PlaySounds.Clear();
         ObjectsToActivate.Clear();
+
+		gameObject.BroadCastEvent("OnDestroy");
     }
 
-    #endregion
+	void OnBecameVisible()
+	{
+		gameObject.BroadCastEvent("OnBecameVisible");
+	}
+
+	void OnTriggerExit(Collider other)
+	{
+		gameObject.BroadCastEvent("OnTriggerExit");
+	}
+	
+	#endregion
 
 }
 
@@ -234,6 +252,8 @@ public class ActivateObjectAction : EventExecuterBase
 
 #endregion
 
+#region ExtensionMethods
+
 public static class EventsHandlerExtensionMethods
 {
 
@@ -271,3 +291,5 @@ public static class EventsHandlerExtensionMethods
     }
 
 }
+
+#endregion

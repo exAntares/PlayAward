@@ -4,7 +4,10 @@ using System.Collections;
 public class ChaserChasing : EnemiesBaseState
 {
     public float Speed = 0.01f;
-    public CharacterController Controller;
+	public GameObject NewDoor;
+	public Renderer myrenderer;
+
+	protected CharacterController Controller;
 
 	// Use this for initialization
     override protected void InitState()
@@ -12,9 +15,18 @@ public class ChaserChasing : EnemiesBaseState
         base.InitState();
         Controller = GetComponent<CharacterController>();
     }
+
+	public override void BeginState()
+	{
+		Invoke("StopChasing", 10.0f);
+	}
 	
+	public override void EndState()
+	{
+	}
+
 	// Update is called once per frame
-	void FixedUpdate ()
+	void FixedUpdate()
     {
         if(Player)
         {
@@ -38,4 +50,28 @@ public class ChaserChasing : EnemiesBaseState
 			}
 		}
 	}
+
+	void StopChasing()
+	{
+		if(!enabled) return;
+
+		if(myrenderer && myrenderer.isVisible)
+		{
+			Invoke("StopChasing", 10.0f);
+			return;
+		}
+
+		Destroy(gameObject, 0.1f);
+
+		if(NewDoor)
+		{
+			GameObject newDoor = Instantiate(NewDoor) as GameObject;
+
+			Vector3 NewPosition = newDoor.transform.position;
+			NewPosition.x = transform.position.x;
+
+			newDoor.transform.position = NewPosition;
+		}
+	}
+
 }

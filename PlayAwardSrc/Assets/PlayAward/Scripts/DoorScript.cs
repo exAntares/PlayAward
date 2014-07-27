@@ -62,5 +62,9 @@ public class DoorScript : MonoBehaviour
 		}
 	}
 
+	void EventOnTriggerExit(GameObject Trigger)
+	{
+		print(Trigger + " EventOnTriggerExit");
+	}
 
 }
