@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DoorScript : MonoBehaviour
+public class DoorScript : MonoBehaviour, IUsable
 {
 	public enum DoorState
 	{
