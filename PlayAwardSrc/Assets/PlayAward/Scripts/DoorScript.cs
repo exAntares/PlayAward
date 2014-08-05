@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DoorScript : MonoBehaviour, IUsable
+public class DoorScript : UsableObject
 {
 	public enum DoorState
 	{
@@ -49,7 +49,7 @@ public class DoorScript : MonoBehaviour, IUsable
 		}
 	}
 
-	public void OnUse()
+	override public void OnUse()
 	{
 		switch(State)
 		{

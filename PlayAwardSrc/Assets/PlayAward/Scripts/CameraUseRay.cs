@@ -7,6 +7,7 @@ public class CameraUseRay : MonoBehaviour
 	protected float CoolDownTimer = 0.2f;
 	protected bool bCoolDown = false;
 	protected GameObject UsableObject;
+    protected GameObject lastUsableObject;
 
 	public Texture2D GuiTexture;
 
@@ -56,30 +57,48 @@ public class CameraUseRay : MonoBehaviour
 		if(Physics.Raycast(ray, out hit, Distance))
 		{
 			UsableObject = hit.collider.gameObject;
+            CheckLastObject();
 			if(UsableObject)
 			{
-				IUsable itemusable = UsableObject.GetComponent(typeof(IUsable)) as IUsable;
+                UsableObject itemusable = UsableObject.GetComponent(typeof(UsableObject)) as UsableObject;
 				if(itemusable != null)
-				{
-					//print("Item Usable!!!");
+				{ 
+                    if (!bCoolDown && Input.GetButton("Use"))
+                    {
+                        itemusable.OnUse();
+                        StartCoolDown();
+                    }
+
+                    lastUsableObject = UsableObject;
+                    itemusable.OnTargeted();
 				}
 				else
 				{
-					//UsableObject = null;
+					UsableObject = null;
 				}
-			}
-
-			if(!bCoolDown && UsableObject && Input.GetButton("Use"))
-			{
-				UsableObject.SendMessage("OnUse", SendMessageOptions.DontRequireReceiver);
-				StartCoolDown();
 			}
 		}
 		else
 		{
 			UsableObject = null;
 		}
+
+        CheckLastObject();
 	}
+
+    void CheckLastObject()
+    {
+        // Clear Last usable object
+        if (UsableObject != lastUsableObject && lastUsableObject)
+        {
+            UsableObject itemusable = lastUsableObject.GetComponent(typeof(UsableObject)) as UsableObject;
+            if (itemusable)
+            {
+                itemusable.OnStopTargeted();
+            }
+            lastUsableObject = null;
+        }
+    }
 
 	void StartCoolDown()
 	{
