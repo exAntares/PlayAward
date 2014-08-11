@@ -39,11 +39,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9be87c0653f21304dbd48704a5493410, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NecessaryObjects:
-    Player: {fileID: 100004, guid: b0828de0cfae43e45b410674f3c29cc0, type: 2}
-    StartPoint: {fileID: 100000, guid: dece42017ae4ad646b7661e176fc844d, type: 2}
-    Fader: {fileID: 100000, guid: b9a447ff801cd7a4e9732a4a3359f7e1, type: 2}
-    Others: []
+  _DefaultObjects:
+    DefaultStartPoint: {fileID: 100000, guid: dece42017ae4ad646b7661e176fc844d, type: 2}
+    DefaultPlayer: {fileID: 100004, guid: b0828de0cfae43e45b410674f3c29cc0, type: 2}
+    DefaultFader: {fileID: 100000, guid: b9a447ff801cd7a4e9732a4a3359f7e1, type: 2}
+  ScenesToLoad:
+  - Main
+  - Main_Pasillo
+  - Main_Pasillo_Design
+  - Main_Hall_Design
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -80,83 +80,7 @@ NavMeshSettings:
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
   m_NavMesh: {fileID: 0}
---- !u!1 &580690040
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-  m_PrefabInternal: {fileID: 1599293449}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 580690042}
-  - 114: {fileID: 580690041}
-  m_Layer: 0
-  m_Name: GameMode
-  m_TagString: GameMode
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
---- !u!114 &580690041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 1bb1666c31edce9459cc55653340e95f,
-    type: 2}
-  m_PrefabInternal: {fileID: 1599293449}
-  m_GameObject: {fileID: 580690040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9be87c0653f21304dbd48704a5493410, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _DefaultObjects:
-    DefaultStartPoint: {fileID: 100000, guid: dece42017ae4ad646b7661e176fc844d, type: 2}
-    DefaultPlayer: {fileID: 100004, guid: b0828de0cfae43e45b410674f3c29cc0, type: 2}
-    DefaultFader: {fileID: 100000, guid: b9a447ff801cd7a4e9732a4a3359f7e1, type: 2}
-  ScenesToLoad:
-  - Main
-  - Main_Pasillo
-  - Main_Pasillo_Design
-  - Main_Hall_Design
---- !u!4 &580690042
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-  m_PrefabInternal: {fileID: 1599293449}
-  m_GameObject: {fileID: 580690040}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
---- !u!1 &871017000
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 871017001}
-  m_Layer: 0
-  m_Name: "HallDise\xF1o"
-  m_TagString: Untagged
-  m_Icon: {fileID: 266726316, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &871017001
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 871017000}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
---- !u!1001 &1599293449
+--- !u!1001 &1582575657
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -197,6 +121,82 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-  m_RootGameObject: {fileID: 580690040}
+  m_RootGameObject: {fileID: 1728553554}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &1728553554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+  m_PrefabInternal: {fileID: 1582575657}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1728553556}
+  - 114: {fileID: 1728553555}
+  m_Layer: 0
+  m_Name: GameMode
+  m_TagString: GameMode
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!114 &1728553555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 1bb1666c31edce9459cc55653340e95f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1582575657}
+  m_GameObject: {fileID: 1728553554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9be87c0653f21304dbd48704a5493410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _DefaultObjects:
+    DefaultStartPoint: {fileID: 100000, guid: dece42017ae4ad646b7661e176fc844d, type: 2}
+    DefaultPlayer: {fileID: 100004, guid: b0828de0cfae43e45b410674f3c29cc0, type: 2}
+    DefaultFader: {fileID: 100000, guid: b9a447ff801cd7a4e9732a4a3359f7e1, type: 2}
+  ScenesToLoad:
+  - Main
+  - Main_Pasillo
+  - Main_Pasillo_Design
+  - Main_Hall_Design
+--- !u!4 &1728553556
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+  m_PrefabInternal: {fileID: 1582575657}
+  m_GameObject: {fileID: 1728553554}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+--- !u!1 &1744434366
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1744434367}
+  m_Layer: 0
+  m_Name: "PasilloDise\xF1o"
+  m_TagString: Untagged
+  m_Icon: {fileID: 266726316, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1744434367
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1744434366}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 23.0589066, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
