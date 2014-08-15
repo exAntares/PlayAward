@@ -7,11 +7,32 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: ShaderForgeInternal
-  m_Shader: {fileID: 4800000, guid: 3c2ff98dd53924d0b85358d999cf6890, type: 3}
+  m_Shader: {fileID: 4800000, guid: 8abfc4d493a933648bc3d02d1fcb6ff3, type: 3}
   m_ShaderKeywords: []
   m_CustomRenderQueue: -1
   m_SavedProperties:
     serializedVersion: 2
-    m_TexEnvs: {}
+    m_TexEnvs:
+      data:
+        first:
+          name: _node_3
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _FloorTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _WallTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
     m_Floats: {}
     m_Colors: {}
