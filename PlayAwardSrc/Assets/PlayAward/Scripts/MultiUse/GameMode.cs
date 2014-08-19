@@ -57,11 +57,16 @@ public class DefaultObjects
             _DefaultObjects = new GameObject("DefaultObjects");
         }
 
-        if (!GameObject.FindGameObjectWithTag(DefaultStartPoint.tag))
+        GameObject tmpStartPoint = GameObject.FindGameObjectWithTag(DefaultStartPoint.tag) as GameObject;
+        if (!tmpStartPoint)
         {
             DefaultStartPoint = GameObject.Instantiate(DefaultStartPoint) as GameObject;
             DefaultStartPoint.name = "DefaultStartPoint";
             DefaultStartPoint.transform.parent = _DefaultObjects.transform;
+        }
+        else
+        {
+            DefaultStartPoint = tmpStartPoint;
         }
 
         if (!GameObject.FindGameObjectWithTag(DefaultPlayer.tag))
