@@ -41,8 +41,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 2.18556941e-08, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.30925083, y: -.0208454989, z: 20.1111603}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400002}
@@ -55,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: -2.18556941e-08, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.60974789, z: -1.14075704e-07}
+  m_LocalPosition: {x: -.123174667, y: 2.60974789, z: -1.14075704e-07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400000}
@@ -96,8 +96,8 @@ Light:
   m_Enabled: 1
   serializedVersion: 3
   m_Type: 2
-  m_Color: {r: 1, g: .926785171, b: .639705896, a: 1}
-  m_Intensity: 1
+  m_Color: {r: .985294104, g: .693632066, b: .420198947, a: 1}
+  m_Intensity: 1.89999998
   m_Range: 7
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -144,7 +144,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: .42403996
   m_Height: 3.02464914
