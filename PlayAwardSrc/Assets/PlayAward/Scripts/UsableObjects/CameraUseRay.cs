@@ -3,6 +3,7 @@ using System.Collections;
 
 public class CameraUseRay : MonoBehaviour
 {
+    public float Distance = 4.0f;
 	public GUIStyle textStyle;
 	protected float CoolDownTimer = 0.2f;
 	protected bool bCoolDown = false;
@@ -55,7 +56,6 @@ public class CameraUseRay : MonoBehaviour
 
 	void FixedUpdate ()
 	{
-		float Distance = 3.0f;
 		Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0.0f));   
 		RaycastHit hit;
 		Debug.DrawRay(ray.origin, ray.direction * Distance, Color.yellow);
@@ -70,7 +70,7 @@ public class CameraUseRay : MonoBehaviour
 				{ 
                     if (!bCoolDown && Input.GetButton("Use"))
                     {
-                        itemusable.OnUse();
+                        itemusable.OnUse(gameObject);
                         StartCoolDown();
                     }
 
