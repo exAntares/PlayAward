@@ -18,6 +18,11 @@ public class CameraUseRay : MonoBehaviour
 
 	void CreateCrossHair()
 	{
+        //HAC
+        Screen.showCursor = false;
+        Screen.lockCursor = true;
+        //---
+
 		GuiTexture = new Texture2D(Screen.width, Screen.height);
 		int y = 0;
 		while (y < GuiTexture.height)
