@@ -14264,6 +14264,64 @@ Prefab:
   m_RootGameObject: {fileID: 781002651}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &830656695
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 4c5849e82b5af2047ba0507935546827, type: 2}
+  m_PrefabInternal: {fileID: 2002775801}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 830656698}
+  - 33: {fileID: 830656697}
+  - 23: {fileID: 830656696}
+  m_Layer: 0
+  m_Name: Alfombra_Hall_PF
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &830656696
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: 4c5849e82b5af2047ba0507935546827,
+    type: 2}
+  m_PrefabInternal: {fileID: 2002775801}
+  m_GameObject: {fileID: 830656695}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: ef93dedfb82ec8f43af55a82a03c6bd2, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &830656697
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: 4c5849e82b5af2047ba0507935546827,
+    type: 2}
+  m_PrefabInternal: {fileID: 2002775801}
+  m_GameObject: {fileID: 830656695}
+  m_Mesh: {fileID: 4300000, guid: f604331497c5fd545ad4880c3d81d379, type: 3}
+--- !u!4 &830656698
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 4c5849e82b5af2047ba0507935546827, type: 2}
+  m_PrefabInternal: {fileID: 2002775801}
+  m_GameObject: {fileID: 830656695}
+  m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
+  m_LocalPosition: {x: 14.1271915, y: -.0309619065, z: -16.7272205}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
 --- !u!1 &832486426
 GameObject:
   m_ObjectHideFlags: 0
@@ -23208,8 +23266,7 @@ MonoBehaviour:
   - Main_Pasillo
   - Main_Pasillo_Design
   - Main_Hall_Design
-  - Salon
-  - Corridor
+  - Main_Salon
 --- !u!4 &1370564678
 Transform:
   m_ObjectHideFlags: 0
@@ -35904,6 +35961,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 968822622}
   m_RootOrder: 18
+--- !u!1001 &2002775801
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 4c5849e82b5af2047ba0507935546827, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 14.1271915
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4c5849e82b5af2047ba0507935546827, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -.0309619065
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4c5849e82b5af2047ba0507935546827, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -16.7272205
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4c5849e82b5af2047ba0507935546827, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4c5849e82b5af2047ba0507935546827, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: .707106829
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4c5849e82b5af2047ba0507935546827, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4c5849e82b5af2047ba0507935546827, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: .707106829
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4c5849e82b5af2047ba0507935546827, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 4c5849e82b5af2047ba0507935546827, type: 2}
+  m_RootGameObject: {fileID: 830656695}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &2008161867
 GameObject:
   m_ObjectHideFlags: 0
