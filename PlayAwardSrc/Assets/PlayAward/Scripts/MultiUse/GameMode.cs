@@ -4,8 +4,10 @@ using System.Collections.Generic;
 
 public class GameMode : Singleton<GameMode>
 {
+    public bool LoadDebugMaps = false;
     public DefaultObjects _DefaultObjects;
     public List<string> ScenesToLoad = new List<string>();
+    public List<string> DebugMaps = new List<string>();
 
     private List<string> ScenesLoaded = new List<string>();
     private string thisLevel;
@@ -29,6 +31,18 @@ public class GameMode : Singleton<GameMode>
             {
                 Application.LoadLevelAdditive(scene);
                 ScenesLoaded.Add(scene);
+            }
+        }
+
+        if (LoadDebugMaps)
+        {
+            foreach (string scene in DebugMaps)
+            {
+                if (scene != thisLevel && !ScenesLoaded.Contains(scene))
+                {
+                    Application.LoadLevelAdditive(scene);
+                    ScenesLoaded.Add(scene);
+                }
             }
         }
 
