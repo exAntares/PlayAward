@@ -3,6 +3,7 @@ using System.Collections;
 
 public class InventoryItem : UsableObject
 {
+    public string Name;
     public Inventory currentIventory;
 
     override public void OnUse(GameObject User)

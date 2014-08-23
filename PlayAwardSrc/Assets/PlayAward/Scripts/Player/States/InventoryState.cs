@@ -5,11 +5,22 @@ using System.Collections.Generic;
 public class InventoryState : PlayerStateBase
 {
     public Inventory Inventario;
+    public InventoryItem SelectedItem;
 
     override protected void InitState()
     {
         base.InitState();
         Inventario = gameObject.GetInventory();
+    }
+
+    public virtual void BeginState()
+    {
+        //gameObject.
+    }
+
+    public virtual void EndState()
+    {
+        //Debug.Log ("StateBase EndState");
     }
 
     void ShowInventory()
@@ -31,4 +42,10 @@ public class InventoryState : PlayerStateBase
 
         }
     }
+
+    void SelectItem(InventoryItem item)
+    {
+        SelectedItem = item;
+    }
+
 }

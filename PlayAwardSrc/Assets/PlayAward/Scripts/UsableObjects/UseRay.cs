@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CameraUseRay : MonoBehaviour
+public class UseRay : MonoBehaviour
 {
     public float Distance = 4.0f;
 	public GUIStyle textStyle;
