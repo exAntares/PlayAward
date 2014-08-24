@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Marmol_MT
-  m_Shader: {fileID: 4800000, guid: 6c878572b37d9444fbe97119bbf1c765, type: 3}
+  m_Name: Metallic_cobre
+  m_Shader: {fileID: 4800000, guid: 173ea76c55d104a85a85a4a8ebaccf2a, type: 3}
   m_ShaderKeywords: []
   m_CustomRenderQueue: -1
   m_SavedProperties:
@@ -17,35 +17,28 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 4d5e8017eff7d284d84a8281daa1a1c6, type: 3}
+          m_Texture: {fileID: 2800000, guid: 779d1237e1aede840956dd1dbd9aa800, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _BumpMap
         second:
-          m_Texture: {fileID: 2800000, guid: cecb061869a6fc44aa198e71df34b843, type: 3}
+          m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _SpecTex
         second:
-          m_Texture: {fileID: 2800000, guid: 58b161d44a697a142b410a2c082acafe, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _OccTex
-        second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 2800000, guid: 1ddf96f5b2f895a4baa7a5207ca9b355, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
           name: _Shininess
-        second: 7.01471806
+        second: 7.99999952
       data:
         first:
           name: _SpecInt
@@ -53,17 +46,13 @@ Material:
       data:
         first:
           name: _Fresnel
-        second: 1
-      data:
-        first:
-          name: _OccStrength
-        second: 0
+        second: .285714298
     m_Colors:
       data:
         first:
           name: _Color
-        second: {r: 1, g: 1, b: 1, a: 1}
+        second: {r: .776470602, g: .344863355, b: .173564002, a: 1}
       data:
         first:
           name: _SpecColor
-        second: {r: 1, g: 1, b: 1, a: 1}
+        second: {r: .862745106, g: .725009382, b: .595463276, a: 1}
