@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Decal_05_bano_sangre
-  m_Shader: {fileID: 4800000, guid: 3a731b5411678f64fbed18a1d3353b18, type: 3}
+  m_Shader: {fileID: 4800000, guid: 23d947d851d2fd24a9dfd136d9538f13, type: 3}
   m_ShaderKeywords: []
   m_CustomRenderQueue: -1
   m_SavedProperties:
@@ -22,6 +22,13 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 2800000, guid: 47ffc227367e66045b909dd0e4fc2ce9, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
           name: _SpecTex
         second:
           m_Texture: {fileID: 2800000, guid: d46ee08d6b45beb4cb3a5b76941941a1, type: 3}
@@ -31,11 +38,11 @@ Material:
       data:
         first:
           name: _Shininess
-        second: 4.30046892
+        second: 7.99999952
       data:
         first:
           name: _SpecInt
-        second: 1
+        second: .5
       data:
         first:
           name: _Fresnel
