@@ -49,7 +49,7 @@ public class DoorScript : UsableObject
 		}
 	}
 
-	override public void OnUse()
+    override public void OnUse(GameObject User)
 	{
 		switch(State)
 		{

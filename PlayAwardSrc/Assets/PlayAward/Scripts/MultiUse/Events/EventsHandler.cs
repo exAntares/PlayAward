@@ -89,7 +89,7 @@ public class EventsHandler : MonoBehaviour
         }
         else
         {
-            Debug.Log(gameObject + " No hay delegados asignados para " + eventName);
+            //Debug.Log(gameObject + " No hay delegados asignados para " + eventName);
         }
        
     }
