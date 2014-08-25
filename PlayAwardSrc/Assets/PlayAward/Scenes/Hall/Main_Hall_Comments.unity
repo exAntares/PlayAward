@@ -80,268 +80,54 @@ NavMeshSettings:
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
   m_NavMesh: {fileID: 0}
---- !u!1001 &50715898
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 871017001}
-    m_Modifications:
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 13.4879913
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.64449596
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 18.273859
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: .149757221
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: .988722801
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 10200000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_Text
-      value: Necesito mobiliario por aqui. Cajas vienen bien
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalScale.x
-      value: .099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: Comment
-      value: Necesito mobiliario por aqui. Cajas vienen bien
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-  m_RootGameObject: {fileID: 1086522549}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
---- !u!1001 &138638746
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 871017001}
-    m_Modifications:
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 30.2999992
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 2.80533099
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -40
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -.716552377
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: -.697533369
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 10200000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_Text
-      value: Puerta hacia el pasillo
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalScale.x
-      value: .100000009
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalScale.z
-      value: .100000001
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalScale.y
-      value: .100000001
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: Comment
-      value: Puerta hacia el pasillo
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-  m_RootGameObject: {fileID: 1151993553}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
---- !u!1 &139794981
+--- !u!1 &365847977
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-  m_PrefabInternal: {fileID: 1759878366}
+  m_PrefabParentObject: {fileID: 100008, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+  m_PrefabInternal: {fileID: 1599293449}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 139794982}
-  - 114: {fileID: 139794985}
-  - 23: {fileID: 139794984}
-  - 102: {fileID: 139794983}
+  - 4: {fileID: 365847978}
+  - 131: {fileID: 365847979}
   m_Layer: 0
-  m_Name: Comment
+  m_Name: UnityWatermark-small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &139794982
+  m_IsActive: 0
+--- !u!4 &365847978
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-  m_PrefabInternal: {fileID: 1759878366}
-  m_GameObject: {fileID: 139794981}
-  m_LocalRotation: {x: 0, y: .999683022, z: 0, w: -.0251790006}
-  m_LocalPosition: {x: 4.1235919, y: 1.32847798, z: -83.6889038}
-  m_LocalScale: {x: .099999994, y: .100000001, z: .100000009}
+  m_PrefabParentObject: {fileID: 400008, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+  m_PrefabInternal: {fileID: 1599293449}
+  m_GameObject: {fileID: 365847977}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .5, y: .5, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
-  m_Father: {fileID: 871017001}
-  m_RootOrder: 8
---- !u!102 &139794983
-TextMesh:
-  serializedVersion: 3
+  m_Father: {fileID: 979441475}
+  m_RootOrder: 0
+--- !u!131 &365847979
+GUITexture:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10200000, guid: bd9978e8225f68a4180d9ea3955dfd84,
+  m_PrefabParentObject: {fileID: 13100002, guid: 1bb1666c31edce9459cc55653340e95f,
     type: 2}
-  m_PrefabInternal: {fileID: 1759878366}
-  m_GameObject: {fileID: 139794981}
-  m_Text: Ventanales mas amplios que engloben casi toda la pared
-  m_OffsetZ: 0
-  m_CharacterSize: 1
-  m_LineSpacing: 1
-  m_Anchor: 0
-  m_Alignment: 0
-  m_TabSize: 3
-  m_FontSize: 24
-  m_FontStyle: 0
-  m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-  m_Color:
+  m_PrefabInternal: {fileID: 1599293449}
+  m_GameObject: {fileID: 365847977}
+  m_Enabled: 1
+  m_Texture: {fileID: 10400, guid: 0000000000000000e000000000000000, type: 0}
+  m_Color: {r: .5, g: .5, b: .5, a: .5}
+  m_PixelInset:
     serializedVersion: 2
-    rgba: 4278190335
---- !u!23 &139794984
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300000, guid: bd9978e8225f68a4180d9ea3955dfd84,
-    type: 2}
-  m_PrefabInternal: {fileID: 1759878366}
-  m_GameObject: {fileID: 139794981}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!114 &139794985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: bd9978e8225f68a4180d9ea3955dfd84,
-    type: 2}
-  m_PrefabInternal: {fileID: 1759878366}
-  m_GameObject: {fileID: 139794981}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a4b8f16cdfd5b1459af26a6cc6a675d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Comment: Ventanales mas amplios que engloben casi toda la pared
---- !u!1001 &274982260
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 871017001}
-    m_Modifications:
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 2.43543792
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -3.38080382
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: .999964952
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: .00837687682
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 10200000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_Text
-      value: La lampara mas grande y mas centrada en el techo
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalScale.x
-      value: .099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: Comment
-      value: La lampara mas grande y mas centrada en el techo
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-  m_RootGameObject: {fileID: 604826060}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
+    x: -64
+    y: -29
+    width: 128
+    height: 58
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
 --- !u!1 &580690040
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,16 +156,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9be87c0653f21304dbd48704a5493410, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LoadDebugMaps: 1
   _DefaultObjects:
     DefaultStartPoint: {fileID: 100000, guid: dece42017ae4ad646b7661e176fc844d, type: 2}
     DefaultPlayer: {fileID: 100004, guid: b0828de0cfae43e45b410674f3c29cc0, type: 2}
     DefaultFader: {fileID: 100000, guid: b9a447ff801cd7a4e9732a4a3359f7e1, type: 2}
   ScenesToLoad:
   - Main_Hall
+  - Main_Hall_Design
   - Main_Pasillo
   - Main_Pasillo_Design
-  - Main_Hall_Design
-  - Salon
+  - Main_Salon
+  - "Main_Ba\xF1o"
+  DebugMaps:
+  - Main_Hall_Comments
 --- !u!4 &580690042
 Transform:
   m_ObjectHideFlags: 0
@@ -389,95 +179,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 979441475}
   m_Father: {fileID: 0}
   m_RootOrder: 1
---- !u!1 &604826060
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-  m_PrefabInternal: {fileID: 274982260}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 604826061}
-  - 114: {fileID: 604826064}
-  - 23: {fileID: 604826063}
-  - 102: {fileID: 604826062}
-  m_Layer: 0
-  m_Name: Comment
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &604826061
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-  m_PrefabInternal: {fileID: 274982260}
-  m_GameObject: {fileID: 604826060}
-  m_LocalRotation: {x: 0, y: .999964952, z: 0, w: .00837687682}
-  m_LocalPosition: {x: 2.43543792, y: 10, z: -3.38080382}
-  m_LocalScale: {x: .099999994, y: .100000001, z: .100000001}
-  m_Children: []
-  m_Father: {fileID: 871017001}
-  m_RootOrder: 1
---- !u!102 &604826062
-TextMesh:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10200000, guid: bd9978e8225f68a4180d9ea3955dfd84,
-    type: 2}
-  m_PrefabInternal: {fileID: 274982260}
-  m_GameObject: {fileID: 604826060}
-  m_Text: La lampara mas grande y mas centrada en el techo
-  m_OffsetZ: 0
-  m_CharacterSize: 1
-  m_LineSpacing: 1
-  m_Anchor: 0
-  m_Alignment: 0
-  m_TabSize: 3
-  m_FontSize: 24
-  m_FontStyle: 0
-  m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-  m_Color:
-    serializedVersion: 2
-    rgba: 4278190335
---- !u!23 &604826063
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300000, guid: bd9978e8225f68a4180d9ea3955dfd84,
-    type: 2}
-  m_PrefabInternal: {fileID: 274982260}
-  m_GameObject: {fileID: 604826060}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!114 &604826064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: bd9978e8225f68a4180d9ea3955dfd84,
-    type: 2}
-  m_PrefabInternal: {fileID: 274982260}
-  m_GameObject: {fileID: 604826060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a4b8f16cdfd5b1459af26a6cc6a675d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Comment: La lampara mas grande y mas centrada en el techo
 --- !u!1 &712790740
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,7 +212,7 @@ Transform:
   m_LocalScale: {x: .099999994, y: .100000001, z: .100000009}
   m_Children: []
   m_Father: {fileID: 871017001}
-  m_RootOrder: 9
+  m_RootOrder: 3
 --- !u!102 &712790742
 TextMesh:
   serializedVersion: 3
@@ -590,14 +295,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 933017262}
-  - {fileID: 604826061}
-  - {fileID: 1086522550}
-  - {fileID: 1630674922}
-  - {fileID: 1081116964}
-  - {fileID: 1151993554}
   - {fileID: 1522468227}
   - {fileID: 2039912297}
-  - {fileID: 139794982}
   - {fileID: 712790741}
   - {fileID: 1638947756}
   - {fileID: 943286741}
@@ -786,7 +485,7 @@ Transform:
   m_LocalScale: {x: .099999994, y: .100000001, z: .100000009}
   m_Children: []
   m_Father: {fileID: 871017001}
-  m_RootOrder: 11
+  m_RootOrder: 5
 --- !u!102 &943286742
 TextMesh:
   serializedVersion: 3
@@ -905,6 +604,51 @@ Prefab:
   m_RootGameObject: {fileID: 933017259}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &979441474
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100006, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+  m_PrefabInternal: {fileID: 1599293449}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 979441475}
+  - 114: {fileID: 979441476}
+  m_Layer: 0
+  m_Name: Destroyme
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &979441475
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400006, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+  m_PrefabInternal: {fileID: 1599293449}
+  m_GameObject: {fileID: 979441474}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 365847978}
+  - {fileID: 1445244403}
+  - {fileID: 1120856408}
+  m_Father: {fileID: 580690042}
+  m_RootOrder: 0
+--- !u!114 &979441476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 1bb1666c31edce9459cc55653340e95f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1599293449}
+  m_GameObject: {fileID: 979441474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed891cfed7e6f184ba296ba7396f3e24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startAutoDestroy: 1
+  msecsToDestroy: 1100
 --- !u!1001 &1018331532
 Prefab:
   m_ObjectHideFlags: 0
@@ -971,264 +715,54 @@ Prefab:
   m_RootGameObject: {fileID: 2039912296}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1 &1081116963
+--- !u!1 &1120856407
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-  m_PrefabInternal: {fileID: 1338849281}
+  m_PrefabParentObject: {fileID: 100002, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+  m_PrefabInternal: {fileID: 1599293449}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 1081116964}
-  - 114: {fileID: 1081116967}
-  - 23: {fileID: 1081116966}
-  - 102: {fileID: 1081116965}
+  - 4: {fileID: 1120856408}
+  - 131: {fileID: 1120856409}
   m_Layer: 0
-  m_Name: Comment
+  m_Name: Midnight Logo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1081116964
+--- !u!4 &1120856408
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-  m_PrefabInternal: {fileID: 1338849281}
-  m_GameObject: {fileID: 1081116963}
-  m_LocalRotation: {x: 0, y: -.716552377, z: 0, w: -.697533309}
-  m_LocalPosition: {x: 20.592701, y: 2.80533051, z: 14.7129297}
-  m_LocalScale: {x: .099999994, y: .100000001, z: .100000009}
+  m_PrefabParentObject: {fileID: 400002, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+  m_PrefabInternal: {fileID: 1599293449}
+  m_GameObject: {fileID: 1120856407}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .5, y: .5, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
-  m_Father: {fileID: 871017001}
-  m_RootOrder: 4
---- !u!102 &1081116965
-TextMesh:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10200000, guid: bd9978e8225f68a4180d9ea3955dfd84,
-    type: 2}
-  m_PrefabInternal: {fileID: 1338849281}
-  m_GameObject: {fileID: 1081116963}
-  m_Text: Puerta hacia el pasillo
-  m_OffsetZ: 0
-  m_CharacterSize: 1
-  m_LineSpacing: 1
-  m_Anchor: 0
-  m_Alignment: 0
-  m_TabSize: 3
-  m_FontSize: 24
-  m_FontStyle: 0
-  m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-  m_Color:
-    serializedVersion: 2
-    rgba: 4278190335
---- !u!23 &1081116966
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300000, guid: bd9978e8225f68a4180d9ea3955dfd84,
-    type: 2}
-  m_PrefabInternal: {fileID: 1338849281}
-  m_GameObject: {fileID: 1081116963}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!114 &1081116967
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: bd9978e8225f68a4180d9ea3955dfd84,
-    type: 2}
-  m_PrefabInternal: {fileID: 1338849281}
-  m_GameObject: {fileID: 1081116963}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a4b8f16cdfd5b1459af26a6cc6a675d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Comment: Puerta hacia el pasillo
---- !u!1 &1086522549
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-  m_PrefabInternal: {fileID: 50715898}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1086522550}
-  - 114: {fileID: 1086522553}
-  - 23: {fileID: 1086522552}
-  - 102: {fileID: 1086522551}
-  m_Layer: 0
-  m_Name: Comment
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1086522550
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-  m_PrefabInternal: {fileID: 50715898}
-  m_GameObject: {fileID: 1086522549}
-  m_LocalRotation: {x: 0, y: .149757221, z: 0, w: .988722801}
-  m_LocalPosition: {x: 13.4879913, y: 1.64449596, z: 18.273859}
-  m_LocalScale: {x: .099999994, y: .100000001, z: .100000001}
-  m_Children: []
-  m_Father: {fileID: 871017001}
+  m_Father: {fileID: 979441475}
   m_RootOrder: 2
---- !u!102 &1086522551
-TextMesh:
-  serializedVersion: 3
+--- !u!131 &1120856409
+GUITexture:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10200000, guid: bd9978e8225f68a4180d9ea3955dfd84,
+  m_PrefabParentObject: {fileID: 13100000, guid: 1bb1666c31edce9459cc55653340e95f,
     type: 2}
-  m_PrefabInternal: {fileID: 50715898}
-  m_GameObject: {fileID: 1086522549}
-  m_Text: Necesito mobiliario por aqui. Cajas vienen bien
-  m_OffsetZ: 0
-  m_CharacterSize: 1
-  m_LineSpacing: 1
-  m_Anchor: 0
-  m_Alignment: 0
-  m_TabSize: 3
-  m_FontSize: 24
-  m_FontStyle: 0
-  m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-  m_Color:
+  m_PrefabInternal: {fileID: 1599293449}
+  m_GameObject: {fileID: 1120856407}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 380c98ce87a73f748b525603709335d5, type: 3}
+  m_Color: {r: .5, g: .5, b: .5, a: .5}
+  m_PixelInset:
     serializedVersion: 2
-    rgba: 4278190335
---- !u!23 &1086522552
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300000, guid: bd9978e8225f68a4180d9ea3955dfd84,
-    type: 2}
-  m_PrefabInternal: {fileID: 50715898}
-  m_GameObject: {fileID: 1086522549}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!114 &1086522553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: bd9978e8225f68a4180d9ea3955dfd84,
-    type: 2}
-  m_PrefabInternal: {fileID: 50715898}
-  m_GameObject: {fileID: 1086522549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a4b8f16cdfd5b1459af26a6cc6a675d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Comment: Necesito mobiliario por aqui. Cajas vienen bien
---- !u!1 &1151993553
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-  m_PrefabInternal: {fileID: 138638746}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1151993554}
-  - 114: {fileID: 1151993557}
-  - 23: {fileID: 1151993556}
-  - 102: {fileID: 1151993555}
-  m_Layer: 0
-  m_Name: Comment
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1151993554
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-  m_PrefabInternal: {fileID: 138638746}
-  m_GameObject: {fileID: 1151993553}
-  m_LocalRotation: {x: 0, y: -.716552377, z: 0, w: -.697533369}
-  m_LocalPosition: {x: 30.2999992, y: 2.80533099, z: -40}
-  m_LocalScale: {x: .100000009, y: .100000001, z: .100000001}
-  m_Children: []
-  m_Father: {fileID: 871017001}
-  m_RootOrder: 5
---- !u!102 &1151993555
-TextMesh:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10200000, guid: bd9978e8225f68a4180d9ea3955dfd84,
-    type: 2}
-  m_PrefabInternal: {fileID: 138638746}
-  m_GameObject: {fileID: 1151993553}
-  m_Text: Puerta hacia el pasillo
-  m_OffsetZ: 0
-  m_CharacterSize: 1
-  m_LineSpacing: 1
-  m_Anchor: 0
-  m_Alignment: 0
-  m_TabSize: 3
-  m_FontSize: 24
-  m_FontStyle: 0
-  m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-  m_Color:
-    serializedVersion: 2
-    rgba: 4278190335
---- !u!23 &1151993556
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300000, guid: bd9978e8225f68a4180d9ea3955dfd84,
-    type: 2}
-  m_PrefabInternal: {fileID: 138638746}
-  m_GameObject: {fileID: 1151993553}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!114 &1151993557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: bd9978e8225f68a4180d9ea3955dfd84,
-    type: 2}
-  m_PrefabInternal: {fileID: 138638746}
-  m_GameObject: {fileID: 1151993553}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a4b8f16cdfd5b1459af26a6cc6a675d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Comment: Puerta hacia el pasillo
+    x: -960
+    y: -540
+    width: 1920
+    height: 1080
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
 --- !u!1001 &1248332486
 Prefab:
   m_ObjectHideFlags: 0
@@ -1293,66 +827,85 @@ Prefab:
   m_RootGameObject: {fileID: 1638947755}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1001 &1338849281
-Prefab:
+--- !u!1 &1445244399
+GameObject:
   m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100004, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+  m_PrefabInternal: {fileID: 1599293449}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1445244403}
+  - 20: {fileID: 1445244402}
+  - 92: {fileID: 1445244401}
+  - 124: {fileID: 1445244400}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!124 &1445244400
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 12400000, guid: 1bb1666c31edce9459cc55653340e95f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1599293449}
+  m_GameObject: {fileID: 1445244399}
+  m_Enabled: 1
+--- !u!92 &1445244401
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9200000, guid: 1bb1666c31edce9459cc55653340e95f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1599293449}
+  m_GameObject: {fileID: 1445244399}
+  m_Enabled: 1
+--- !u!20 &1445244402
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2000000, guid: 1bb1666c31edce9459cc55653340e95f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1599293449}
+  m_GameObject: {fileID: 1445244399}
+  m_Enabled: 1
   serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 871017001}
-    m_Modifications:
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 20.592701
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 2.80533051
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 14.7129297
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -.716552377
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: -.697533309
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 10200000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_Text
-      value: Puerta hacia el pasillo
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalScale.x
-      value: .099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalScale.z
-      value: .100000009
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: Comment
-      value: Puerta hacia el pasillo
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-  m_RootGameObject: {fileID: 1081116963}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: .0196078438}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: .300000012
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_HDR: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: .0219999999
+--- !u!4 &1445244403
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400004, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+  m_PrefabInternal: {fileID: 1599293449}
+  m_GameObject: {fileID: 1445244399}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .5, y: .5, z: -10}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 979441475}
+  m_RootOrder: 1
 --- !u!1 &1522468226
 GameObject:
   m_ObjectHideFlags: 0
@@ -1382,7 +935,7 @@ Transform:
   m_LocalScale: {x: .100000009, y: .100000001, z: .100000001}
   m_Children: []
   m_Father: {fileID: 871017001}
-  m_RootOrder: 6
+  m_RootOrder: 1
 --- !u!102 &1522468228
 TextMesh:
   serializedVersion: 3
@@ -1489,92 +1042,6 @@ Prefab:
   m_RootGameObject: {fileID: 580690040}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1 &1630674921
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-  m_PrefabInternal: {fileID: 2055024549}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1630674922}
-  - 114: {fileID: 1630674925}
-  - 23: {fileID: 1630674924}
-  - 102: {fileID: 1630674923}
-  m_Layer: 0
-  m_Name: Comment
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1630674922
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-  m_PrefabInternal: {fileID: 2055024549}
-  m_GameObject: {fileID: 1630674921}
-  m_LocalRotation: {x: 0, y: -.885933816, z: 0, w: .463811755}
-  m_LocalPosition: {x: -16.9922028, y: 1.32847798, z: -24.5565796}
-  m_LocalScale: {x: .099999994, y: .100000001, z: .100000001}
-  m_Children: []
-  m_Father: {fileID: 871017001}
-  m_RootOrder: 3
---- !u!102 &1630674923
-TextMesh:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10200000, guid: bd9978e8225f68a4180d9ea3955dfd84,
-    type: 2}
-  m_PrefabInternal: {fileID: 2055024549}
-  m_GameObject: {fileID: 1630674921}
-  m_Text: Este armario es muy chico
-  m_OffsetZ: 0
-  m_CharacterSize: 1
-  m_LineSpacing: 1
-  m_Anchor: 0
-  m_Alignment: 0
-  m_TabSize: 3
-  m_FontSize: 24
-  m_FontStyle: 0
-  m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-  m_Color:
-    serializedVersion: 2
-    rgba: 4278190335
---- !u!23 &1630674924
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300000, guid: bd9978e8225f68a4180d9ea3955dfd84,
-    type: 2}
-  m_PrefabInternal: {fileID: 2055024549}
-  m_GameObject: {fileID: 1630674921}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!114 &1630674925
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: bd9978e8225f68a4180d9ea3955dfd84,
-    type: 2}
-  m_PrefabInternal: {fileID: 2055024549}
-  m_GameObject: {fileID: 1630674921}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a4b8f16cdfd5b1459af26a6cc6a675d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Comment: Este armario es muy chico
 --- !u!1 &1638947755
 GameObject:
   m_ObjectHideFlags: 0
@@ -1604,7 +1071,7 @@ Transform:
   m_LocalScale: {x: .100000009, y: .100000001, z: .100000024}
   m_Children: []
   m_Father: {fileID: 871017001}
-  m_RootOrder: 10
+  m_RootOrder: 4
 --- !u!102 &1638947757
 TextMesh:
   serializedVersion: 3
@@ -1665,66 +1132,6 @@ MonoBehaviour:
   Comment: "Por estetica deberia de haber un poco\nde espacio entre la puerta y el
     techo. \nQuizas lo mas facil sea que la puerta sea\nun poco mas baja que las demas...
     El techo\nme aprece bien de altura"
---- !u!1001 &1759878366
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 871017001}
-    m_Modifications:
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 4.1235919
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.32847798
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -83.6889038
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: .999683022
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: -.0251790006
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 10200000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_Text
-      value: Ventanales mas amplios que engloben casi toda la pared
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalScale.x
-      value: .099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalScale.z
-      value: .100000009
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: Comment
-      value: Ventanales mas amplios que engloben casi toda la pared
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-  m_RootGameObject: {fileID: 139794981}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1001 &1857421796
 Prefab:
   m_ObjectHideFlags: 0
@@ -1814,7 +1221,7 @@ Transform:
   m_LocalScale: {x: .099999994, y: .100000001, z: .100000001}
   m_Children: []
   m_Father: {fileID: 871017001}
-  m_RootOrder: 7
+  m_RootOrder: 2
 --- !u!102 &2039912298
 TextMesh:
   serializedVersion: 3
@@ -1881,62 +1288,6 @@ MonoBehaviour:
 
     Asi hacemos un angulo de 90 grados mas definido con la esquina de la entrada del
     pasillo'
---- !u!1001 &2055024549
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 871017001}
-    m_Modifications:
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -16.9922028
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.32847798
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -24.5565796
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -.885933816
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: .463811755
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 10200000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_Text
-      value: Este armario es muy chico
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: m_LocalScale.x
-      value: .099999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-      propertyPath: Comment
-      value: Este armario es muy chico
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
-  m_RootGameObject: {fileID: 1630674921}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1001 &2084843186
 Prefab:
   m_ObjectHideFlags: 0
