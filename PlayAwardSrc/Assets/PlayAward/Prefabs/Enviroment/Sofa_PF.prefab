@@ -42,8 +42,9 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 916bbd6e20a953141acd398891809a71, type: 2}
+  - {fileID: 2100000, guid: 916bbd6e20a953141acd398891809a71, type: 2}
+  - {fileID: 2100000, guid: e121ad98cfbcf644983fb96b0326688c, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -57,7 +58,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Mesh: {fileID: 4300000, guid: 6eaabf1beb73b304da946c090182e0f5, type: 3}
+  m_Mesh: {fileID: 4300002, guid: 6eaabf1beb73b304da946c090182e0f5, type: 3}
 --- !u!65 &6500000
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -68,8 +69,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.71307087, y: 2.3725543, z: 1.76117682}
-  m_Center: {x: 0, y: 1.18627477, z: -3.87430191e-07}
+  m_Size: {x: 4.62243414, y: 2.77517939, z: 1.76117635}
+  m_Center: {x: 0, y: 1.38758731, z: 8.94069672e-08}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
