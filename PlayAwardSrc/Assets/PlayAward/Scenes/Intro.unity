@@ -181,7 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9be87c0653f21304dbd48704a5493410, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LoadDebugMaps: 1
+  LoadDebugMaps: 0
   _DefaultObjects:
     DefaultStartPoint: {fileID: 100000, guid: dece42017ae4ad646b7661e176fc844d, type: 2}
     DefaultPlayer: {fileID: 100004, guid: b0828de0cfae43e45b410674f3c29cc0, type: 2}
@@ -340,6 +340,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+      propertyPath: LoadDebugMaps
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
   m_RootGameObject: {fileID: 789404328}
@@ -369,7 +373,7 @@ GUITexture:
   m_PrefabInternal: {fileID: 1456081535}
   m_GameObject: {fileID: 1525653627}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 62391c45f077d584b90f7d91baba3374, type: 3}
+  m_Texture: {fileID: 2800000, guid: 380c98ce87a73f748b525603709335d5, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
