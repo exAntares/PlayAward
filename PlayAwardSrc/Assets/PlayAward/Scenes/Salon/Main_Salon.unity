@@ -5063,7 +5063,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 8476dff91a3e7cf4bb7dd66db98e4273, type: 2}
+  - {fileID: 2100000, guid: 916bbd6e20a953141acd398891809a71, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -5085,7 +5085,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 400380196}
   m_LocalRotation: {x: 0, y: -.919218421, z: 0, w: -.393748105}
-  m_LocalPosition: {x: -9.73547268, y: 6.460886, z: -.537721276}
+  m_LocalPosition: {x: -9.32930851, y: 6.460886, z: -.924838603}
   m_LocalScale: {x: 1, y: 9.75950432, z: 1.7901808}
   m_Children: []
   m_Father: {fileID: 1944504063}
@@ -5590,7 +5590,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
 --- !u!1 &416429988
 GameObject:
   m_ObjectHideFlags: 0
@@ -7425,7 +7425,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 706aba589958237409cd3203efd76178, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -39.8077507
+      value: -40.1244583
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 706aba589958237409cd3203efd76178, type: 2}
       propertyPath: m_LocalRotation.x
@@ -8665,7 +8665,7 @@ Transform:
   m_PrefabInternal: {fileID: 593386612}
   m_GameObject: {fileID: 660561871}
   m_LocalRotation: {x: 0, y: .707108378, z: 0, w: .707105219}
-  m_LocalPosition: {x: -30.4832306, y: 0, z: -39.8077507}
+  m_LocalPosition: {x: -30.4832306, y: 0, z: -40.1244583}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2135255092}
@@ -12263,7 +12263,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 0d7f6c0041b15214bb9e2c3f274df96d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 21.1017208
+      value: -18.0655785
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 0d7f6c0041b15214bb9e2c3f274df96d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12271,7 +12271,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 0d7f6c0041b15214bb9e2c3f274df96d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -40.1372108
+      value: -48.6081085
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 0d7f6c0041b15214bb9e2c3f274df96d, type: 3}
       propertyPath: m_LocalRotation.x
@@ -12291,7 +12291,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 0d7f6c0041b15214bb9e2c3f274df96d, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 0d7f6c0041b15214bb9e2c3f274df96d, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -20723,14 +20723,14 @@ Transform:
   m_PrefabInternal: {fileID: 978254128}
   m_GameObject: {fileID: 1557794984}
   m_LocalRotation: {x: 0, y: -.707081318, z: 0, w: .70713228}
-  m_LocalPosition: {x: 21.1017208, y: -1.74175668e-07, z: -40.1372108}
+  m_LocalPosition: {x: -18.0655785, y: -1.74175668e-07, z: -48.6081085}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 84535989}
   - {fileID: 1220746726}
   - {fileID: 272098057}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
 --- !u!1001 &1576606681
 Prefab:
   m_ObjectHideFlags: 0
@@ -26688,6 +26688,7 @@ GameObject:
   - 4: {fileID: 2016989295}
   - 33: {fileID: 2016989294}
   - 23: {fileID: 2016989293}
+  - 65: {fileID: 2016989292}
   m_Layer: 0
   m_Name: Mesa_comedor_PF
   m_TagString: Untagged
@@ -26695,6 +26696,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &2016989292
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2016989291}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 21.7759094, y: 1.42027724, z: 5.12829781}
+  m_Center: {x: 4.76837158e-07, y: .702362359, z: -1.1920929e-07}
 --- !u!23 &2016989293
 Renderer:
   m_ObjectHideFlags: 0
