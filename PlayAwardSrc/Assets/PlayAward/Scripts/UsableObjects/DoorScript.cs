@@ -9,6 +9,7 @@ public class DoorScript : UsableObject
 		Open
 	}
 
+    public bool Locked = false;
 	public DoorState State = DoorState.Closed;
 	[Range(0.0f,1.0f)]
 	public float DoorPosition = 0.0f;
@@ -51,6 +52,8 @@ public class DoorScript : UsableObject
 
     override public void OnUse(GameObject User)
 	{
+        if (Locked) return;
+
 		switch(State)
 		{
 		case DoorState.Open:
