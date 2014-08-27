@@ -1,11 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class ChaptersScript : MonoBehaviour
 {
-    public Chapter Chapter1 = null;
-    public Chapter Chapter2 = null;
-    public Chapter Chapter3 = null;
+    public List<Chapter> ObjectsPerChapter;
 
     void Start()
     {
@@ -13,34 +12,39 @@ public class ChaptersScript : MonoBehaviour
         if (globalEvents)
         {
             globalEvents.RegisterFunctionToEvent(OnChapter2, "Capitulo 2");
+            globalEvents.RegisterFunctionToEvent(OnChapter2, "Capitulo 3");
         }
     }
 
     [ContextMenu("OnChapter2")]
     virtual public void OnChapter2()
     {
-        if (Chapter1 != null)
+        foreach (Chapter chapterObject in ObjectsPerChapter)
         {
-            Chapter1.Hide();
-        }
-
-        if (Chapter2 != null)
-        {
-            Chapter2.Show();
+            if (chapterObject.myChapter == Chapter.Chapters.Chapter2)
+            {
+                chapterObject.Show();
+            }
+            else
+            {
+                chapterObject.Hide();
+            }
         }
     }
 
     [ContextMenu("OnChapter3")]
     virtual public void OnChapter3()
     {
-        if (Chapter2 != null)
+        foreach (Chapter chapterObject in ObjectsPerChapter)
         {
-            Chapter2.Hide();
-        }
-
-        if (Chapter3 != null)
-        {
-            Chapter3.Show();
+            if (chapterObject.myChapter == Chapter.Chapters.Chapter3)
+            {
+                chapterObject.Show();
+            }
+            else
+            {
+                chapterObject.Hide();
+            }
         }
     }
 }
@@ -48,6 +52,14 @@ public class ChaptersScript : MonoBehaviour
 [System.Serializable]
 public class Chapter
 {
+    public enum Chapters
+    {
+        Chapter1,
+        Chapter2,
+        Chapter3
+    }
+
+    public Chapters myChapter;
     public GameObject ChapterObject;
 
     public void Show()
