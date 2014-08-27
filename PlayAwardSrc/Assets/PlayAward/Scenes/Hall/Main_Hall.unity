@@ -2614,6 +2614,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myRenderer: {fileID: 0}
   TargetedColor: {r: .549019635, g: .607843161, b: .760784328, a: 1}
+  Locked: 0
   State: 0
   DoorPosition: 0
   myAnimator: {fileID: 137189359}
@@ -8156,6 +8157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myRenderer: {fileID: 0}
   TargetedColor: {r: .549019635, g: .607843161, b: .760784328, a: 1}
+  Locked: 0
   State: 0
   DoorPosition: 0
   myAnimator: {fileID: 383139985}
@@ -8607,6 +8609,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myRenderer: {fileID: 586808235}
   TargetedColor: {r: .549019635, g: .607843161, b: .760784328, a: 1}
+  Locked: 1
   State: 0
   DoorPosition: 0
   myAnimator: {fileID: 414034044}
@@ -11893,7 +11896,7 @@ Transform:
   m_PrefabInternal: {fileID: 1963220318}
   m_GameObject: {fileID: 586808233}
   m_LocalRotation: {x: 2.38418579e-07, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: .18585968, y: .0485639647, z: .147598267}
+  m_LocalPosition: {x: .188051343, y: .0486836508, z: .163520694}
   m_LocalScale: {x: 1, y: 1, z: .623419821}
   m_Children: []
   m_Father: {fileID: 82191480}
@@ -14012,7 +14015,7 @@ GameObject:
   - 33: {fileID: 703925607}
   - 23: {fileID: 703925606}
   m_Layer: 0
-  m_Name: Lampara_Mesita_PF
+  m_Name: Lampara_mesita_PF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14849,6 +14852,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myRenderer: {fileID: 794043597}
   TargetedColor: {r: .549019635, g: .607843161, b: .760784328, a: 1}
+  Locked: 1
   State: 0
   DoorPosition: 0
   myAnimator: {fileID: 749030471}
@@ -14926,6 +14930,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myRenderer: {fileID: 0}
   TargetedColor: {r: .549019635, g: .607843161, b: .764705896, a: 1}
+  Locked: 0
   State: 0
   DoorPosition: 0
   myAnimator: {fileID: 752593999}
@@ -15353,7 +15358,7 @@ Transform:
   m_PrefabInternal: {fileID: 1517644912}
   m_GameObject: {fileID: 765454414}
   m_LocalRotation: {x: 2.38418579e-07, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: .18585968, y: .0485639647, z: .147598267}
+  m_LocalPosition: {x: .196573377, y: .0485405996, z: .147600055}
   m_LocalScale: {x: 1, y: 1, z: .623419821}
   m_Children: []
   m_Father: {fileID: 1941785061}
@@ -15662,7 +15667,7 @@ Renderer:
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
   - {fileID: 2100000, guid: 59b7b78d4e6c5e3418e6e0524a480826, type: 2}
-  - {fileID: 2100000, guid: 8476dff91a3e7cf4bb7dd66db98e4273, type: 2}
+  - {fileID: 2100000, guid: acd3f2578c384cf40bdbeefae38bc5a2, type: 2}
   - {fileID: 2100000, guid: 80fb9d9a57a67924fa82fab0f803720c, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
@@ -17307,6 +17312,10 @@ Prefab:
     - target: {fileID: 400000, guid: 1541ac59e4b99db4b828bcb66108bcec, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 1541ac59e4b99db4b828bcb66108bcec, type: 2}
+      propertyPath: Locked
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1541ac59e4b99db4b828bcb66108bcec, type: 2}
@@ -19331,6 +19340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myRenderer: {fileID: 608358249}
   TargetedColor: {r: .549019635, g: .607843161, b: .760784328, a: 1}
+  Locked: 0
   State: 0
   DoorPosition: 0
   myAnimator: {fileID: 911452408}
@@ -20806,7 +20816,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 696d7613b228a7542aa90b385bbc1404, type: 3}
       propertyPath: m_LocalRotation.y
-      value: .948821843
+      value: .948821902
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 696d7613b228a7542aa90b385bbc1404, type: 3}
       propertyPath: m_LocalRotation.z
@@ -20814,7 +20824,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 696d7613b228a7542aa90b385bbc1404, type: 3}
       propertyPath: m_LocalRotation.w
-      value: .315811723
+      value: .315811753
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 696d7613b228a7542aa90b385bbc1404, type: 3}
       propertyPath: m_RootOrder
@@ -22092,7 +22102,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 696d7613b228a7542aa90b385bbc1404, type: 3}
   m_PrefabInternal: {fileID: 962241949}
   m_GameObject: {fileID: 1029387458}
-  m_LocalRotation: {x: 0, y: .948821843, z: 0, w: .315811723}
+  m_LocalRotation: {x: 0, y: .948821902, z: 0, w: .315811753}
   m_LocalPosition: {x: -17.8288193, y: -.030964613, z: -24.836132}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -24880,7 +24890,7 @@ Prefab:
     - target: {fileID: 2300002, guid: f759205fb473c874eb3e4b9a7885d01d, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 8476dff91a3e7cf4bb7dd66db98e4273, type: 2}
+      objectReference: {fileID: 2100000, guid: acd3f2578c384cf40bdbeefae38bc5a2, type: 2}
     - target: {fileID: 2300002, guid: f759205fb473c874eb3e4b9a7885d01d, type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 
@@ -25886,6 +25896,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myRenderer: {fileID: 765454416}
   TargetedColor: {r: .549019635, g: .607843161, b: .760784328, a: 1}
+  Locked: 1
   State: 0
   DoorPosition: 0
   myAnimator: {fileID: 1224832109}
@@ -27571,7 +27582,7 @@ GameObject:
   - 33: {fileID: 1332150147}
   - 23: {fileID: 1332150146}
   m_Layer: 0
-  m_Name: Lampara_Mesita_PF
+  m_Name: Lampara_mesita_PF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31524,6 +31535,22 @@ Prefab:
     - target: {fileID: 400000, guid: 1541ac59e4b99db4b828bcb66108bcec, type: 2}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400014, guid: 1541ac59e4b99db4b828bcb66108bcec, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: .196573377
+      objectReference: {fileID: 0}
+    - target: {fileID: 400014, guid: 1541ac59e4b99db4b828bcb66108bcec, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .0485405996
+      objectReference: {fileID: 0}
+    - target: {fileID: 400014, guid: 1541ac59e4b99db4b828bcb66108bcec, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: .147600055
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 1541ac59e4b99db4b828bcb66108bcec, type: 2}
+      propertyPath: Locked
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1541ac59e4b99db4b828bcb66108bcec, type: 2}
@@ -37097,6 +37124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myRenderer: {fileID: 57748860}
   TargetedColor: {r: .549019635, g: .607843161, b: .760784328, a: 1}
+  Locked: 0
   State: 0
   DoorPosition: 0
   myAnimator: {fileID: 1774673129}
@@ -40594,6 +40622,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myRenderer: {fileID: 0}
   TargetedColor: {r: .549019635, g: .607843161, b: .749019623, a: 1}
+  Locked: 0
   State: 0
   DoorPosition: 0
   myAnimator: {fileID: 1926304627}
@@ -41532,6 +41561,22 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1541ac59e4b99db4b828bcb66108bcec, type: 2}
       propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400014, guid: 1541ac59e4b99db4b828bcb66108bcec, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: .188051343
+      objectReference: {fileID: 0}
+    - target: {fileID: 400014, guid: 1541ac59e4b99db4b828bcb66108bcec, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .0486836508
+      objectReference: {fileID: 0}
+    - target: {fileID: 400014, guid: 1541ac59e4b99db4b828bcb66108bcec, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: .163520694
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 1541ac59e4b99db4b828bcb66108bcec, type: 2}
+      propertyPath: Locked
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
