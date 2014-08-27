@@ -20,7 +20,7 @@ public class GameMode : Singleton<GameMode>
         thisLevel = Application.loadedLevelName;
         print("Level Loaded " + thisLevel);
 
-        Invoke("LoadAllLevels", 1.0f);
+        LoadAllLevels();
     }
 
     void LoadAllLevels()
@@ -46,7 +46,7 @@ public class GameMode : Singleton<GameMode>
             }
         }
 
-        Invoke("PostLoadLevels", 0.1f);
+        PostLoadLevels();
     }
 
     void PostLoadLevels()
@@ -62,6 +62,7 @@ public class DefaultObjects
     public GameObject DefaultStartPoint;
 	public GameObject DefaultPlayer;
 	public GameObject DefaultFader;
+    public GameObject GlobalEvents;
 
     public void Init()
     {
@@ -94,6 +95,12 @@ public class DefaultObjects
             DefaultFader = GameObject.Instantiate(DefaultFader) as GameObject;
             DefaultFader.name = "DefaultFader";
             DefaultFader.transform.parent = _DefaultObjects.transform;
+        }
+
+        if (GlobalEvents)
+        {
+            GlobalEvents = GameObject.Instantiate(GlobalEvents) as GameObject;
+            GlobalEvents.name = "GlobalEvents";
         }
     }
 }
