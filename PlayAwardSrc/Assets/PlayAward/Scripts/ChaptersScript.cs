@@ -21,7 +21,7 @@ public class ChaptersScript : MonoBehaviour
     {
         foreach (Chapter chapterObject in ObjectsPerChapter)
         {
-            if (chapterObject.myChapter == Chapter.Chapters.Chapter2)
+            if (chapterObject.myChapter == Chapter.Chapters.Chapter_2)
             {
                 chapterObject.Show();
             }
@@ -37,7 +37,7 @@ public class ChaptersScript : MonoBehaviour
     {
         foreach (Chapter chapterObject in ObjectsPerChapter)
         {
-            if (chapterObject.myChapter == Chapter.Chapters.Chapter3)
+            if (chapterObject.myChapter == Chapter.Chapters.Chapter_3)
             {
                 chapterObject.Show();
             }
@@ -47,6 +47,14 @@ public class ChaptersScript : MonoBehaviour
             }
         }
     }
+
+    void OnValidate()
+    {
+        foreach (Chapter chapterObject in ObjectsPerChapter)
+        {
+            chapterObject.UpdateName();
+        }
+    }
 }
 
 [System.Serializable]
@@ -54,11 +62,13 @@ public class Chapter
 {
     public enum Chapters
     {
-        Chapter1,
-        Chapter2,
-        Chapter3
+        Chapter_1,
+        Chapter_2,
+        Chapter_3
     }
 
+    [HideInInspector]
+    public string name;
     public Chapters myChapter;
     public GameObject ChapterObject;
 
@@ -78,4 +88,8 @@ public class Chapter
         }
     }
 
+    public void UpdateName()
+    {
+        name = ChapterObject ? ChapterObject.name : "null";
+    }
 }
