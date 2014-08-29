@@ -202,8 +202,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100016}
   m_LocalRotation: {x: 1.68587576e-07, y: -.707105994, z: 1.99495815e-07, w: .707107604}
-  m_LocalPosition: {x: -1.67991638, y: -.362487793, z: .143909469}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1.53616333, y: -.362487793, z: .143910944}
+  m_LocalScale: {x: .797292411, y: .797292352, z: .797292352}
   m_Children: []
   m_Father: {fileID: 400002}
   m_RootOrder: 1
@@ -327,6 +327,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myRenderer: {fileID: 2300004}
   TargetedColor: {r: .549019635, g: .607843161, b: .760784328, a: 1}
+  Locked: 0
   State: 0
   DoorPosition: 0
   myAnimator: {fileID: 9500000}
