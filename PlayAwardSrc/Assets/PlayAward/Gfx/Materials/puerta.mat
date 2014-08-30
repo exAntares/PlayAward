@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: puerta
-  m_Shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: 6c878572b37d9444fbe97119bbf1c765, type: 3}
   m_ShaderKeywords: []
   m_CustomRenderQueue: -1
   m_SavedProperties:
@@ -27,11 +27,26 @@ Material:
           m_Texture: {fileID: 2800000, guid: 0d42f147d66e55a47869ddf2efd9e5dd, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _SpecTex
+        second:
+          m_Texture: {fileID: 2800000, guid: b4f563c81882e3f42ae87410d54757a1, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
           name: _Shininess
-        second: .0865214616
+        second: 6.12899494
+      data:
+        first:
+          name: _SpecInt
+        second: .100000001
+      data:
+        first:
+          name: _Fresnel
+        second: 0
     m_Colors:
       data:
         first:
@@ -40,4 +55,4 @@ Material:
       data:
         first:
           name: _SpecColor
-        second: {r: 1, g: 1, b: 1, a: 1}
+        second: {r: .45588237, g: .45588237, b: .45588237, a: 1}

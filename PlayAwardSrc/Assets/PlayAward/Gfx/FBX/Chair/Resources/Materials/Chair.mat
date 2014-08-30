@@ -8,7 +8,8 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: Chair
   m_Shader: {fileID: 4800000, guid: 6c878572b37d9444fbe97119bbf1c765, type: 3}
-  m_ShaderKeywords: []
+  m_ShaderKeywords:
+  - MARMO_BOX_PROJECTION_ON
   m_CustomRenderQueue: -1
   m_SavedProperties:
     serializedVersion: 2
@@ -29,16 +30,16 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _SpecTex
+          name: _Detail
         second:
-          m_Texture: {fileID: 2800000, guid: 152e89d04d7b9a74ead546d36acf7be1, type: 3}
+          m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _Detail
+          name: _SpecTex
         second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 2800000, guid: 152e89d04d7b9a74ead546d36acf7be1, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:

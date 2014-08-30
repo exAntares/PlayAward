@@ -8,7 +8,8 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: Madera
   m_Shader: {fileID: 4800000, guid: 6c878572b37d9444fbe97119bbf1c765, type: 3}
-  m_ShaderKeywords: []
+  m_ShaderKeywords:
+  - MARMO_BOX_PROJECTION_ON
   m_CustomRenderQueue: -1
   m_SavedProperties:
     serializedVersion: 2
@@ -42,7 +43,7 @@ Material:
       data:
         first:
           name: _SpecInt
-        second: .300000012
+        second: .100000001
       data:
         first:
           name: _Fresnel
@@ -55,4 +56,4 @@ Material:
       data:
         first:
           name: _SpecColor
-        second: {r: .720588207, g: .720588207, b: .720588207, a: 1}
+        second: {r: .492647052, g: .492647052, b: .492647052, a: 1}
