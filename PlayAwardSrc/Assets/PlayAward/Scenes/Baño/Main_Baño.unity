@@ -4017,7 +4017,6 @@ Transform:
   m_LocalPosition: {x: 6.68198776, y: 6.65255165, z: -25.1569366}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1340919973}
   - {fileID: 1352347440}
   m_Father: {fileID: 370646781}
   m_RootOrder: 1
@@ -5768,7 +5767,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 195699b2ce5ec56479d3c6687611bc29, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -12514,61 +12513,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 259190166}
   m_GameObject: {fileID: 1340689569}
   m_Mesh: {fileID: 4300002, guid: 0d7f6c0041b15214bb9e2c3f274df96d, type: 3}
---- !u!1 &1340919972
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1340919973}
-  - 114: {fileID: 1340919974}
-  m_Layer: 0
-  m_Name: Sky Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1340919973
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1340919972}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 56.3962173, y: 57.0401001, z: 94.1885071}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 207415644}
-  m_RootOrder: 0
---- !u!114 &1340919974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1340919972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b80761b669fcde24da55cd3a471c8c2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LinearSpace: 1
-  _BlendingSupport: 1
-  _ProjectionSupport: 1
-  GameAutoApply: 1
-  EditorAutoApply: 1
-  _GlobalSky: {fileID: 1637867243}
-  GlobalBlender:
-    CurrentSky: {fileID: 1637867243}
-    PreviousSky: {fileID: 1637867243}
-    blendTime: .25
-  LocalBlendTime: .25
-  GlobalBlendTime: .25
-  _ShowSkybox: 1
-  SkiesToProbe: []
-  ProbeExposures: {x: 1, y: 1, z: 1, w: 1}
-  ProbeWithCubeRT: 1
 --- !u!1 &1352347439
 GameObject:
   m_ObjectHideFlags: 0
@@ -12596,7 +12540,7 @@ Transform:
   m_Children:
   - {fileID: 1637867241}
   m_Father: {fileID: 207415644}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!1 &1367924608
 GameObject:
   m_ObjectHideFlags: 0
