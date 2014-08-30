@@ -16,6 +16,22 @@ public class ChaptersScript : MonoBehaviour
         }
     }
 
+    [ContextMenu("OnChapter1")]
+    virtual public void OnChapter1()
+    {
+        foreach (Chapter chapterObject in ObjectsPerChapter)
+        {
+            if (chapterObject.myChapter == Chapter.Chapters.Chapter_1)
+            {
+                chapterObject.Show();
+            }
+            else
+            {
+                chapterObject.Hide();
+            }
+        }
+    }
+
     [ContextMenu("OnChapter2")]
     virtual public void OnChapter2()
     {
