@@ -13,7 +13,6 @@ GameObject:
   - 124: {fileID: 12400000}
   - 114: {fileID: 11400000}
   - 81: {fileID: 8100000}
-  - 114: {fileID: 11400016}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -50,6 +49,8 @@ GameObject:
   - 143: {fileID: 14300000}
   - 114: {fileID: 11400006}
   - 114: {fileID: 11400004}
+  - 114: {fileID: 11400020}
+  - 114: {fileID: 11400018}
   - 114: {fileID: 11400008}
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400010}
@@ -299,6 +300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StateName: Inventory
+  Inventario: {fileID: 0}
 --- !u!114 &11400012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -329,19 +331,32 @@ MonoBehaviour:
   SpawnGameObjects: []
   MessagesToSend: []
   ObjectsToActivate: []
---- !u!114 &11400016
+--- !u!114 &11400018
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c42c68479491cc45a75b92c3f0a8fa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Items: []
+--- !u!114 &11400020
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3ac0d6fd2208cf40b085dcfc3ae44f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Distance: 4
   textStyle:
-    m_Name: UseText
+    m_Name: 
     m_Normal:
       m_Background: {fileID: 0}
       m_TextColor: {r: 1, g: 1, b: 1, a: 1}

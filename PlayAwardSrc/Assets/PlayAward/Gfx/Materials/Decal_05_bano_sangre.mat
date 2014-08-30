@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Decal_05_bano_sangre
+  m_Shader: {fileID: 4800000, guid: 23d947d851d2fd24a9dfd136d9538f13, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 38450dc1413f34a4c84ab2547b95a7e3, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 2800000, guid: 47ffc227367e66045b909dd0e4fc2ce9, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _SpecTex
+        second:
+          m_Texture: {fileID: 2800000, guid: d46ee08d6b45beb4cb3a5b76941941a1, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Shininess
+        second: 7.99999952
+      data:
+        first:
+          name: _SpecInt
+        second: .5
+      data:
+        first:
+          name: _Fresnel
+        second: 0
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: .551470578, g: .0121648042, b: .0121648042, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: 1, g: .735294104, b: .735294104, a: 0}

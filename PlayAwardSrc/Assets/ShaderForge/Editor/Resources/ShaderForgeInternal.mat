@@ -30,27 +30,11 @@ Material:
     m_Floats:
       data:
         first:
-          name: _node_47
-        second: 1
-      data:
-        first:
-          name: _node_48
-        second: 1
-      data:
-        first:
           name: _FloorUtiling
         second: 1
       data:
         first:
           name: _FloorVTiling
-        second: 1
-      data:
-        first:
-          name: _FloorVTiling_copy
-        second: 1
-      data:
-        first:
-          name: _FloorUtiling_copy
         second: 1
       data:
         first:
@@ -60,4 +44,12 @@ Material:
         first:
           name: _WallUtiling_copy
         second: 1
-    m_Colors: {}
+    m_Colors:
+      data:
+        first:
+          name: _FloorTintColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _WallTintColor
+        second: {r: 1, g: 1, b: 1, a: 1}

@@ -78,8 +78,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400008}
   - 114: {fileID: 11400000}
-  - 114: {fileID: 11400002}
-  - 65: {fileID: 6500000}
+  - 64: {fileID: 6400000}
   m_Layer: 0
   m_Name: Vela
   m_TagString: Untagged
@@ -162,7 +161,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100008}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.9403379, y: 1.6712687, z: 6.36284781}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400010}
@@ -176,7 +175,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100010}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: .100160241, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400008}
@@ -469,19 +468,20 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100010}
-  m_Mesh: {fileID: 4300000, guid: 5144f785c5b10894196a9ca6c9144400, type: 3}
---- !u!65 &6500000
-BoxCollider:
+  m_Mesh: {fileID: 4300002, guid: 5144f785c5b10894196a9ca6c9144400, type: 3}
+--- !u!64 &6400000
+MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100008}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: .230000004, z: 2}
-  m_Center: {x: 0, y: .119999997, z: 0}
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300002, guid: 5144f785c5b10894196a9ca6c9144400, type: 3}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -490,22 +490,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 100008}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d400668b3f2a1f438366b56174f69c3, type: 3}
+  m_Script: {fileID: 11500000, guid: 9cffd84a9c45557458eea71738bba675, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NumVela: 0
---- !u!114 &11400002
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cf3015ed6cfb564ca41f7ef8523a546, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CooldDown: 2
+  myRenderer: {fileID: 2300000}
+  TargetedColor: {r: .550000012, g: .610000014, b: .75999999, a: 1}
+  currentIventory: {fileID: 0}
+  ID: -1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

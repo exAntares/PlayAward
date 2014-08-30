@@ -1,0 +1,1358 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+SceneSettings:
+  m_ObjectHideFlags: 0
+  m_PVSData: 
+  m_PVSObjectsArray: []
+  m_PVSPortalsArray: []
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: .25
+    backfaceThreshold: 100
+--- !u!104 &2
+RenderSettings:
+  m_Fog: 0
+  m_FogColor: {r: .5, g: .5, b: .5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: .00999999978
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientLight: {r: .200000003, g: .200000003, b: .200000003, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: .5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 0}
+  m_ObjectHideFlags: 0
+--- !u!127 &3
+LevelGameManager:
+  m_ObjectHideFlags: 0
+--- !u!157 &4
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  m_LightProbes: {fileID: 0}
+  m_Lightmaps:
+  - m_Lightmap: {fileID: 2800000, guid: 6c724ec9580c6b841ad413dbcbe99d8a, type: 3}
+    m_IndirectLightmap: {fileID: 2800000, guid: 28d1abef7acffff4dbfa4a402963d0c5,
+      type: 3}
+  - m_Lightmap: {fileID: 2800000, guid: 994136d75e2c66b4fb3bdd889704b526, type: 3}
+    m_IndirectLightmap: {fileID: 2800000, guid: ebc2dfe314130384e8b4c726f62efefc,
+      type: 3}
+  m_LightmapsMode: 1
+  m_BakedColorSpace: 0
+  m_UseDualLightmapsInForward: 0
+  m_LightmapEditorSettings:
+    m_Resolution: 50
+    m_LastUsedResolution: 50
+    m_TextureWidth: 1024
+    m_TextureHeight: 1024
+    m_BounceBoost: 1
+    m_BounceIntensity: 1
+    m_SkyLightColor: {r: .860000014, g: .930000007, b: 1, a: 1}
+    m_SkyLightIntensity: 0
+    m_Quality: 0
+    m_Bounces: 1
+    m_FinalGatherRays: 1000
+    m_FinalGatherContrastThreshold: .0500000007
+    m_FinalGatherGradientThreshold: 0
+    m_FinalGatherInterpolationPoints: 15
+    m_AOAmount: .100000001
+    m_AOMaxDistance: .100000001
+    m_AOContrast: 1
+    m_LODSurfaceMappingDistance: 1
+    m_Padding: 0
+    m_TextureCompression: 0
+    m_LockAtlas: 0
+--- !u!196 &5
+NavMeshSettings:
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    agentRadius: .5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: .400000006
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    accuratePlacement: 0
+    minRegionArea: 2
+    widthInaccuracy: 16.666666
+    heightInaccuracy: 10
+  m_NavMesh: {fileID: 0}
+--- !u!1 &365847977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100008, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+  m_PrefabInternal: {fileID: 1599293449}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 365847978}
+  - 131: {fileID: 365847979}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &365847978
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400008, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+  m_PrefabInternal: {fileID: 1599293449}
+  m_GameObject: {fileID: 365847977}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .5, y: .5, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_Children: []
+  m_Father: {fileID: 979441475}
+  m_RootOrder: 0
+--- !u!131 &365847979
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13100002, guid: 1bb1666c31edce9459cc55653340e95f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1599293449}
+  m_GameObject: {fileID: 365847977}
+  m_Enabled: 1
+  m_Texture: {fileID: 10400, guid: 0000000000000000e000000000000000, type: 0}
+  m_Color: {r: .5, g: .5, b: .5, a: .5}
+  m_PixelInset:
+    serializedVersion: 2
+    x: -64
+    y: -29
+    width: 128
+    height: 58
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!1 &580690040
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+  m_PrefabInternal: {fileID: 1599293449}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 580690042}
+  - 114: {fileID: 580690041}
+  m_Layer: 0
+  m_Name: GameMode
+  m_TagString: GameMode
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!114 &580690041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 1bb1666c31edce9459cc55653340e95f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1599293449}
+  m_GameObject: {fileID: 580690040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9be87c0653f21304dbd48704a5493410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LoadDebugMaps: 1
+  _DefaultObjects:
+    DefaultStartPoint: {fileID: 100000, guid: dece42017ae4ad646b7661e176fc844d, type: 2}
+    DefaultPlayer: {fileID: 100004, guid: b0828de0cfae43e45b410674f3c29cc0, type: 2}
+    DefaultFader: {fileID: 100000, guid: b9a447ff801cd7a4e9732a4a3359f7e1, type: 2}
+  ScenesToLoad:
+  - Main_Hall
+  - Main_Hall_Design
+  - Main_Pasillo
+  - Main_Pasillo_Design
+  - Main_Salon
+  - "Main_Ba\xF1o"
+  DebugMaps:
+  - Main_Hall_Comments
+--- !u!4 &580690042
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+  m_PrefabInternal: {fileID: 1599293449}
+  m_GameObject: {fileID: 580690040}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 979441475}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+--- !u!1 &712790740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+  m_PrefabInternal: {fileID: 1857421796}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 712790741}
+  - 114: {fileID: 712790744}
+  - 23: {fileID: 712790743}
+  - 102: {fileID: 712790742}
+  m_Layer: 0
+  m_Name: Comment
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &712790741
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+  m_PrefabInternal: {fileID: 1857421796}
+  m_GameObject: {fileID: 712790740}
+  m_LocalRotation: {x: 0, y: .721729636, z: 0, w: -.69217515}
+  m_LocalPosition: {x: -31, y: 2.5, z: -41}
+  m_LocalScale: {x: .099999994, y: .100000001, z: .100000009}
+  m_Children: []
+  m_Father: {fileID: 871017001}
+  m_RootOrder: 3
+--- !u!102 &712790742
+TextMesh:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 10200000, guid: bd9978e8225f68a4180d9ea3955dfd84,
+    type: 2}
+  m_PrefabInternal: {fileID: 1857421796}
+  m_GameObject: {fileID: 712790740}
+  m_Text: Puerta que no se abre.
+  m_OffsetZ: 0
+  m_CharacterSize: 1
+  m_LineSpacing: 1
+  m_Anchor: 0
+  m_Alignment: 0
+  m_TabSize: 3
+  m_FontSize: 24
+  m_FontStyle: 0
+  m_RichText: 1
+  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278190335
+--- !u!23 &712790743
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: bd9978e8225f68a4180d9ea3955dfd84,
+    type: 2}
+  m_PrefabInternal: {fileID: 1857421796}
+  m_GameObject: {fileID: 712790740}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!114 &712790744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: bd9978e8225f68a4180d9ea3955dfd84,
+    type: 2}
+  m_PrefabInternal: {fileID: 1857421796}
+  m_GameObject: {fileID: 712790740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a4b8f16cdfd5b1459af26a6cc6a675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Comment: Puerta que no se abre.
+--- !u!1 &871017000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 871017001}
+  m_Layer: 0
+  m_Name: "HallDise\xF1o"
+  m_TagString: Untagged
+  m_Icon: {fileID: 266726316, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &871017001
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 871017000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 933017262}
+  - {fileID: 1522468227}
+  - {fileID: 2039912297}
+  - {fileID: 712790741}
+  - {fileID: 1638947756}
+  - {fileID: 943286741}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!1001 &903375265
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 871017001}
+    m_Modifications:
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 7.62803221
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.80533099
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -49.931385
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -.998902082
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: .0468471944
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 10200000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_Text
+      value: "En este capitulo el salon deberia estar casi vacio. Abandonado, como
+        si anta\xF1o hubieran mudado los muebles.\nDebe de haber una vela en el suelo,
+        un sof\xE1, el telefono en la esquina de la derecha, muchas cajas, basura,
+        polvo...fijaros en el layout"
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalScale.x
+      value: .100000009
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalScale.z
+      value: .100000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: Comment
+      value: "En este capitulo el salon deberia estar casi vacio. Abandonado, como
+        si anta\xF1o hubieran mudado los muebles.\nDebe de haber una vela en el suelo,
+        un sof\xE1, el telefono en la esquina de la derecha, muchas cajas, basura,
+        polvo...fijaros en el layout"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+  m_RootGameObject: {fileID: 1522468226}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1 &933017259
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+  m_PrefabInternal: {fileID: 950949934}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 933017262}
+  - 114: {fileID: 933017263}
+  - 23: {fileID: 933017261}
+  - 102: {fileID: 933017260}
+  m_Layer: 0
+  m_Name: Comment
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!102 &933017260
+TextMesh:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 10200000, guid: bd9978e8225f68a4180d9ea3955dfd84,
+    type: 2}
+  m_PrefabInternal: {fileID: 950949934}
+  m_GameObject: {fileID: 933017259}
+  m_Text: "Las escaleras necesitan colision plana. \nLa colision debe ser una maya
+    de las dimensiones\nde la escalera, pero completamente plana\n"
+  m_OffsetZ: 0
+  m_CharacterSize: 1
+  m_LineSpacing: 1
+  m_Anchor: 0
+  m_Alignment: 0
+  m_TabSize: 3
+  m_FontSize: 24
+  m_FontStyle: 0
+  m_RichText: 1
+  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278190335
+--- !u!23 &933017261
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: bd9978e8225f68a4180d9ea3955dfd84,
+    type: 2}
+  m_PrefabInternal: {fileID: 950949934}
+  m_GameObject: {fileID: 933017259}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!4 &933017262
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+  m_PrefabInternal: {fileID: 950949934}
+  m_GameObject: {fileID: 933017259}
+  m_LocalRotation: {x: 0, y: .730067074, z: 0, w: .683375478}
+  m_LocalPosition: {x: 10.030261, y: 1.89999998, z: -.717206717}
+  m_LocalScale: {x: .100000001, y: .100000001, z: .100000001}
+  m_Children: []
+  m_Father: {fileID: 871017001}
+  m_RootOrder: 0
+--- !u!114 &933017263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: bd9978e8225f68a4180d9ea3955dfd84,
+    type: 2}
+  m_PrefabInternal: {fileID: 950949934}
+  m_GameObject: {fileID: 933017259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a4b8f16cdfd5b1459af26a6cc6a675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Comment: "Las escaleras necesitan colision plana. \nLa colision debe ser una maya
+    de las dimensiones\nde la escalera, pero completamente plana\n"
+--- !u!1 &943286740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+  m_PrefabInternal: {fileID: 2084843186}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 943286741}
+  - 114: {fileID: 943286744}
+  - 23: {fileID: 943286743}
+  - 102: {fileID: 943286742}
+  m_Layer: 0
+  m_Name: Comment
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &943286741
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+  m_PrefabInternal: {fileID: 2084843186}
+  m_GameObject: {fileID: 943286740}
+  m_LocalRotation: {x: 0, y: .999683022, z: 0, w: -.0251790006}
+  m_LocalPosition: {x: 4.1235919, y: 2.56879044, z: -84.3072128}
+  m_LocalScale: {x: .099999994, y: .100000001, z: .100000009}
+  m_Children: []
+  m_Father: {fileID: 871017001}
+  m_RootOrder: 5
+--- !u!102 &943286742
+TextMesh:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 10200000, guid: bd9978e8225f68a4180d9ea3955dfd84,
+    type: 2}
+  m_PrefabInternal: {fileID: 2084843186}
+  m_GameObject: {fileID: 943286740}
+  m_Text: 'Las ventanas deben dejar pasar la luz del
+
+    exterior por lo que deben posicionarse en espacios huecos
+
+    con cristales transparentes'
+  m_OffsetZ: 0
+  m_CharacterSize: 1
+  m_LineSpacing: 1
+  m_Anchor: 0
+  m_Alignment: 0
+  m_TabSize: 3
+  m_FontSize: 24
+  m_FontStyle: 0
+  m_RichText: 1
+  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278190335
+--- !u!23 &943286743
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: bd9978e8225f68a4180d9ea3955dfd84,
+    type: 2}
+  m_PrefabInternal: {fileID: 2084843186}
+  m_GameObject: {fileID: 943286740}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!114 &943286744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: bd9978e8225f68a4180d9ea3955dfd84,
+    type: 2}
+  m_PrefabInternal: {fileID: 2084843186}
+  m_GameObject: {fileID: 943286740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a4b8f16cdfd5b1459af26a6cc6a675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Comment: 'Las ventanas deben dejar pasar la luz del
+
+    exterior por lo que deben posicionarse en espacios huecos
+
+    con cristales transparentes'
+--- !u!1001 &950949934
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 871017001}
+    m_Modifications:
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 10.030261
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.89999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -.717206717
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: .730067074
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: .683375478
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 10200000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_Text
+      value: "Las escaleras necesitan colision plana. \nLa colision debe ser una maya
+        de las dimensiones\nde la escalera, pero completamente plana\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: Comment
+      value: "Las escaleras necesitan colision plana. \nLa colision debe ser una maya
+        de las dimensiones\nde la escalera, pero completamente plana\n"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+  m_RootGameObject: {fileID: 933017259}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1 &979441474
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100006, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+  m_PrefabInternal: {fileID: 1599293449}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 979441475}
+  - 114: {fileID: 979441476}
+  m_Layer: 0
+  m_Name: Destroyme
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &979441475
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400006, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+  m_PrefabInternal: {fileID: 1599293449}
+  m_GameObject: {fileID: 979441474}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 365847978}
+  - {fileID: 1445244403}
+  - {fileID: 1120856408}
+  m_Father: {fileID: 580690042}
+  m_RootOrder: 0
+--- !u!114 &979441476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 1bb1666c31edce9459cc55653340e95f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1599293449}
+  m_GameObject: {fileID: 979441474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed891cfed7e6f184ba296ba7396f3e24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startAutoDestroy: 1
+  msecsToDestroy: 1100
+--- !u!1001 &1018331532
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 871017001}
+    m_Modifications:
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 4.1235919
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.32254577
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -61.7131996
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: .999682963
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: -.0251793638
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 10200000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_Text
+      value: '<-------Necesito este pasillo mas estrecho ----->
+
+        Por tanto la mesa debe ser mas estrecha tambien
+
+        Asi hacemos un angulo de 90 grados mas definido con la esquina de la entrada
+        del pasillo'
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalScale.x
+      value: .099999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: Comment
+      value: '<-------Necesito este pasillo mas estrecho ----->
+
+        Por tanto la mesa debe ser mas estrecha tambien
+
+        Asi hacemos un angulo de 90 grados mas definido con la esquina de la entrada
+        del pasillo'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+  m_RootGameObject: {fileID: 2039912296}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1 &1120856407
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100002, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+  m_PrefabInternal: {fileID: 1599293449}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1120856408}
+  - 131: {fileID: 1120856409}
+  m_Layer: 0
+  m_Name: Midnight Logo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1120856408
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400002, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+  m_PrefabInternal: {fileID: 1599293449}
+  m_GameObject: {fileID: 1120856407}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .5, y: .5, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_Children: []
+  m_Father: {fileID: 979441475}
+  m_RootOrder: 2
+--- !u!131 &1120856409
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13100000, guid: 1bb1666c31edce9459cc55653340e95f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1599293449}
+  m_GameObject: {fileID: 1120856407}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 380c98ce87a73f748b525603709335d5, type: 3}
+  m_Color: {r: .5, g: .5, b: .5, a: .5}
+  m_PixelInset:
+    serializedVersion: 2
+    x: -960
+    y: -540
+    width: 1920
+    height: 1080
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!1001 &1248332486
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 871017001}
+    m_Modifications:
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 2.0259707
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -26
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: .996590078
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: .0825119317
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 10200000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_Text
+      value: "Por estetica deberia de haber un poco\nde espacio entre la puerta y
+        el techo. \nQuizas lo mas facil sea que la puerta sea\nun poco mas baja que
+        las demas... El techo\nme aprece bien de altura"
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalScale.x
+      value: .100000009
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalScale.z
+      value: .100000024
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: Comment
+      value: "Por estetica deberia de haber un poco\nde espacio entre la puerta y
+        el techo. \nQuizas lo mas facil sea que la puerta sea\nun poco mas baja que
+        las demas... El techo\nme aprece bien de altura"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+  m_RootGameObject: {fileID: 1638947755}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1 &1445244399
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100004, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+  m_PrefabInternal: {fileID: 1599293449}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1445244403}
+  - 20: {fileID: 1445244402}
+  - 92: {fileID: 1445244401}
+  - 124: {fileID: 1445244400}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!124 &1445244400
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 12400000, guid: 1bb1666c31edce9459cc55653340e95f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1599293449}
+  m_GameObject: {fileID: 1445244399}
+  m_Enabled: 1
+--- !u!92 &1445244401
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9200000, guid: 1bb1666c31edce9459cc55653340e95f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1599293449}
+  m_GameObject: {fileID: 1445244399}
+  m_Enabled: 1
+--- !u!20 &1445244402
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2000000, guid: 1bb1666c31edce9459cc55653340e95f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1599293449}
+  m_GameObject: {fileID: 1445244399}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: .0196078438}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: .300000012
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_HDR: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: .0219999999
+--- !u!4 &1445244403
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400004, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+  m_PrefabInternal: {fileID: 1599293449}
+  m_GameObject: {fileID: 1445244399}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .5, y: .5, z: -10}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 979441475}
+  m_RootOrder: 1
+--- !u!1 &1522468226
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+  m_PrefabInternal: {fileID: 903375265}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1522468227}
+  - 114: {fileID: 1522468230}
+  - 23: {fileID: 1522468229}
+  - 102: {fileID: 1522468228}
+  m_Layer: 0
+  m_Name: Comment
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1522468227
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+  m_PrefabInternal: {fileID: 903375265}
+  m_GameObject: {fileID: 1522468226}
+  m_LocalRotation: {x: 0, y: -.998902082, z: 0, w: .0468471944}
+  m_LocalPosition: {x: 7.62803221, y: 2.80533099, z: -49.931385}
+  m_LocalScale: {x: .100000009, y: .100000001, z: .100000001}
+  m_Children: []
+  m_Father: {fileID: 871017001}
+  m_RootOrder: 1
+--- !u!102 &1522468228
+TextMesh:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 10200000, guid: bd9978e8225f68a4180d9ea3955dfd84,
+    type: 2}
+  m_PrefabInternal: {fileID: 903375265}
+  m_GameObject: {fileID: 1522468226}
+  m_Text: "En este capitulo el salon deberia estar casi vacio. Abandonado, como si
+    anta\xF1o hubieran mudado los muebles.\nDebe de haber una vela en el suelo, un
+    sof\xE1, el telefono en la esquina de la derecha, muchas cajas, basura, polvo...fijaros
+    en el layout"
+  m_OffsetZ: 0
+  m_CharacterSize: 1
+  m_LineSpacing: 1
+  m_Anchor: 0
+  m_Alignment: 0
+  m_TabSize: 3
+  m_FontSize: 24
+  m_FontStyle: 0
+  m_RichText: 1
+  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278190335
+--- !u!23 &1522468229
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: bd9978e8225f68a4180d9ea3955dfd84,
+    type: 2}
+  m_PrefabInternal: {fileID: 903375265}
+  m_GameObject: {fileID: 1522468226}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!114 &1522468230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: bd9978e8225f68a4180d9ea3955dfd84,
+    type: 2}
+  m_PrefabInternal: {fileID: 903375265}
+  m_GameObject: {fileID: 1522468226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a4b8f16cdfd5b1459af26a6cc6a675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Comment: "En este capitulo el salon deberia estar casi vacio. Abandonado, como si
+    anta\xF1o hubieran mudado los muebles.\nDebe de haber una vela en el suelo, un
+    sof\xE1, el telefono en la esquina de la derecha, muchas cajas, basura, polvo...fijaros
+    en el layout"
+--- !u!1001 &1599293449
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+  m_RootGameObject: {fileID: 580690040}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1 &1638947755
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+  m_PrefabInternal: {fileID: 1248332486}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1638947756}
+  - 114: {fileID: 1638947759}
+  - 23: {fileID: 1638947758}
+  - 102: {fileID: 1638947757}
+  m_Layer: 0
+  m_Name: Comment
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1638947756
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+  m_PrefabInternal: {fileID: 1248332486}
+  m_GameObject: {fileID: 1638947755}
+  m_LocalRotation: {x: 0, y: .996590078, z: 0, w: .0825119317}
+  m_LocalPosition: {x: 2.0259707, y: 4, z: -26}
+  m_LocalScale: {x: .100000009, y: .100000001, z: .100000024}
+  m_Children: []
+  m_Father: {fileID: 871017001}
+  m_RootOrder: 4
+--- !u!102 &1638947757
+TextMesh:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 10200000, guid: bd9978e8225f68a4180d9ea3955dfd84,
+    type: 2}
+  m_PrefabInternal: {fileID: 1248332486}
+  m_GameObject: {fileID: 1638947755}
+  m_Text: "Por estetica deberia de haber un poco\nde espacio entre la puerta y el
+    techo. \nQuizas lo mas facil sea que la puerta sea\nun poco mas baja que las demas...
+    El techo\nme aprece bien de altura"
+  m_OffsetZ: 0
+  m_CharacterSize: 1
+  m_LineSpacing: 1
+  m_Anchor: 0
+  m_Alignment: 0
+  m_TabSize: 3
+  m_FontSize: 24
+  m_FontStyle: 0
+  m_RichText: 1
+  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278190335
+--- !u!23 &1638947758
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: bd9978e8225f68a4180d9ea3955dfd84,
+    type: 2}
+  m_PrefabInternal: {fileID: 1248332486}
+  m_GameObject: {fileID: 1638947755}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!114 &1638947759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: bd9978e8225f68a4180d9ea3955dfd84,
+    type: 2}
+  m_PrefabInternal: {fileID: 1248332486}
+  m_GameObject: {fileID: 1638947755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a4b8f16cdfd5b1459af26a6cc6a675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Comment: "Por estetica deberia de haber un poco\nde espacio entre la puerta y el
+    techo. \nQuizas lo mas facil sea que la puerta sea\nun poco mas baja que las demas...
+    El techo\nme aprece bien de altura"
+--- !u!1001 &1857421796
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 871017001}
+    m_Modifications:
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -31
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -41
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: .721729636
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: -.69217515
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 10200000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_Text
+      value: Puerta que no se abre.
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalScale.x
+      value: .099999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalScale.z
+      value: .100000009
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: Comment
+      value: Puerta que no se abre.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+  m_RootGameObject: {fileID: 712790740}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1 &2039912296
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+  m_PrefabInternal: {fileID: 1018331532}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2039912297}
+  - 114: {fileID: 2039912300}
+  - 23: {fileID: 2039912299}
+  - 102: {fileID: 2039912298}
+  m_Layer: 0
+  m_Name: Comment
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2039912297
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+  m_PrefabInternal: {fileID: 1018331532}
+  m_GameObject: {fileID: 2039912296}
+  m_LocalRotation: {x: 0, y: .999682963, z: 0, w: -.0251793638}
+  m_LocalPosition: {x: 4.1235919, y: 2.32254577, z: -61.7131996}
+  m_LocalScale: {x: .099999994, y: .100000001, z: .100000001}
+  m_Children: []
+  m_Father: {fileID: 871017001}
+  m_RootOrder: 2
+--- !u!102 &2039912298
+TextMesh:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 10200000, guid: bd9978e8225f68a4180d9ea3955dfd84,
+    type: 2}
+  m_PrefabInternal: {fileID: 1018331532}
+  m_GameObject: {fileID: 2039912296}
+  m_Text: '<-------Necesito este pasillo mas estrecho ----->
+
+    Por tanto la mesa debe ser mas estrecha tambien
+
+    Asi hacemos un angulo de 90 grados mas definido con la esquina de la entrada del
+    pasillo'
+  m_OffsetZ: 0
+  m_CharacterSize: 1
+  m_LineSpacing: 1
+  m_Anchor: 0
+  m_Alignment: 0
+  m_TabSize: 3
+  m_FontSize: 24
+  m_FontStyle: 0
+  m_RichText: 1
+  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278190335
+--- !u!23 &2039912299
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: bd9978e8225f68a4180d9ea3955dfd84,
+    type: 2}
+  m_PrefabInternal: {fileID: 1018331532}
+  m_GameObject: {fileID: 2039912296}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!114 &2039912300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: bd9978e8225f68a4180d9ea3955dfd84,
+    type: 2}
+  m_PrefabInternal: {fileID: 1018331532}
+  m_GameObject: {fileID: 2039912296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a4b8f16cdfd5b1459af26a6cc6a675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Comment: '<-------Necesito este pasillo mas estrecho ----->
+
+    Por tanto la mesa debe ser mas estrecha tambien
+
+    Asi hacemos un angulo de 90 grados mas definido con la esquina de la entrada del
+    pasillo'
+--- !u!1001 &2084843186
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 871017001}
+    m_Modifications:
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 4.1235919
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.56879044
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -84.3072128
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: .999683022
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: -.0251790006
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 10200000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_Text
+      value: 'Las ventanas deben dejar pasar la luz del
+
+        exterior por lo que deben posicionarse en espacios huecos
+
+        con cristales transparentes'
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalScale.x
+      value: .099999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: m_LocalScale.z
+      value: .100000009
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+      propertyPath: Comment
+      value: 'Las ventanas deben dejar pasar la luz del
+
+        exterior por lo que deben posicionarse en espacios huecos
+
+        con cristales transparentes'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: bd9978e8225f68a4180d9ea3955dfd84, type: 2}
+  m_RootGameObject: {fileID: 943286740}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1

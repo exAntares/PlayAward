@@ -19,7 +19,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
         {
             //If a Singleton already exists and you find
             //another reference in scene, destroy it!
-            Destroy(this.gameObject);
+            DestroyImmediate(this.gameObject);
         }
 
         DontDestroyOnLoad(this);
