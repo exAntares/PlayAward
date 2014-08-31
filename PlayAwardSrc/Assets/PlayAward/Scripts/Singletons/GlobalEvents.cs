@@ -7,8 +7,16 @@ public class GlobalEvents : MonoBehaviour
 
     void Start()
     {
-        int a;
-        print("GlobalEvents Start");
+        //Start Game on chapter 1
+        Cap1();
+    }
+
+    #region EditorHelpers;
+
+    [ContextMenu("Capitulo 1")]
+    public void Cap1()
+    {
+        gameObject.BroadCastEvent("Capitulo 1");
     }
 
     [ContextMenu("Capitulo 2")]
@@ -16,4 +24,12 @@ public class GlobalEvents : MonoBehaviour
     {
         gameObject.BroadCastEvent("Capitulo 2");
     }
+
+    [ContextMenu("Capitulo 3")]
+    public void Cap3()
+    {
+        gameObject.BroadCastEvent("Capitulo 3");
+    }
+
+    #endregion
 }
