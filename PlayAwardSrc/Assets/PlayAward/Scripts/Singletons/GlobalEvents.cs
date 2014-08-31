@@ -32,4 +32,22 @@ public class GlobalEvents : MonoBehaviour
     }
 
     #endregion
+
+    #region debug
+    public void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.F1))
+        {
+            Cap1();
+        }
+        else if(Input.GetKeyUp(KeyCode.F2))
+        {
+            Cap2();
+        }
+        else if(Input.GetKeyUp(KeyCode.F3))
+        {
+            Cap3();
+        }
+    }
+    #endregion
 }

@@ -32,7 +32,9 @@ public class MouseLook : MonoBehaviour {
 
 	bool InputEnabled = true;
 
-	void Update ()
+    private GameObject CameraContainer = null;
+
+	void FixedUpdate ()
 	{
 		if(InputEnabled)
 		{
@@ -52,6 +54,7 @@ public class MouseLook : MonoBehaviour {
 
 	void UpdateRotation()
 	{
+        /*
 		if (axes == RotationAxes.MouseXAndY)
 		{
 			float rotationX = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * sensitivityX;
@@ -61,23 +64,31 @@ public class MouseLook : MonoBehaviour {
 			
 			transform.localEulerAngles = new Vector3(-rotationY, rotationX, 0);
 		}
-		else if (axes == RotationAxes.MouseX)
+        */
+
+        if (axes == RotationAxes.MouseX || axes == RotationAxes.MouseXAndY)
 		{
 			transform.Rotate(0, Input.GetAxis("Mouse X") * sensitivityX, 0);
 		}
-		else
+
+        if (axes == RotationAxes.MouseY || axes == RotationAxes.MouseXAndY)
 		{
 			rotationY += Input.GetAxis("Mouse Y") * sensitivityY;
 			rotationY = Mathf.Clamp (rotationY, minimumY, maximumY);
-			
-			transform.localEulerAngles = new Vector3(-rotationY, transform.localEulerAngles.y, 0);
+
+            Vector3 newRotation = new Vector3(-rotationY, CameraContainer.transform.localEulerAngles.y, 0);
+            CameraContainer.transform.localEulerAngles = newRotation;
 		}
 	}
 
 	void Start ()
 	{
 		// Make the rigid body not change rotation
-		if (GetComponent<Rigidbody>())
-			GetComponent<Rigidbody>().freezeRotation = true;
+        if (GetComponent<Rigidbody>())
+        {
+            GetComponent<Rigidbody>().freezeRotation = true;
+        }
+
+        CameraContainer = transform.FindChild("CameraContainer").gameObject;
 	}
 }

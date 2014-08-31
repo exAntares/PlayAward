@@ -184,6 +184,12 @@ private function UpdateFunction () {
 	// We copy the actual velocity into a temporary variable that we can manipulate.
 	var velocity : Vector3 = movement.velocity;
 	
+	var myAnimator : Animator = GetComponent(Animator);
+    if(myAnimator)
+    {
+        myAnimator.SetInteger("MovementSpeed", velocity.magnitude);
+    }
+
 	// Update velocity based on input
 	velocity = ApplyInputVelocityChange(velocity);
 	
