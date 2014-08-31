@@ -32,6 +32,8 @@ public class MouseLook : MonoBehaviour {
 
 	bool InputEnabled = true;
 
+    private GameObject CameraContainer = null;
+
 	void FixedUpdate ()
 	{
 		if(InputEnabled)
@@ -52,6 +54,7 @@ public class MouseLook : MonoBehaviour {
 
 	void UpdateRotation()
 	{
+        /*
 		if (axes == RotationAxes.MouseXAndY)
 		{
 			float rotationX = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * sensitivityX;
@@ -61,17 +64,20 @@ public class MouseLook : MonoBehaviour {
 			
 			transform.localEulerAngles = new Vector3(-rotationY, rotationX, 0);
 		}
-		else if (axes == RotationAxes.MouseX)
+        */
+
+        if (axes == RotationAxes.MouseX || axes == RotationAxes.MouseXAndY)
 		{
 			transform.Rotate(0, Input.GetAxis("Mouse X") * sensitivityX, 0);
 		}
-		else
+
+        if (axes == RotationAxes.MouseY || axes == RotationAxes.MouseXAndY)
 		{
 			rotationY += Input.GetAxis("Mouse Y") * sensitivityY;
 			rotationY = Mathf.Clamp (rotationY, minimumY, maximumY);
-			
-            Vector3 newRotation = new Vector3(-rotationY, transform.localEulerAngles.y, 0);
-            transform.localEulerAngles = newRotation;
+
+            Vector3 newRotation = new Vector3(-rotationY, CameraContainer.transform.localEulerAngles.y, 0);
+            CameraContainer.transform.localEulerAngles = newRotation;
 		}
 	}
 
@@ -82,5 +88,7 @@ public class MouseLook : MonoBehaviour {
         {
             GetComponent<Rigidbody>().freezeRotation = true;
         }
+
+        CameraContainer = transform.FindChild("CameraContainer").gameObject;
 	}
 }
