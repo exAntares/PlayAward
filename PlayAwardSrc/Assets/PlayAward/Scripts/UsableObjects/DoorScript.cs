@@ -5,8 +5,9 @@ public class DoorScript : UsableObject
 {
 	public enum DoorState
 	{
-		Closed,
-		Open
+        Closed,
+		OpenIn,
+        OpenOut
 	}
 
     public bool Locked = false;
@@ -20,7 +21,18 @@ public class DoorScript : UsableObject
 	{
 		switch(State)
 		{
-		case DoorState.Open:
+        case DoorState.OpenOut:
+            if (DoorPosition > -1.0f)
+            {
+                DoorPosition -= Speed * Time.deltaTime;
+            }
+            else
+            {
+                DoorPosition = -1.0f;
+            }
+
+            break;
+		case DoorState.OpenIn:
 			if(DoorPosition < 1.0f)
 			{
 				DoorPosition += Speed * Time.deltaTime;
@@ -31,17 +43,22 @@ public class DoorScript : UsableObject
 			}
 
 			break;
-		case DoorState.Closed:
-			if(DoorPosition > 0.0f)
-			{
-				DoorPosition -= Speed * Time.deltaTime;
-			}
-			else
-			{
-				DoorPosition = 0.0f;
-			}
+        case DoorState.Closed:
+            if (DoorPosition < 0.0f)
+            {
+                DoorPosition += Speed * Time.deltaTime;
+            }
+            else if (DoorPosition > 0.0f)
+            {
+                DoorPosition -= Speed * Time.deltaTime;
+            }
 
-			break;
+            if(Mathf.Abs(DoorPosition) <= 0.1f)
+            {
+                DoorPosition = 0.0f;
+            }
+
+            break;
 		}
 
 		if(myAnimator)
@@ -56,12 +73,26 @@ public class DoorScript : UsableObject
 
 		switch(State)
 		{
-		case DoorState.Open:
+        case DoorState.OpenOut:
+            State = DoorState.Closed;
+            break;
+		case DoorState.OpenIn:
 			State = DoorState.Closed;
 			break;
-		case DoorState.Closed:
-			State = DoorState.Open;
-			break;
+        case DoorState.Closed:
+            {
+                print(Quaternion.Dot(User.transform.rotation, transform.parent.transform.rotation));
+
+                if (Mathf.Abs(Quaternion.Dot(User.transform.rotation, transform.parent.transform.rotation)) <= 0.7f)
+                {
+                    State = DoorState.OpenIn;
+                }
+                else
+                {
+                    State = DoorState.OpenOut;
+                }
+            }
+            break;
 		}
 	}
 
