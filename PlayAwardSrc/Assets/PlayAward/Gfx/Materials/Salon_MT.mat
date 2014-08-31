@@ -7,9 +7,10 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Salon_MT
-  m_Shader: {fileID: 4800000, guid: 960f4aab5214945d191493c9b02ed80d, type: 3}
+  m_Shader: {fileID: 4800000, guid: 857f47563d80247cfa79677a8d496230, type: 3}
   m_ShaderKeywords:
   - MARMO_BOX_PROJECTION_ON
+  - MARMO_SKY_BLEND_OFF
   m_CustomRenderQueue: -1
   m_SavedProperties:
     serializedVersion: 2
@@ -25,7 +26,7 @@ Material:
         first:
           name: _BumpMap
         second:
-          m_Texture: {fileID: 2800000, guid: ebdb43f0cb888fb40b03a9d89f950fb8, type: 3}
+          m_Texture: {fileID: 2800000, guid: c8b0a1f4b608b8c4fa829f7b29d2740f, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:

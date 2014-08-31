@@ -8,7 +8,8 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: Glass
   m_Shader: {fileID: 4800000, guid: 83aaaf3a30c35f24ab01fc92b7d09fee, type: 3}
-  m_ShaderKeywords: []
+  m_ShaderKeywords:
+  - MARMO_BOX_PROJECTION_ON
   m_CustomRenderQueue: -1
   m_SavedProperties:
     serializedVersion: 2
@@ -45,7 +46,7 @@ Material:
       data:
         first:
           name: _Shininess
-        second: 5.85452938
+        second: 5.99050474
       data:
         first:
           name: _SpecInt
