@@ -20,52 +20,7 @@ public class DoorScript : UsableObject
 
 	void FixedUpdate()
 	{
-		switch(State)
-		{
-        case DoorState.OpenOut:
-            if (DoorPosition > -1.0f)
-            {
-                DoorPosition -= Speed * Time.deltaTime;
-            }
-            else
-            {
-                DoorPosition = -1.0f;
-            }
 
-            break;
-		case DoorState.OpenIn:
-			if(DoorPosition < 1.0f)
-			{
-				DoorPosition += Speed * Time.deltaTime;
-			}
-			else
-			{
-				DoorPosition = 1.0f;
-			}
-
-			break;
-        case DoorState.Closed:
-            if (DoorPosition < 0.0f)
-            {
-                DoorPosition += Speed * Time.deltaTime;
-            }
-            else if (DoorPosition > 0.0f)
-            {
-                DoorPosition -= Speed * Time.deltaTime;
-            }
-
-            if (Mathf.Abs(DoorPosition) <= 0.1f && DoorPosition != 0.0f)
-            {
-                if (Sounds != null && Sounds.ClosedSound)
-                {
-                    AudioSource.PlayClipAtPoint(Sounds.ClosedSound, transform.position);
-                }
-
-                DoorPosition = 0.0f;
-            }
-
-            break;
-		}
 
 		if(myAnimator)
 		{
@@ -86,12 +41,6 @@ public class DoorScript : UsableObject
 
 		switch(State)
 		{
-        case DoorState.OpenOut:
-            State = DoorState.Closed;
-            break;
-		case DoorState.OpenIn:            
-			State = DoorState.Closed;
-			break;
         case DoorState.Closed:
             {
                 print(Quaternion.Dot(User.transform.rotation, transform.parent.transform.rotation));
@@ -100,10 +49,18 @@ public class DoorScript : UsableObject
 
                 if (Mathf.Abs(Quaternion.Dot(User.transform.rotation, transform.parent.transform.rotation)) <= 0.7f)
                 {
+                    if (myAnimator)
+                    {
+                        myAnimator.SetTrigger("Open_in");
+                    }
                     State = DoorState.OpenIn;
                 }
                 else
                 {
+                    if (myAnimator)
+                    {
+                        myAnimator.SetTrigger("Open_out");
+                    }
                     State = DoorState.OpenOut;
                 }
             }
@@ -111,7 +68,7 @@ public class DoorScript : UsableObject
 		}
 	}
 
-    void PlayOpenSound()
+    public void PlayOpenSound()
     {
         if (Sounds != null && Sounds.OpenSound)
         {
@@ -119,8 +76,36 @@ public class DoorScript : UsableObject
         }
     }
 
+    public void PlayClosedSound()
+    {
+        if (Sounds != null && Sounds.ClosedSound)
+        {
+            AudioSource.PlayClipAtPoint(Sounds.ClosedSound, transform.position);
+        }
+    }
+
 	void EventOnTriggerExit(GameObject Trigger)
 	{
+        switch (State)
+        {
+            case DoorState.OpenOut:
+                {
+                    if (myAnimator)
+                    {
+                        myAnimator.SetTrigger("Closed_out");
+                    }
+                }
+                break;
+            case DoorState.OpenIn:
+                {
+                    if (myAnimator)
+                    {
+                        myAnimator.SetTrigger("Closed_in");
+                    }
+                }
+                break;
+        }
+
 		State = DoorState.Closed;
 	}
 
