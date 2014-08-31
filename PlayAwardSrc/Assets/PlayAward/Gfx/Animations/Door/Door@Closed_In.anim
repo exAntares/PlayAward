@@ -5818,4 +5818,11 @@ AnimationClip:
     path: puerta_mas_pomo/Pivote_puerta_pomo
     classID: 4
     script: {fileID: 0}
-  m_Events: []
+  m_Events:
+  - time: 1.5
+    functionName: PlayClosedSound
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
