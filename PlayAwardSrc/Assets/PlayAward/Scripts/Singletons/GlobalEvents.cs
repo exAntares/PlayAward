@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GlobalEvents : MonoBehaviour
+public class GlobalEvents : Singleton<GlobalEvents>
 {
-    //private GlobalEvents() { } // guarantee this will be always a singleton only - can't use the constructor!
+    private GlobalEvents() { } // guarantee this will be always a singleton only - can't use the constructor!
 
     void Start()
     {
