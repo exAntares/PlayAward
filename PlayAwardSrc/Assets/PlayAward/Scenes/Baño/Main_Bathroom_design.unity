@@ -16808,6 +16808,7 @@ GameObject:
   - 4: {fileID: 1541168508}
   - 108: {fileID: 1541168509}
   - 95: {fileID: 1541168510}
+  - 114: {fileID: 1541168511}
   m_Layer: 0
   m_Name: Spotlight
   m_TagString: Untagged
@@ -16877,6 +16878,21 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+--- !u!114 &1541168511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1541168507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ead1dd7b11e9c54788bd76a5c188bb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sounds:
+  - {fileID: 8300000, guid: f59e2a5682e86c54e8acab5a4cb00ae4, type: 3}
+  - {fileID: 8300000, guid: c533a0b2993526d47b07660a658cb84a, type: 3}
+  - {fileID: 8300000, guid: 1f78521a496d4b24585f2bfc83a995ce, type: 3}
 --- !u!1 &1541973013
 GameObject:
   m_ObjectHideFlags: 0

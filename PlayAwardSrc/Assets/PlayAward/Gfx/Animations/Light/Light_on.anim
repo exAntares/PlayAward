@@ -21,24 +21,24 @@ AnimationClip:
       - time: 0
         value: -172.000061
         inSlope: 34.3853912
-        outSlope: 36.2288132
+        outSlope: 35.3890686
         tangentMode: 17
-      - time: 4.91666651
+      - time: 5.0333333
         value: 6.12492228
-        inSlope: 36.2288132
+        inSlope: 35.3890686
         outSlope: -50.2240181
         tangentMode: 21
-      - time: 4.94999981
+      - time: 5.0666666
         value: 4.45078993
         inSlope: 32.3525009
         outSlope: 32.3525009
         tangentMode: 10
-      - time: 4.98333311
+      - time: 5.0999999
         value: 8.28175354
         inSlope: -143.428284
         outSlope: -143.428284
         tangentMode: 10
-      - time: 5
+      - time: 5.11666679
         value: 1.58523798
         inSlope: -401.785583
         outSlope: -401.785583
@@ -67,7 +67,7 @@ AnimationClip:
   m_AnimationClipSettings:
     serializedVersion: 2
     m_StartTime: 0
-    m_StopTime: 5
+    m_StopTime: 5.11666679
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -88,24 +88,24 @@ AnimationClip:
       - time: 0
         value: -172.000061
         inSlope: 34.3853912
-        outSlope: 36.2288132
+        outSlope: 35.3890686
         tangentMode: 17
-      - time: 4.91666651
+      - time: 5.0333333
         value: 6.12492228
-        inSlope: 36.2288132
+        inSlope: 35.3890686
         outSlope: -50.2240181
         tangentMode: 21
-      - time: 4.94999981
+      - time: 5.0666666
         value: 4.45078993
         inSlope: 32.3525009
         outSlope: 32.3525009
         tangentMode: 10
-      - time: 4.98333311
+      - time: 5.0999999
         value: 8.28175354
         inSlope: -143.428284
         outSlope: -143.428284
         tangentMode: 10
-      - time: 5
+      - time: 5.11666679
         value: 1.58523798
         inSlope: -401.785583
         outSlope: -401.785583
@@ -117,4 +117,25 @@ AnimationClip:
     classID: 108
     script: {fileID: 0}
   m_EulerEditorCurves: []
-  m_Events: []
+  m_Events:
+  - time: 4.05000019
+    functionName: PlaySoundEffectFromList
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 1
+    messageOptions: 0
+  - time: 4.98333311
+    functionName: PlaySoundEffectFromList
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 2
+    messageOptions: 0
+  - time: 5.05000019
+    functionName: PlaySoundEffectFromList
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
