@@ -1450,6 +1450,7 @@ GameObject:
   - 4: {fileID: 25075906}
   - 33: {fileID: 25075905}
   - 23: {fileID: 25075904}
+  - 114: {fileID: 25075907}
   m_Layer: 0
   m_Name: Suelo_PF
   m_TagString: Untagged
@@ -1498,6 +1499,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 969333287}
   m_RootOrder: 2
+--- !u!114 &25075907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: a5e870e0d22fb404b8da0a0368b9abb9,
+    type: 2}
+  m_PrefabInternal: {fileID: 758673782}
+  m_GameObject: {fileID: 25075903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 0
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 0
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
+    blendTime: .25
 --- !u!1001 &25622612
 Prefab:
   m_ObjectHideFlags: 0
@@ -1590,6 +1614,63 @@ Prefab:
   m_RootGameObject: {fileID: 645403801}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &36423260
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 36423261}
+  - 114: {fileID: 36423263}
+  - 65: {fileID: 36423262}
+  m_Layer: 0
+  m_Name: EnableDirLight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &36423261
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 36423260}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.19288516, y: -4.00941753, z: 44.4294662}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 511809144}
+  m_RootOrder: 1
+--- !u!65 &36423262
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 36423260}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.46000004, y: 4.73999977, z: .289999992}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &36423263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 36423260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8634e062924929664361c08745211fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: 2
+  source: {fileID: 0}
+  target: {fileID: 165261886}
+  triggerCount: 1
+  repeatTrigger: 1
 --- !u!1 &36574180
 GameObject:
   m_ObjectHideFlags: 0
@@ -1735,7 +1816,7 @@ Transform:
   m_LocalScale: {x: 1.40000093, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 18
+  m_RootOrder: 17
 --- !u!23 &37518290
 Renderer:
   m_ObjectHideFlags: 0
@@ -1783,7 +1864,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -3363,7 +3444,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &72954757
 Renderer:
   m_ObjectHideFlags: 0
@@ -3820,7 +3901,7 @@ Transform:
   m_LocalScale: {x: 1.4000001, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 51
+  m_RootOrder: 50
 --- !u!1001 &88533874
 Prefab:
   m_ObjectHideFlags: 0
@@ -3968,7 +4049,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -4513,7 +4594,7 @@ Transform:
   m_LocalScale: {x: 3.16724563, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 58
+  m_RootOrder: 57
 --- !u!114 &115384391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6403,7 +6484,7 @@ Transform:
   m_LocalScale: {x: 9, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 36
+  m_RootOrder: 35
 --- !u!23 &151060314
 Renderer:
   m_ObjectHideFlags: 0
@@ -6451,7 +6532,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -6678,7 +6759,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -6785,7 +6866,7 @@ Transform:
   m_LocalScale: {x: 1.40000224, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 21
+  m_RootOrder: 20
 --- !u!23 &161414368
 Renderer:
   m_ObjectHideFlags: 0
@@ -6833,7 +6914,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -6875,7 +6956,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -7456,7 +7537,7 @@ Transform:
   m_LocalScale: {x: 9, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 34
+  m_RootOrder: 33
 --- !u!23 &175323865
 Renderer:
   m_ObjectHideFlags: 0
@@ -7504,7 +7585,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -7578,6 +7659,7 @@ GameObject:
   - 33: {fileID: 177688029}
   - 23: {fileID: 177688028}
   - 65: {fileID: 177688027}
+  - 114: {fileID: 177688031}
   m_Layer: 0
   m_Name: Estanteria_Baja_PF
   m_TagString: Untagged
@@ -7639,6 +7721,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 245688627}
   m_RootOrder: 13
+--- !u!114 &177688031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 8b9d8783c8dcbde43a76d3b4a8d5fa3e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1483668255}
+  m_GameObject: {fileID: 177688026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 3
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 0
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
+    blendTime: .25
 --- !u!1 &179912861
 GameObject:
   m_ObjectHideFlags: 0
@@ -7668,7 +7773,7 @@ Transform:
   m_LocalScale: {x: 9, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 32
+  m_RootOrder: 31
 --- !u!23 &179912863
 Renderer:
   m_ObjectHideFlags: 0
@@ -7716,7 +7821,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -7732,6 +7837,7 @@ GameObject:
   - 33: {fileID: 181775465}
   - 23: {fileID: 181775464}
   - 65: {fileID: 181775463}
+  - 114: {fileID: 181775466}
   m_Layer: 0
   m_Name: Estanteria_Baja_PF
   m_TagString: Untagged
@@ -7793,6 +7899,29 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1795998228}
   m_GameObject: {fileID: 181775461}
   m_Mesh: {fileID: 4300000, guid: 5dfaec200bb8f2e4fb3c1589f28d036e, type: 3}
+--- !u!114 &181775466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 8b9d8783c8dcbde43a76d3b4a8d5fa3e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1795998228}
+  m_GameObject: {fileID: 181775461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 3
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 0
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
+    blendTime: .25
 --- !u!1 &183446545
 GameObject:
   m_ObjectHideFlags: 0
@@ -8053,7 +8182,7 @@ Transform:
   m_LocalScale: {x: 9, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 35
+  m_RootOrder: 34
 --- !u!23 &187185877
 Renderer:
   m_ObjectHideFlags: 0
@@ -8101,7 +8230,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -8700,6 +8829,7 @@ GameObject:
   - 4: {fileID: 204920436}
   - 33: {fileID: 204920435}
   - 23: {fileID: 204920434}
+  - 114: {fileID: 204920437}
   m_Layer: 0
   m_Name: Suelo_PF
   m_TagString: Untagged
@@ -8748,6 +8878,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 969333287}
   m_RootOrder: 5
+--- !u!114 &204920437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: a5e870e0d22fb404b8da0a0368b9abb9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1390992237}
+  m_GameObject: {fileID: 204920433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 0
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 0
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
+    blendTime: .25
 --- !u!1001 &206901087
 Prefab:
   m_ObjectHideFlags: 0
@@ -9150,6 +9303,7 @@ GameObject:
   - 4: {fileID: 229496574}
   - 33: {fileID: 229496573}
   - 23: {fileID: 229496572}
+  - 114: {fileID: 229496575}
   m_Layer: 0
   m_Name: Suelo_PF
   m_TagString: Untagged
@@ -9198,6 +9352,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 969333287}
   m_RootOrder: 31
+--- !u!114 &229496575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: a5e870e0d22fb404b8da0a0368b9abb9,
+    type: 2}
+  m_PrefabInternal: {fileID: 439098789}
+  m_GameObject: {fileID: 229496571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 0
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 0
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
+    blendTime: .25
 --- !u!1001 &231141173
 Prefab:
   m_ObjectHideFlags: 0
@@ -9502,7 +9679,7 @@ Transform:
   m_LocalScale: {x: 1.39999962, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 12
+  m_RootOrder: 11
 --- !u!23 &238988655
 Renderer:
   m_ObjectHideFlags: 0
@@ -9550,7 +9727,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -9627,7 +9804,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &245688627
 Transform:
   m_ObjectHideFlags: 0
@@ -9937,7 +10114,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &262176541
 Renderer:
   m_ObjectHideFlags: 0
@@ -10568,7 +10745,7 @@ Transform:
   m_LocalScale: {x: 1.4000001, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 53
+  m_RootOrder: 52
 --- !u!1001 &282217662
 Prefab:
   m_ObjectHideFlags: 0
@@ -10760,6 +10937,7 @@ GameObject:
   - 33: {fileID: 291489808}
   - 23: {fileID: 291489807}
   - 65: {fileID: 291489810}
+  - 114: {fileID: 291489811}
   m_Layer: 0
   m_Name: Estanteria_Baja_PF
   m_TagString: Untagged
@@ -10821,6 +10999,29 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.60000002, y: 1.12631679, z: 1.46227109}
   m_Center: {x: -1.1920929e-07, y: .563158274, z: 5.96046448e-08}
+--- !u!114 &291489811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 8b9d8783c8dcbde43a76d3b4a8d5fa3e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1763013587}
+  m_GameObject: {fileID: 291489806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 3
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 0
+  Blender:
+    CurrentSky: {fileID: 298678418}
+    PreviousSky: {fileID: 298678418}
+    blendTime: .25
 --- !u!1 &292669642
 GameObject:
   m_ObjectHideFlags: 0
@@ -10858,7 +11059,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -12103,7 +12304,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -12190,7 +12391,7 @@ Transform:
   m_LocalScale: {x: 1.40000021, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 10
+  m_RootOrder: 9
 --- !u!23 &330576525
 Renderer:
   m_ObjectHideFlags: 0
@@ -12230,6 +12431,7 @@ GameObject:
   - 4: {fileID: 331419625}
   - 33: {fileID: 331419624}
   - 23: {fileID: 331419623}
+  - 114: {fileID: 331419626}
   m_Layer: 0
   m_Name: Suelo_PF
   m_TagString: Untagged
@@ -12278,6 +12480,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 969333287}
   m_RootOrder: 0
+--- !u!114 &331419626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: a5e870e0d22fb404b8da0a0368b9abb9,
+    type: 2}
+  m_PrefabInternal: {fileID: 774105109}
+  m_GameObject: {fileID: 331419622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 0
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 0
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
+    blendTime: .25
 --- !u!1 &331983986
 GameObject:
   m_ObjectHideFlags: 0
@@ -12480,76 +12705,6 @@ Prefab:
   m_RootGameObject: {fileID: 1863826773}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1 &338033622
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 338033626}
-  - 33: {fileID: 338033625}
-  - 64: {fileID: 338033624}
-  - 23: {fileID: 338033623}
-  m_Layer: 0
-  m_Name: Back Carpet
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!23 &338033623
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 338033622}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 2100000, guid: 9ffd59762fdbcf74298fb04e274a48e3, type: 2}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!64 &338033624
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 338033622}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_SmoothSphereCollisions: 0
-  m_Convex: 0
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &338033625
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 338033622}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &338033626
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 338033622}
-  m_LocalRotation: {x: 0, y: .0849492103, z: 0, w: .996385276}
-  m_LocalPosition: {x: -12.2045841, y: .00449484587, z: -21.747757}
-  m_LocalScale: {x: .674516737, y: 1, z: 4.09038782}
-  m_Children: []
-  m_Father: {fileID: 1283401960}
-  m_RootOrder: 30
 --- !u!1 &340576472
 GameObject:
   m_ObjectHideFlags: 0
@@ -12560,6 +12715,7 @@ GameObject:
   - 4: {fileID: 340576475}
   - 33: {fileID: 340576474}
   - 23: {fileID: 340576473}
+  - 114: {fileID: 340576476}
   m_Layer: 0
   m_Name: Suelo_PF
   m_TagString: Untagged
@@ -12608,6 +12764,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 969333287}
   m_RootOrder: 12
+--- !u!114 &340576476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: a5e870e0d22fb404b8da0a0368b9abb9,
+    type: 2}
+  m_PrefabInternal: {fileID: 2031070202}
+  m_GameObject: {fileID: 340576472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 0
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 0
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
+    blendTime: .25
 --- !u!1 &344084366
 GameObject:
   m_ObjectHideFlags: 0
@@ -12861,7 +13040,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -12906,6 +13085,7 @@ GameObject:
   - 33: {fileID: 353107835}
   - 23: {fileID: 353107834}
   - 65: {fileID: 353107837}
+  - 114: {fileID: 353107838}
   m_Layer: 0
   m_Name: Estanteria_Baja_PF
   m_TagString: Untagged
@@ -12967,6 +13147,29 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.60000002, y: 1.12631679, z: 1.46227109}
   m_Center: {x: -1.1920929e-07, y: .563158274, z: 5.96046448e-08}
+--- !u!114 &353107838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 8b9d8783c8dcbde43a76d3b4a8d5fa3e,
+    type: 2}
+  m_PrefabInternal: {fileID: 778454311}
+  m_GameObject: {fileID: 353107833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 3
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 0
+  Blender:
+    CurrentSky: {fileID: 298678418}
+    PreviousSky: {fileID: 298678418}
+    blendTime: .25
 --- !u!1 &356523369
 GameObject:
   m_ObjectHideFlags: 0
@@ -13414,7 +13617,7 @@ Transform:
   m_LocalScale: {x: 20, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 42
+  m_RootOrder: 41
 --- !u!23 &377521023
 Renderer:
   m_ObjectHideFlags: 0
@@ -13462,7 +13665,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -14207,7 +14410,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &400380197
 Renderer:
   m_ObjectHideFlags: 0
@@ -14417,6 +14620,7 @@ GameObject:
   - 4: {fileID: 406423103}
   - 33: {fileID: 406423105}
   - 23: {fileID: 406423104}
+  - 114: {fileID: 406423106}
   m_Layer: 0
   m_Name: puerta_pomo
   m_TagString: Untagged
@@ -14465,6 +14669,29 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1668079258}
   m_GameObject: {fileID: 406423102}
   m_Mesh: {fileID: 4300004, guid: 0d7f6c0041b15214bb9e2c3f274df96d, type: 3}
+--- !u!114 &406423106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400010, guid: 1541ac59e4b99db4b828bcb66108bcec,
+    type: 2}
+  m_PrefabInternal: {fileID: 1668079258}
+  m_GameObject: {fileID: 406423102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 3
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 298678418}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 0
+  Blender:
+    CurrentSky: {fileID: 298678418}
+    PreviousSky: {fileID: 298678418}
+    blendTime: .25
 --- !u!1001 &406995683
 Prefab:
   m_ObjectHideFlags: 0
@@ -14573,7 +14800,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &412118738
 Renderer:
   m_ObjectHideFlags: 0
@@ -14704,7 +14931,7 @@ Transform:
   m_LocalScale: {x: 5, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 27
+  m_RootOrder: 26
 --- !u!23 &412945678
 Renderer:
   m_ObjectHideFlags: 0
@@ -14752,7 +14979,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -14786,7 +15013,7 @@ Transform:
   m_LocalScale: {x: 5, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 29
+  m_RootOrder: 28
 --- !u!23 &413011607
 Renderer:
   m_ObjectHideFlags: 0
@@ -14834,7 +15061,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -15087,7 +15314,7 @@ Transform:
   m_LocalScale: {x: 1.39999998, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 9
+  m_RootOrder: 8
 --- !u!23 &419937530
 Renderer:
   m_ObjectHideFlags: 0
@@ -15135,7 +15362,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -15177,7 +15404,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -15246,6 +15473,7 @@ GameObject:
   - 4: {fileID: 423314643}
   - 33: {fileID: 423314642}
   - 23: {fileID: 423314641}
+  - 114: {fileID: 423314644}
   m_Layer: 0
   m_Name: Suelo_PF
   m_TagString: Untagged
@@ -15294,6 +15522,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 969333287}
   m_RootOrder: 28
+--- !u!114 &423314644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: a5e870e0d22fb404b8da0a0368b9abb9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1314713085}
+  m_GameObject: {fileID: 423314640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 0
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 0
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
+    blendTime: .25
 --- !u!1 &425339507
 GameObject:
   m_ObjectHideFlags: 0
@@ -15323,7 +15574,7 @@ Transform:
   m_LocalScale: {x: 1.39999998, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 14
+  m_RootOrder: 13
 --- !u!23 &425339509
 Renderer:
   m_ObjectHideFlags: 0
@@ -15371,7 +15622,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -15413,7 +15664,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -16714,7 +16965,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -16912,7 +17163,7 @@ Transform:
   m_LocalScale: {x: 5, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 31
+  m_RootOrder: 30
 --- !u!23 &432270651
 Renderer:
   m_ObjectHideFlags: 0
@@ -16960,7 +17211,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -17195,7 +17446,6 @@ Transform:
   - {fileID: 1363545187}
   - {fileID: 2041593351}
   - {fileID: 1769607973}
-  - {fileID: 702098800}
   - {fileID: 1365328233}
   - {fileID: 1288934807}
   - {fileID: 2060711450}
@@ -17501,7 +17751,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &448331927
 Renderer:
   m_ObjectHideFlags: 0
@@ -17756,7 +18006,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -19016,6 +19266,10 @@ Prefab:
     - target: {fileID: 400000, guid: 87ae462a8029d4247b04a12250b8694e, type: 2}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 87ae462a8029d4247b04a12250b8694e, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87ae462a8029d4247b04a12250b8694e, type: 2}
@@ -20547,6 +20801,7 @@ GameObject:
   - 4: {fileID: 482281150}
   - 33: {fileID: 482281149}
   - 23: {fileID: 482281148}
+  - 114: {fileID: 482281151}
   m_Layer: 0
   m_Name: Suelo_PF
   m_TagString: Untagged
@@ -20595,6 +20850,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 969333287}
   m_RootOrder: 7
+--- !u!114 &482281151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: a5e870e0d22fb404b8da0a0368b9abb9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1027630809}
+  m_GameObject: {fileID: 482281147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 0
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 0
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
+    blendTime: .25
 --- !u!1 &483834615
 GameObject:
   m_ObjectHideFlags: 0
@@ -20857,7 +21135,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &489862387
 Renderer:
   m_ObjectHideFlags: 0
@@ -21419,6 +21697,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 165261887}
+  - {fileID: 36423261}
+  - {fileID: 840689205}
   m_Father: {fileID: 2140169854}
   m_RootOrder: 13
 --- !u!1 &518078365
@@ -21432,6 +21712,7 @@ GameObject:
   - 33: {fileID: 518078367}
   - 23: {fileID: 518078366}
   - 65: {fileID: 518078369}
+  - 114: {fileID: 518078370}
   m_Layer: 0
   m_Name: Estanteria_Baja_PF
   m_TagString: Untagged
@@ -21493,6 +21774,29 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.60000002, y: 1.12631679, z: 1.46227109}
   m_Center: {x: -1.1920929e-07, y: .563158274, z: 5.96046448e-08}
+--- !u!114 &518078370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 8b9d8783c8dcbde43a76d3b4a8d5fa3e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1453467498}
+  m_GameObject: {fileID: 518078365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 3
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 0
+  Blender:
+    CurrentSky: {fileID: 298678418}
+    PreviousSky: {fileID: 298678418}
+    blendTime: .25
 --- !u!1 &521757123
 GameObject:
   m_ObjectHideFlags: 0
@@ -23707,7 +24011,7 @@ Transform:
   m_LocalScale: {x: 18.5000019, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 39
+  m_RootOrder: 38
 --- !u!23 &557477257
 Renderer:
   m_ObjectHideFlags: 0
@@ -23755,7 +24059,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -24094,6 +24398,7 @@ GameObject:
   - 4: {fileID: 571781004}
   - 33: {fileID: 571781003}
   - 23: {fileID: 571781002}
+  - 114: {fileID: 571781005}
   m_Layer: 0
   m_Name: Suelo_PF
   m_TagString: Untagged
@@ -24142,6 +24447,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 969333287}
   m_RootOrder: 29
+--- !u!114 &571781005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: a5e870e0d22fb404b8da0a0368b9abb9,
+    type: 2}
+  m_PrefabInternal: {fileID: 267941444}
+  m_GameObject: {fileID: 571781001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 0
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 0
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
+    blendTime: .25
 --- !u!1001 &572485169
 Prefab:
   m_ObjectHideFlags: 0
@@ -24219,7 +24547,7 @@ Transform:
   m_LocalScale: {x: 5, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 28
+  m_RootOrder: 27
 --- !u!23 &575607450
 Renderer:
   m_ObjectHideFlags: 0
@@ -24267,7 +24595,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -24634,6 +24962,10 @@ Prefab:
     - target: {fileID: 400000, guid: 706aba589958237409cd3203efd76178, type: 2}
       propertyPath: m_RootOrder
       value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 706aba589958237409cd3203efd76178, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 706aba589958237409cd3203efd76178, type: 2}
@@ -25030,7 +25362,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -25054,7 +25386,7 @@ Transform:
   m_LocalScale: {x: 12, y: 8, z: 12}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 48
+  m_RootOrder: 47
 --- !u!1 &605856515
 GameObject:
   m_ObjectHideFlags: 0
@@ -25413,7 +25745,7 @@ Transform:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100010, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-  m_PrefabInternal: {fileID: 808435910}
+  m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 623396521}
@@ -25429,20 +25761,20 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400010, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-  m_PrefabInternal: {fileID: 808435910}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 623396520}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 10, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 806951520}
+  m_Father: {fileID: 0}
   m_RootOrder: 1
 --- !u!114 &623396522
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400004, guid: 1bb1666c31edce9459cc55653340e95f,
     type: 2}
-  m_PrefabInternal: {fileID: 808435910}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 623396520}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -25586,7 +25918,7 @@ Transform:
   m_LocalScale: {x: 1.40000188, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 22
+  m_RootOrder: 21
 --- !u!23 &628795697
 Renderer:
   m_ObjectHideFlags: 0
@@ -25634,7 +25966,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -26211,6 +26543,7 @@ GameObject:
   - 4: {fileID: 645403804}
   - 33: {fileID: 645403803}
   - 23: {fileID: 645403802}
+  - 114: {fileID: 645403805}
   m_Layer: 0
   m_Name: Suelo_PF
   m_TagString: Untagged
@@ -26259,6 +26592,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 969333287}
   m_RootOrder: 4
+--- !u!114 &645403805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: a5e870e0d22fb404b8da0a0368b9abb9,
+    type: 2}
+  m_PrefabInternal: {fileID: 31329592}
+  m_GameObject: {fileID: 645403801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 0
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 0
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
+    blendTime: .25
 --- !u!1001 &645528489
 Prefab:
   m_ObjectHideFlags: 0
@@ -27860,7 +28216,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &660561872
 Renderer:
   m_ObjectHideFlags: 0
@@ -28605,6 +28961,7 @@ GameObject:
   - 4: {fileID: 697060480}
   - 33: {fileID: 697060479}
   - 23: {fileID: 697060478}
+  - 114: {fileID: 697060481}
   m_Layer: 0
   m_Name: Suelo_PF
   m_TagString: Untagged
@@ -28653,6 +29010,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 969333287}
   m_RootOrder: 6
+--- !u!114 &697060481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: a5e870e0d22fb404b8da0a0368b9abb9,
+    type: 2}
+  m_PrefabInternal: {fileID: 103703138}
+  m_GameObject: {fileID: 697060477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 0
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 0
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
+    blendTime: .25
 --- !u!1 &698003867
 GameObject:
   m_ObjectHideFlags: 0
@@ -28845,88 +29225,6 @@ Prefab:
   m_RootGameObject: {fileID: 175323863}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1 &702098796
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: 70c1fb68b681dca45b98f744da22c912, type: 2}
-  m_PrefabInternal: {fileID: 1533961730}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 702098800}
-  - 33: {fileID: 702098799}
-  - 23: {fileID: 702098797}
-  - 114: {fileID: 702098798}
-  m_Layer: 0
-  m_Name: Decal_ladrillo_03_PF
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!23 &702098797
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300000, guid: 70c1fb68b681dca45b98f744da22c912,
-    type: 2}
-  m_PrefabInternal: {fileID: 1533961730}
-  m_GameObject: {fileID: 702098796}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 2100000, guid: 25edba1b50011bc4da6b65c115494273, type: 2}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!114 &702098798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 70c1fb68b681dca45b98f744da22c912,
-    type: 2}
-  m_PrefabInternal: {fileID: 1533961730}
-  m_GameObject: {fileID: 702098796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BindType: 0
-  AnchorTransform: {fileID: 0}
-  AnchorOffset: {x: 0, y: 0, z: 0}
-  AnchorSky: {fileID: 0}
-  CurrentApplicator: {fileID: 0}
-  HasLocalSky: 0
-  HasChanged: 0
-  Blender:
-    CurrentSky: {fileID: 0}
-    PreviousSky: {fileID: 0}
-    blendTime: .25
---- !u!33 &702098799
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 3300000, guid: 70c1fb68b681dca45b98f744da22c912,
-    type: 2}
-  m_PrefabInternal: {fileID: 1533961730}
-  m_GameObject: {fileID: 702098796}
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &702098800
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: 70c1fb68b681dca45b98f744da22c912, type: 2}
-  m_PrefabInternal: {fileID: 1533961730}
-  m_GameObject: {fileID: 702098796}
-  m_LocalRotation: {x: -.000132076209, y: -.764890373, z: -.000111222944, w: -.64416045}
-  m_LocalPosition: {x: 2.04475307, y: 6.51783657, z: 20.4741745}
-  m_LocalScale: {x: 6, y: 6, z: 1}
-  m_Children: []
-  m_Father: {fileID: 439254197}
-  m_RootOrder: 3
 --- !u!1 &708206951
 GameObject:
   m_ObjectHideFlags: 0
@@ -29132,7 +29430,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -29532,7 +29830,7 @@ Transform:
   m_LocalScale: {x: 15, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 40
+  m_RootOrder: 39
 --- !u!23 &727087818
 Renderer:
   m_ObjectHideFlags: 0
@@ -29580,7 +29878,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -30268,7 +30566,7 @@ Transform:
   m_LocalScale: {x: 1.39999998, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 16
+  m_RootOrder: 15
 --- !u!23 &759521997
 Renderer:
   m_ObjectHideFlags: 0
@@ -30316,7 +30614,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -30960,7 +31258,7 @@ Transform:
   m_LocalScale: {x: 3, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 46
+  m_RootOrder: 45
 --- !u!23 &790783724
 Renderer:
   m_ObjectHideFlags: 0
@@ -31081,7 +31379,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -31264,7 +31562,7 @@ Prefab:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-  m_PrefabInternal: {fileID: 808435910}
+  m_PrefabInternal: {fileID: 1903974678}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 806951520}
@@ -31281,7 +31579,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400000, guid: 1bb1666c31edce9459cc55653340e95f,
     type: 2}
-  m_PrefabInternal: {fileID: 808435910}
+  m_PrefabInternal: {fileID: 1903974678}
   m_GameObject: {fileID: 806951518}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -31307,64 +31605,15 @@ MonoBehaviour:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-  m_PrefabInternal: {fileID: 808435910}
+  m_PrefabInternal: {fileID: 1903974678}
   m_GameObject: {fileID: 806951518}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1875345025}
-  - {fileID: 623396521}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
---- !u!1001 &808435910
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-  m_RootGameObject: {fileID: 806951518}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
+  m_RootOrder: 2
 --- !u!1 &808553270
 GameObject:
   m_ObjectHideFlags: 0
@@ -31510,6 +31759,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 22
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e68cf446f10cdfa4c9982de1e0275640, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e68cf446f10cdfa4c9982de1e0275640, type: 2}
   m_RootGameObject: {fileID: 2135114101}
@@ -31544,7 +31797,7 @@ Transform:
   m_LocalScale: {x: 1.40000188, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 24
+  m_RootOrder: 23
 --- !u!23 &817106169
 Renderer:
   m_ObjectHideFlags: 0
@@ -31592,7 +31845,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -31626,7 +31879,7 @@ Transform:
   m_LocalScale: {x: 5.40000105, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 30
+  m_RootOrder: 29
 --- !u!23 &817520640
 Renderer:
   m_ObjectHideFlags: 0
@@ -31674,7 +31927,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -31930,7 +32183,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -32249,6 +32502,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 245688627}
   m_RootOrder: 17
+--- !u!1 &840689204
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 840689205}
+  - 114: {fileID: 840689207}
+  - 65: {fileID: 840689206}
+  m_Layer: 0
+  m_Name: DisableDirLight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &840689205
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 840689204}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.19288731, y: -4.00941753, z: 44.7176132}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 511809144}
+  m_RootOrder: 2
+--- !u!65 &840689206
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 840689204}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.46000004, y: 4.73999977, z: .289999992}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &840689207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 840689204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8634e062924929664361c08745211fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: 5
+  source: {fileID: 0}
+  target: {fileID: 165261886}
+  triggerCount: 1
+  repeatTrigger: 1
 --- !u!1 &843942593
 GameObject:
   m_ObjectHideFlags: 0
@@ -32403,6 +32713,10 @@ Prefab:
     - target: {fileID: 400000, guid: 8e7ce051c468fc548b73a66eef6bfdec, type: 2}
       propertyPath: m_RootOrder
       value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8e7ce051c468fc548b73a66eef6bfdec, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8e7ce051c468fc548b73a66eef6bfdec, type: 2}
@@ -32662,7 +32976,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -33103,7 +33417,7 @@ Transform:
   m_LocalScale: {x: 1.4000001, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 15
+  m_RootOrder: 14
 --- !u!23 &884365293
 Renderer:
   m_ObjectHideFlags: 0
@@ -33151,7 +33465,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -33388,7 +33702,7 @@ Transform:
   m_LocalScale: {x: 9, y: 9, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 44
+  m_RootOrder: 43
 --- !u!23 &906239663
 Renderer:
   m_ObjectHideFlags: 0
@@ -33973,7 +34287,7 @@ Transform:
   m_LocalScale: {x: 1.3999995, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 11
+  m_RootOrder: 10
 --- !u!23 &930943955
 Renderer:
   m_ObjectHideFlags: 0
@@ -34021,7 +34335,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -34186,10 +34500,10 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
-    CurrentSky: {fileID: 298678418}
-    PreviousSky: {fileID: 298678418}
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
     blendTime: .25
 --- !u!65 &938591987
 BoxCollider:
@@ -34357,6 +34671,7 @@ GameObject:
   - 4: {fileID: 949227233}
   - 33: {fileID: 949227232}
   - 23: {fileID: 949227231}
+  - 114: {fileID: 949227234}
   m_Layer: 0
   m_Name: Suelo_PF
   m_TagString: Untagged
@@ -34405,6 +34720,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 969333287}
   m_RootOrder: 3
+--- !u!114 &949227234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: a5e870e0d22fb404b8da0a0368b9abb9,
+    type: 2}
+  m_PrefabInternal: {fileID: 194251541}
+  m_GameObject: {fileID: 949227230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 0
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 0
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
+    blendTime: .25
 --- !u!1 &950524484
 GameObject:
   m_ObjectHideFlags: 0
@@ -34855,7 +35193,7 @@ Transform:
   m_LocalScale: {x: 15, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 41
+  m_RootOrder: 40
 --- !u!23 &969270487
 Renderer:
   m_ObjectHideFlags: 0
@@ -34903,7 +35241,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -35461,7 +35799,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -35557,7 +35895,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -35578,7 +35916,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &985263792
 Renderer:
   m_ObjectHideFlags: 0
@@ -36022,7 +36360,7 @@ Prefab:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100004, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-  m_PrefabInternal: {fileID: 808435910}
+  m_PrefabInternal: {fileID: 1903974678}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 999839310}
@@ -36040,7 +36378,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400004, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-  m_PrefabInternal: {fileID: 808435910}
+  m_PrefabInternal: {fileID: 1903974678}
   m_GameObject: {fileID: 999839309}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .5, y: .5, z: -10}
@@ -36053,7 +36391,7 @@ Behaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 12400000, guid: 1bb1666c31edce9459cc55653340e95f,
     type: 2}
-  m_PrefabInternal: {fileID: 808435910}
+  m_PrefabInternal: {fileID: 1903974678}
   m_GameObject: {fileID: 999839309}
   m_Enabled: 1
 --- !u!92 &999839312
@@ -36061,7 +36399,7 @@ Behaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 9200000, guid: 1bb1666c31edce9459cc55653340e95f,
     type: 2}
-  m_PrefabInternal: {fileID: 808435910}
+  m_PrefabInternal: {fileID: 1903974678}
   m_GameObject: {fileID: 999839309}
   m_Enabled: 1
 --- !u!20 &999839313
@@ -36069,7 +36407,7 @@ Camera:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 2000000, guid: 1bb1666c31edce9459cc55653340e95f,
     type: 2}
-  m_PrefabInternal: {fileID: 808435910}
+  m_PrefabInternal: {fileID: 1903974678}
   m_GameObject: {fileID: 999839309}
   m_Enabled: 1
   serializedVersion: 2
@@ -38636,7 +38974,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -38753,6 +39091,7 @@ GameObject:
   - 4: {fileID: 1092009426}
   - 33: {fileID: 1092009425}
   - 23: {fileID: 1092009424}
+  - 114: {fileID: 1092009427}
   m_Layer: 0
   m_Name: Suelo_PF
   m_TagString: Untagged
@@ -38801,6 +39140,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 969333287}
   m_RootOrder: 30
+--- !u!114 &1092009427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: a5e870e0d22fb404b8da0a0368b9abb9,
+    type: 2}
+  m_PrefabInternal: {fileID: 809836167}
+  m_GameObject: {fileID: 1092009423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 0
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 0
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
+    blendTime: .25
 --- !u!1001 &1093417272
 Prefab:
   m_ObjectHideFlags: 0
@@ -39292,6 +39654,7 @@ GameObject:
   - 33: {fileID: 1107103073}
   - 23: {fileID: 1107103072}
   - 95: {fileID: 1107103071}
+  - 114: {fileID: 1107103074}
   m_Layer: 0
   m_Name: Candelabrum_PF
   m_TagString: Untagged
@@ -39359,6 +39722,29 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1545787330}
   m_GameObject: {fileID: 1107103069}
   m_Mesh: {fileID: 4300000, guid: 4cfac8a8a8ed9c24b965ef160b5ea95c, type: 3}
+--- !u!114 &1107103074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 125c95f67cfd493469cdce6550c5dbbe,
+    type: 2}
+  m_PrefabInternal: {fileID: 1545787330}
+  m_GameObject: {fileID: 1107103069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 0
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 1
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
+    blendTime: .25
 --- !u!1001 &1107232301
 Prefab:
   m_ObjectHideFlags: 0
@@ -40307,7 +40693,7 @@ Transform:
   m_LocalScale: {x: 1.39999998, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 8
+  m_RootOrder: 7
 --- !u!23 &1138470040
 Renderer:
   m_ObjectHideFlags: 0
@@ -41151,7 +41537,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -41331,7 +41717,7 @@ Transform:
   m_LocalScale: {x: 1.40000343, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 23
+  m_RootOrder: 22
 --- !u!23 &1180742033
 Renderer:
   m_ObjectHideFlags: 0
@@ -41379,7 +41765,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -41394,6 +41780,7 @@ GameObject:
   - 4: {fileID: 1182345862}
   - 33: {fileID: 1182345861}
   - 23: {fileID: 1182345860}
+  - 114: {fileID: 1182345863}
   m_Layer: 0
   m_Name: Suelo_PF
   m_TagString: Untagged
@@ -41442,6 +41829,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 969333287}
   m_RootOrder: 1
+--- !u!114 &1182345863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: a5e870e0d22fb404b8da0a0368b9abb9,
+    type: 2}
+  m_PrefabInternal: {fileID: 2093155485}
+  m_GameObject: {fileID: 1182345859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 0
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 0
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
+    blendTime: .25
 --- !u!1001 &1182495150
 Prefab:
   m_ObjectHideFlags: 0
@@ -41752,7 +42162,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -41877,7 +42287,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -42204,6 +42614,7 @@ GameObject:
   - 4: {fileID: 1205739004}
   - 33: {fileID: 1205739003}
   - 23: {fileID: 1205739002}
+  - 114: {fileID: 1205739005}
   m_Layer: 0
   m_Name: Mesita_pija_PF
   m_TagString: Untagged
@@ -42252,6 +42663,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 245688627}
   m_RootOrder: 27
+--- !u!114 &1205739005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: f199c51a47b721544b5de2725d8ca59d,
+    type: 2}
+  m_PrefabInternal: {fileID: 495472418}
+  m_GameObject: {fileID: 1205739001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 0
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 1
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
+    blendTime: .25
 --- !u!1001 &1206666857
 Prefab:
   m_ObjectHideFlags: 0
@@ -42333,7 +42767,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -42955,6 +43389,7 @@ GameObject:
   - 33: {fileID: 1239740607}
   - 64: {fileID: 1239740606}
   - 23: {fileID: 1239740605}
+  - 114: {fileID: 1239740609}
   m_Layer: 0
   m_Name: Red Carpet
   m_TagString: Untagged
@@ -43009,11 +43444,33 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1239740604}
   m_LocalRotation: {x: 0, y: -.644481778, z: 0, w: .764619708}
-  m_LocalPosition: {x: 10.0504332, y: .00720708817, z: -21.3756771}
-  m_LocalScale: {x: 1, y: 1, z: 6.24376678}
+  m_LocalPosition: {x: 4.01196527, y: .00632303208, z: -20.3384876}
+  m_LocalScale: {x: 1, y: 1, z: 5}
   m_Children: []
   m_Father: {fileID: 1283401960}
   m_RootOrder: 29
+--- !u!114 &1239740609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1239740604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 3
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 298678418}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 0
+  Blender:
+    CurrentSky: {fileID: 298678418}
+    PreviousSky: {fileID: 298678418}
+    blendTime: .25
 --- !u!1 &1244990400
 GameObject:
   m_ObjectHideFlags: 0
@@ -43309,7 +43766,7 @@ Transform:
   m_LocalScale: {x: 1.40000153, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 19
+  m_RootOrder: 18
 --- !u!23 &1253057969
 Renderer:
   m_ObjectHideFlags: 0
@@ -43357,7 +43814,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -43511,7 +43968,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -44964,6 +45421,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 87ae462a8029d4247b04a12250b8694e, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87ae462a8029d4247b04a12250b8694e, type: 2}
   m_RootGameObject: {fileID: 412118737}
@@ -45026,7 +45487,7 @@ Transform:
   m_LocalScale: {x: 1.39999998, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 54
+  m_RootOrder: 53
 --- !u!1 &1276629360
 GameObject:
   m_ObjectHideFlags: 0
@@ -45228,7 +45689,7 @@ Transform:
   m_LocalScale: {x: 1.39999986, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 17
+  m_RootOrder: 16
 --- !u!23 &1281705226
 Renderer:
   m_ObjectHideFlags: 0
@@ -45276,7 +45737,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -45295,7 +45756,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1283401960
 Transform:
   m_ObjectHideFlags: 0
@@ -45336,7 +45797,6 @@ Transform:
   - {fileID: 291489809}
   - {fileID: 1909676194}
   - {fileID: 1239740608}
-  - {fileID: 338033626}
   m_Father: {fileID: 2135255092}
   m_RootOrder: 0
 --- !u!1001 &1284205383
@@ -45512,7 +45972,7 @@ Transform:
   m_LocalScale: {x: 1.39999998, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!23 &1288934808
 Renderer:
   m_ObjectHideFlags: 0
@@ -45560,7 +46020,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -46311,7 +46771,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -46817,7 +47277,7 @@ Transform:
   m_LocalScale: {x: 5, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 26
+  m_RootOrder: 25
 --- !u!23 &1345865858
 Renderer:
   m_ObjectHideFlags: 0
@@ -46865,7 +47325,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -47372,7 +47832,7 @@ Transform:
   m_LocalScale: {x: 5, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 50
+  m_RootOrder: 49
 --- !u!1 &1363545183
 GameObject:
   m_ObjectHideFlags: 0
@@ -47404,7 +47864,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 25edba1b50011bc4da6b65c115494273, type: 2}
+  - {fileID: 2100000, guid: bcde9a470b169fb46b8fef972ac5ff96, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -47430,7 +47890,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -47512,7 +47972,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -47536,7 +47996,7 @@ Transform:
   m_LocalScale: {x: 10, y: 8, z: 4}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 57
+  m_RootOrder: 56
 --- !u!1 &1365328229
 GameObject:
   m_ObjectHideFlags: 0
@@ -47594,7 +48054,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -47618,7 +48078,7 @@ Transform:
   m_LocalScale: {x: 10, y: 8, z: 4}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!1001 &1366593528
 Prefab:
   m_ObjectHideFlags: 0
@@ -47683,7 +48143,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!111 &1368379562
 Animation:
   m_ObjectHideFlags: 0
@@ -48403,6 +48863,7 @@ GameObject:
   - 4: {fileID: 1410164743}
   - 33: {fileID: 1410164742}
   - 23: {fileID: 1410164741}
+  - 114: {fileID: 1410164744}
   m_Layer: 0
   m_Name: Mesita_pija_PF
   m_TagString: Untagged
@@ -48451,6 +48912,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 245688627}
   m_RootOrder: 2
+--- !u!114 &1410164744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: f199c51a47b721544b5de2725d8ca59d,
+    type: 2}
+  m_PrefabInternal: {fileID: 956922424}
+  m_GameObject: {fileID: 1410164740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 0
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 1
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
+    blendTime: .25
 --- !u!1 &1411226010
 GameObject:
   m_ObjectHideFlags: 0
@@ -50214,7 +50698,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 25edba1b50011bc4da6b65c115494273, type: 2}
+  - {fileID: 2100000, guid: bcde9a470b169fb46b8fef972ac5ff96, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -50240,7 +50724,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -50264,7 +50748,7 @@ Transform:
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 7
+  m_RootOrder: 6
 --- !u!1 &1437749903
 GameObject:
   m_ObjectHideFlags: 0
@@ -50929,7 +51413,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1465137561
 Transform:
   m_ObjectHideFlags: 0
@@ -51067,6 +51551,10 @@ Prefab:
     - target: {fileID: 400000, guid: 87ae462a8029d4247b04a12250b8694e, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 87ae462a8029d4247b04a12250b8694e, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87ae462a8029d4247b04a12250b8694e, type: 2}
@@ -51398,6 +51886,10 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: .934063256
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4ef0b88aab7a37b468b3b4f9eb925332, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4ef0b88aab7a37b468b3b4f9eb925332, type: 2}
   m_RootGameObject: {fileID: 1465137560}
@@ -51611,7 +52103,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -51774,7 +52266,7 @@ Transform:
   m_LocalScale: {x: 8, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 37
+  m_RootOrder: 36
 --- !u!23 &1491075879
 Renderer:
   m_ObjectHideFlags: 0
@@ -51822,7 +52314,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -52001,7 +52493,7 @@ Transform:
   m_LocalScale: {x: 9, y: 9, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 45
+  m_RootOrder: 44
 --- !u!23 &1509061158
 Renderer:
   m_ObjectHideFlags: 0
@@ -52536,6 +53028,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 21
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 87beba80f4ecbbc4cb66313b05661c0c, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87beba80f4ecbbc4cb66313b05661c0c, type: 2}
   m_RootGameObject: {fileID: 448331926}
@@ -52701,50 +53197,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1509252326}
   m_RootOrder: 22
---- !u!1001 &1533961730
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 439254197}
-    m_Modifications:
-    - target: {fileID: 400000, guid: 70c1fb68b681dca45b98f744da22c912, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 2.04475307
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 70c1fb68b681dca45b98f744da22c912, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 6.51783657
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 70c1fb68b681dca45b98f744da22c912, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 20.4741745
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 70c1fb68b681dca45b98f744da22c912, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -.000132076209
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 70c1fb68b681dca45b98f744da22c912, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -.764890373
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 70c1fb68b681dca45b98f744da22c912, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -.000111222944
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 70c1fb68b681dca45b98f744da22c912, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: -.64416045
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 70c1fb68b681dca45b98f744da22c912, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 70c1fb68b681dca45b98f744da22c912, type: 2}
-  m_RootGameObject: {fileID: 702098796}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1 &1535063624
 GameObject:
   m_ObjectHideFlags: 0
@@ -52989,6 +53441,7 @@ GameObject:
   - 4: {fileID: 1542909891}
   - 33: {fileID: 1542909893}
   - 23: {fileID: 1542909892}
+  - 114: {fileID: 1542909895}
   - 114: {fileID: 1542909894}
   m_Layer: 0
   m_Name: puerta
@@ -53059,6 +53512,29 @@ MonoBehaviour:
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
+    blendTime: .25
+--- !u!114 &1542909895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: 1541ac59e4b99db4b828bcb66108bcec,
+    type: 2}
+  m_PrefabInternal: {fileID: 1668079258}
+  m_GameObject: {fileID: 1542909890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 0
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 0
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
     blendTime: .25
 --- !u!1 &1545388797
 GameObject:
@@ -53415,7 +53891,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -53439,7 +53915,7 @@ Transform:
   m_LocalScale: {x: 10, y: 8, z: 4}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 49
+  m_RootOrder: 48
 --- !u!1 &1584417941
 GameObject:
   m_ObjectHideFlags: 0
@@ -53635,7 +54111,7 @@ Transform:
   m_LocalScale: {x: 9, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 33
+  m_RootOrder: 32
 --- !u!23 &1590462434
 Renderer:
   m_ObjectHideFlags: 0
@@ -53683,7 +54159,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -53895,7 +54371,7 @@ Transform:
   m_LocalScale: {x: 1.39999998, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 55
+  m_RootOrder: 54
 --- !u!1 &1607948641
 GameObject:
   m_ObjectHideFlags: 0
@@ -55584,6 +56060,26 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 11400010, guid: 1541ac59e4b99db4b828bcb66108bcec, type: 2}
+      propertyPath: BindType
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400010, guid: 1541ac59e4b99db4b828bcb66108bcec, type: 2}
+      propertyPath: HasChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400010, guid: 1541ac59e4b99db4b828bcb66108bcec, type: 2}
+      propertyPath: AnchorSky
+      value: 
+      objectReference: {fileID: 298678418}
+    - target: {fileID: 11400010, guid: 1541ac59e4b99db4b828bcb66108bcec, type: 2}
+      propertyPath: Blender.CurrentSky
+      value: 
+      objectReference: {fileID: 298678418}
+    - target: {fileID: 11400010, guid: 1541ac59e4b99db4b828bcb66108bcec, type: 2}
+      propertyPath: Blender.PreviousSky
+      value: 
+      objectReference: {fileID: 298678418}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1541ac59e4b99db4b828bcb66108bcec, type: 2}
   m_RootGameObject: {fileID: 1284393718}
@@ -55916,7 +56412,7 @@ Transform:
   m_LocalScale: {x: 25, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 38
+  m_RootOrder: 37
 --- !u!23 &1681230974
 Renderer:
   m_ObjectHideFlags: 0
@@ -55964,7 +56460,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -56379,7 +56875,7 @@ Prefab:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100002, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-  m_PrefabInternal: {fileID: 808435910}
+  m_PrefabInternal: {fileID: 1903974678}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1692382310}
@@ -56395,7 +56891,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400002, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-  m_PrefabInternal: {fileID: 808435910}
+  m_PrefabInternal: {fileID: 1903974678}
   m_GameObject: {fileID: 1692382309}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .5, y: .5, z: 0}
@@ -56408,7 +56904,7 @@ GUITexture:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13100000, guid: 1bb1666c31edce9459cc55653340e95f,
     type: 2}
-  m_PrefabInternal: {fileID: 808435910}
+  m_PrefabInternal: {fileID: 1903974678}
   m_GameObject: {fileID: 1692382309}
   m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: 380c98ce87a73f748b525603709335d5, type: 3}
@@ -56660,7 +57156,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -56803,6 +57299,10 @@ Prefab:
     - target: {fileID: 400000, guid: 280b72e7bb8b44947bdd89252ae434a8, type: 2}
       propertyPath: m_RootOrder
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 280b72e7bb8b44947bdd89252ae434a8, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 280b72e7bb8b44947bdd89252ae434a8, type: 2}
@@ -57008,7 +57508,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -57492,7 +57992,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -58071,7 +58571,7 @@ Transform:
   m_LocalScale: {x: 5, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 25
+  m_RootOrder: 24
 --- !u!23 &1755028457
 Renderer:
   m_ObjectHideFlags: 0
@@ -58119,7 +58619,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -58153,7 +58653,7 @@ Transform:
   m_LocalScale: {x: 1.40000033, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 13
+  m_RootOrder: 12
 --- !u!23 &1755179240
 Renderer:
   m_ObjectHideFlags: 0
@@ -58201,7 +58701,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -58283,7 +58783,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -58499,7 +58999,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 25edba1b50011bc4da6b65c115494273, type: 2}
+  - {fileID: 2100000, guid: bcde9a470b169fb46b8fef972ac5ff96, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -58525,7 +59025,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -59042,7 +59542,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -59342,7 +59842,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -60336,7 +60836,7 @@ Prefab:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100006, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-  m_PrefabInternal: {fileID: 808435910}
+  m_PrefabInternal: {fileID: 1903974678}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1875345025}
@@ -60352,7 +60852,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400006, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-  m_PrefabInternal: {fileID: 808435910}
+  m_PrefabInternal: {fileID: 1903974678}
   m_GameObject: {fileID: 1875345024}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -60367,7 +60867,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400002, guid: 1bb1666c31edce9459cc55653340e95f,
     type: 2}
-  m_PrefabInternal: {fileID: 808435910}
+  m_PrefabInternal: {fileID: 1903974678}
   m_GameObject: {fileID: 1875345024}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -60933,7 +61433,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -60996,6 +61496,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1509252326}
   m_RootOrder: 35
+--- !u!1001 &1903974678
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
+  m_RootGameObject: {fileID: 806951518}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1001 &1904606365
 Prefab:
   m_ObjectHideFlags: 0
@@ -61121,6 +61665,7 @@ GameObject:
   - 33: {fileID: 1909676193}
   - 23: {fileID: 1909676192}
   - 65: {fileID: 1909676195}
+  - 114: {fileID: 1909676196}
   m_Layer: 0
   m_Name: Estanteria_Baja_PF
   m_TagString: Untagged
@@ -61182,6 +61727,29 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.60000002, y: 1.12631679, z: 1.46227109}
   m_Center: {x: -1.1920929e-07, y: .563158274, z: 5.96046448e-08}
+--- !u!114 &1909676196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 8b9d8783c8dcbde43a76d3b4a8d5fa3e,
+    type: 2}
+  m_PrefabInternal: {fileID: 282217662}
+  m_GameObject: {fileID: 1909676191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 3
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 0
+  Blender:
+    CurrentSky: {fileID: 298678418}
+    PreviousSky: {fileID: 298678418}
+    blendTime: .25
 --- !u!1001 &1910691091
 Prefab:
   m_ObjectHideFlags: 0
@@ -61419,7 +61987,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -62059,7 +62627,7 @@ GameObject:
   - 4: {fileID: 1958108688}
   - 114: {fileID: 1958108690}
   - 135: {fileID: 1958108689}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CloseDoorTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63780,6 +64348,7 @@ GameObject:
   - 4: {fileID: 2025448467}
   - 33: {fileID: 2025448466}
   - 23: {fileID: 2025448465}
+  - 114: {fileID: 2025448468}
   m_Layer: 0
   m_Name: Suelo_PF
   m_TagString: Untagged
@@ -63828,6 +64397,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 969333287}
   m_RootOrder: 8
+--- !u!114 &2025448468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: a5e870e0d22fb404b8da0a0368b9abb9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1010152327}
+  m_GameObject: {fileID: 2025448464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 0
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 0
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
+    blendTime: .25
 --- !u!1001 &2026298019
 Prefab:
   m_ObjectHideFlags: 0
@@ -64025,7 +64617,7 @@ Transform:
   m_LocalScale: {x: 1.39999986, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 56
+  m_RootOrder: 55
 --- !u!1001 &2035966756
 Prefab:
   m_ObjectHideFlags: 0
@@ -64084,6 +64676,7 @@ GameObject:
   - 4: {fileID: 2036940558}
   - 33: {fileID: 2036940557}
   - 23: {fileID: 2036940556}
+  - 114: {fileID: 2036940559}
   m_Layer: 0
   m_Name: Suelo_PF
   m_TagString: Untagged
@@ -64132,6 +64725,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 969333287}
   m_RootOrder: 10
+--- !u!114 &2036940559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: a5e870e0d22fb404b8da0a0368b9abb9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1469049100}
+  m_GameObject: {fileID: 2036940555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 0
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 0
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
+    blendTime: .25
 --- !u!1 &2038788656
 GameObject:
   m_ObjectHideFlags: 0
@@ -64247,7 +64863,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -64737,7 +65353,7 @@ Transform:
   m_LocalScale: {x: 1.40000093, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 20
+  m_RootOrder: 19
 --- !u!23 &2054384554
 Renderer:
   m_ObjectHideFlags: 0
@@ -64785,7 +65401,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -64954,7 +65570,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -64978,7 +65594,7 @@ Transform:
   m_LocalScale: {x: 10, y: 8, z: 4}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 6
+  m_RootOrder: 5
 --- !u!1001 &2064511009
 Prefab:
   m_ObjectHideFlags: 0
@@ -65080,7 +65696,7 @@ Transform:
   m_LocalScale: {x: 1.4000001, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 52
+  m_RootOrder: 51
 --- !u!1001 &2067153625
 Prefab:
   m_ObjectHideFlags: 0
@@ -65178,7 +65794,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -65691,7 +66307,7 @@ Transform:
   m_LocalScale: {x: 3, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 43
+  m_RootOrder: 42
 --- !u!23 &2091723037
 Renderer:
   m_ObjectHideFlags: 0
@@ -65860,7 +66476,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -65875,6 +66491,7 @@ GameObject:
   - 4: {fileID: 2101530824}
   - 33: {fileID: 2101530826}
   - 23: {fileID: 2101530825}
+  - 114: {fileID: 2101530828}
   - 114: {fileID: 2101530827}
   m_Layer: 0
   m_Name: puerta_marco
@@ -65889,8 +66506,8 @@ Transform:
   m_PrefabParentObject: {fileID: 400012, guid: 1541ac59e4b99db4b828bcb66108bcec, type: 2}
   m_PrefabInternal: {fileID: 1668079258}
   m_GameObject: {fileID: 2101530823}
-  m_LocalRotation: {x: 8.14603425e-08, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1284393719}
@@ -65945,6 +66562,29 @@ MonoBehaviour:
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
+    blendTime: .25
+--- !u!114 &2101530828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400008, guid: 1541ac59e4b99db4b828bcb66108bcec,
+    type: 2}
+  m_PrefabInternal: {fileID: 1668079258}
+  m_GameObject: {fileID: 2101530823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 0
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 0
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
     blendTime: .25
 --- !u!1 &2107371974
 GameObject:
@@ -66191,7 +66831,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -66451,7 +67091,7 @@ Transform:
   m_LocalScale: {x: 25, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 439254197}
-  m_RootOrder: 47
+  m_RootOrder: 46
 --- !u!23 &2132674907
 Renderer:
   m_ObjectHideFlags: 0
@@ -66499,7 +67139,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -66636,7 +67276,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &2135114102
 Renderer:
   m_ObjectHideFlags: 0
@@ -66800,6 +67440,7 @@ GameObject:
   - 4: {fileID: 2138738840}
   - 33: {fileID: 2138738839}
   - 23: {fileID: 2138738838}
+  - 114: {fileID: 2138738841}
   m_Layer: 0
   m_Name: Suelo_PF
   m_TagString: Untagged
@@ -66848,6 +67489,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 969333287}
   m_RootOrder: 9
+--- !u!114 &2138738841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: a5e870e0d22fb404b8da0a0368b9abb9,
+    type: 2}
+  m_PrefabInternal: {fileID: 65208671}
+  m_GameObject: {fileID: 2138738837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 0
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 0
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
+    blendTime: .25
 --- !u!1 &2139063038
 GameObject:
   m_ObjectHideFlags: 0

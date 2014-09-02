@@ -92,7 +92,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
   m_LocalRotation: {x: 0, y: .999552071, z: 0, w: -.0299278349}
-  m_LocalPosition: {x: 0, y: 1.09608197, z: 0}
+  m_LocalPosition: {x: -.32469815, y: .953097165, z: 8.42371559}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400002}
@@ -184,9 +184,9 @@ MonoBehaviour:
   canControl: 1
   useFixedUpdate: 1
   movement:
-    maxForwardSpeed: 8
-    maxSidewaysSpeed: 8
-    maxBackwardsSpeed: 6
+    maxForwardSpeed: 5
+    maxSidewaysSpeed: 5
+    maxBackwardsSpeed: 4
     slopeSpeedMultiplier:
       serializedVersion: 2
       m_Curve:
@@ -237,8 +237,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   axes: 0
-  sensitivityX: .5
-  sensitivityY: .5
+  sensitivityX: .75
+  sensitivityY: .75
   minimumX: -360
   maximumX: 360
   minimumY: -50
@@ -398,7 +398,7 @@ CharacterController:
   m_GameObject: {fileID: 100004}
   serializedVersion: 2
   m_Height: 3
-  m_Radius: 1.5
+  m_Radius: .800000012
   m_SlopeLimit: 45
   m_StepOffset: .400000006
   m_SkinWidth: .0500000007
