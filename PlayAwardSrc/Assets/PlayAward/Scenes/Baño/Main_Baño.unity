@@ -3218,6 +3218,10 @@ Prefab:
       propertyPath: Blender.PreviousSky
       value: 
       objectReference: {fileID: 1637867243}
+    - target: {fileID: 10800000, guid: 1f8f1884173cb8d4da7b4fbc2078f2a8, type: 2}
+      propertyPath: m_Intensity
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1f8f1884173cb8d4da7b4fbc2078f2a8, type: 2}
   m_RootGameObject: {fileID: 193242929}
@@ -4094,6 +4098,10 @@ Prefab:
       propertyPath: Blender.PreviousSky
       value: 
       objectReference: {fileID: 1637867243}
+    - target: {fileID: 10800000, guid: 1f8f1884173cb8d4da7b4fbc2078f2a8, type: 2}
+      propertyPath: m_Intensity
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 1f8f1884173cb8d4da7b4fbc2078f2a8, type: 2}
@@ -8380,6 +8388,7 @@ MonoBehaviour:
   - Main_Pasillo_Design
   - Main_Salon
   - "Main_Ba\xF1o"
+  - Main_Bathroom_design
   DebugMaps:
   - Main_Hall_Comments
 --- !u!4 &610812501
@@ -10063,7 +10072,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a91a4cdce567e2f4bba23e1dcb2e9412, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: a91a4cdce567e2f4bba23e1dcb2e9412, type: 2}
       propertyPath: m_LocalPosition.x
@@ -10488,7 +10497,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 6
+  m_Radius: 3
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &746390401
 MonoBehaviour:
@@ -12107,7 +12116,7 @@ Light:
   serializedVersion: 3
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: .5
+  m_Intensity: 0
   m_Range: 7
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -12504,7 +12513,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &930011490
 Transform:
   m_ObjectHideFlags: 0
@@ -12568,7 +12577,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 1637867243}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 1637867243}
     PreviousSky: {fileID: 1637867243}
@@ -12600,7 +12609,7 @@ Light:
   serializedVersion: 3
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: .5
+  m_Intensity: 0
   m_Range: 7
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -12871,7 +12880,7 @@ Light:
   serializedVersion: 3
   m_Type: 0
   m_Color: {r: .926470578, g: .918201864, b: .626730084, a: 1}
-  m_Intensity: .5
+  m_Intensity: .300000012
   m_Range: 10
   m_SpotAngle: 55
   m_CookieSize: 10
@@ -13378,6 +13387,14 @@ Prefab:
       propertyPath: Blender.PreviousSky
       value: 
       objectReference: {fileID: 1637867243}
+    - target: {fileID: 10800002, guid: 125c95f67cfd493469cdce6550c5dbbe, type: 2}
+      propertyPath: m_Intensity
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 10800000, guid: 125c95f67cfd493469cdce6550c5dbbe, type: 2}
+      propertyPath: m_Intensity
+      value: .300000012
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 125c95f67cfd493469cdce6550c5dbbe, type: 2}
   m_RootGameObject: {fileID: 979670804}
@@ -14356,7 +14373,7 @@ Light:
   serializedVersion: 3
   m_Type: 0
   m_Color: {r: .926470578, g: .918201864, b: .626730084, a: 1}
-  m_Intensity: .5
+  m_Intensity: .200000003
   m_Range: 10
   m_SpotAngle: 118.199997
   m_CookieSize: 10
@@ -14632,6 +14649,10 @@ Prefab:
       propertyPath: Blender.PreviousSky
       value: 
       objectReference: {fileID: 1637867243}
+    - target: {fileID: 100000, guid: a91a4cdce567e2f4bba23e1dcb2e9412, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a91a4cdce567e2f4bba23e1dcb2e9412, type: 2}
   m_RootGameObject: {fileID: 2112857989}
@@ -24102,7 +24123,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2112857990
 Transform:
   m_ObjectHideFlags: 0
@@ -24166,7 +24187,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 1637867243}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 1637867243}
     PreviousSky: {fileID: 1637867243}
