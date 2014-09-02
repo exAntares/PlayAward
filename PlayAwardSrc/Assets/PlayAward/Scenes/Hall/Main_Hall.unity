@@ -3795,7 +3795,7 @@ Transform:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100004, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-  m_PrefabInternal: {fileID: 1299601216}
+  m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 122276134}
@@ -3813,7 +3813,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400004, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-  m_PrefabInternal: {fileID: 1299601216}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 122276133}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .5, y: .5, z: -10}
@@ -3826,7 +3826,7 @@ Behaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 12400000, guid: 1bb1666c31edce9459cc55653340e95f,
     type: 2}
-  m_PrefabInternal: {fileID: 1299601216}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 122276133}
   m_Enabled: 1
 --- !u!92 &122276136
@@ -3834,7 +3834,7 @@ Behaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 9200000, guid: 1bb1666c31edce9459cc55653340e95f,
     type: 2}
-  m_PrefabInternal: {fileID: 1299601216}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 122276133}
   m_Enabled: 1
 --- !u!20 &122276137
@@ -3842,7 +3842,7 @@ Camera:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 2000000, guid: 1bb1666c31edce9459cc55653340e95f,
     type: 2}
-  m_PrefabInternal: {fileID: 1299601216}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 122276133}
   m_Enabled: 1
   serializedVersion: 2
@@ -4034,6 +4034,7 @@ GameObject:
   - 4: {fileID: 129702295}
   - 33: {fileID: 129702297}
   - 23: {fileID: 129702296}
+  - 114: {fileID: 129702298}
   m_Layer: 0
   m_Name: Lamp_PF
   m_TagString: Untagged
@@ -4085,6 +4086,29 @@ MeshFilter:
   m_PrefabInternal: {fileID: 813651576}
   m_GameObject: {fileID: 129702294}
   m_Mesh: {fileID: 4300002, guid: cedd7f6836c74a945954f828fe3d9003, type: 3}
+--- !u!114 &129702298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 1f8f1884173cb8d4da7b4fbc2078f2a8,
+    type: 2}
+  m_PrefabInternal: {fileID: 813651576}
+  m_GameObject: {fileID: 129702294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 0
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 1
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
+    blendTime: .25
 --- !u!1 &133758624
 GameObject:
   m_ObjectHideFlags: 0
@@ -5514,6 +5538,7 @@ GameObject:
   - 4: {fileID: 184130472}
   - 33: {fileID: 184130474}
   - 23: {fileID: 184130473}
+  - 114: {fileID: 184130475}
   m_Layer: 0
   m_Name: Lamp_PF
   m_TagString: Untagged
@@ -5565,6 +5590,29 @@ MeshFilter:
   m_PrefabInternal: {fileID: 32710865}
   m_GameObject: {fileID: 184130471}
   m_Mesh: {fileID: 4300002, guid: cedd7f6836c74a945954f828fe3d9003, type: 3}
+--- !u!114 &184130475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 1f8f1884173cb8d4da7b4fbc2078f2a8,
+    type: 2}
+  m_PrefabInternal: {fileID: 32710865}
+  m_GameObject: {fileID: 184130471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 0
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 1
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
+    blendTime: .25
 --- !u!1 &186878144
 GameObject:
   m_ObjectHideFlags: 0
@@ -10737,7 +10785,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -11985,6 +12033,7 @@ GameObject:
   - 4: {fileID: 369250977}
   - 33: {fileID: 369250979}
   - 23: {fileID: 369250978}
+  - 114: {fileID: 369250980}
   m_Layer: 0
   m_Name: Lamp_PF
   m_TagString: Untagged
@@ -12036,6 +12085,29 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1297431799}
   m_GameObject: {fileID: 369250976}
   m_Mesh: {fileID: 4300002, guid: cedd7f6836c74a945954f828fe3d9003, type: 3}
+--- !u!114 &369250980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 1f8f1884173cb8d4da7b4fbc2078f2a8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1297431799}
+  m_GameObject: {fileID: 369250976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 0
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 0
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
+    blendTime: .25
 --- !u!1 &370894686
 GameObject:
   m_ObjectHideFlags: 0
@@ -14374,7 +14446,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -15537,6 +15609,7 @@ GameObject:
   - 33: {fileID: 477424468}
   - 23: {fileID: 477424467}
   - 65: {fileID: 477424470}
+  - 114: {fileID: 477424471}
   m_Layer: 0
   m_Name: Estanteria_Baja_PF
   m_TagString: Untagged
@@ -15598,6 +15671,29 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.60000002, y: 1.12631679, z: 1.46227109}
   m_Center: {x: -1.1920929e-07, y: .563158274, z: 5.96046448e-08}
+--- !u!114 &477424471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 8b9d8783c8dcbde43a76d3b4a8d5fa3e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1355293633}
+  m_GameObject: {fileID: 477424466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 3
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 0
+  Blender:
+    CurrentSky: {fileID: 330015585}
+    PreviousSky: {fileID: 330015585}
+    blendTime: .25
 --- !u!1001 &480736779
 Prefab:
   m_ObjectHideFlags: 0
@@ -18321,7 +18417,7 @@ MeshFilter:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100010, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-  m_PrefabInternal: {fileID: 1299601216}
+  m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 551022904}
@@ -18337,20 +18433,20 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400010, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-  m_PrefabInternal: {fileID: 1299601216}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 551022903}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 10, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1370564678}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
 --- !u!114 &551022905
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400004, guid: 1bb1666c31edce9459cc55653340e95f,
     type: 2}
-  m_PrefabInternal: {fileID: 1299601216}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 551022903}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -21133,6 +21229,7 @@ GameObject:
   - 33: {fileID: 651842261}
   - 23: {fileID: 651842260}
   - 95: {fileID: 651842259}
+  - 114: {fileID: 651842262}
   m_Layer: 0
   m_Name: Candelabrum_PF
   m_TagString: Untagged
@@ -21200,6 +21297,29 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1111004076}
   m_GameObject: {fileID: 651842257}
   m_Mesh: {fileID: 4300000, guid: 4cfac8a8a8ed9c24b965ef160b5ea95c, type: 3}
+--- !u!114 &651842262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 125c95f67cfd493469cdce6550c5dbbe,
+    type: 2}
+  m_PrefabInternal: {fileID: 1111004076}
+  m_GameObject: {fileID: 651842257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 0
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 1
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
+    blendTime: .25
 --- !u!1 &652376642
 GameObject:
   m_ObjectHideFlags: 0
@@ -30343,6 +30463,7 @@ GameObject:
   - 4: {fileID: 917089021}
   - 33: {fileID: 917089023}
   - 23: {fileID: 917089022}
+  - 114: {fileID: 917089024}
   m_Layer: 0
   m_Name: Lamp_PF
   m_TagString: Untagged
@@ -30394,6 +30515,29 @@ MeshFilter:
   m_PrefabInternal: {fileID: 74014558}
   m_GameObject: {fileID: 917089020}
   m_Mesh: {fileID: 4300002, guid: cedd7f6836c74a945954f828fe3d9003, type: 3}
+--- !u!114 &917089024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 1f8f1884173cb8d4da7b4fbc2078f2a8,
+    type: 2}
+  m_PrefabInternal: {fileID: 74014558}
+  m_GameObject: {fileID: 917089020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 0
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 1
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
+    blendTime: .25
 --- !u!1 &922520484
 GameObject:
   m_ObjectHideFlags: 0
@@ -31775,6 +31919,7 @@ GameObject:
   - 4: {fileID: 950801418}
   - 33: {fileID: 950801420}
   - 23: {fileID: 950801419}
+  - 114: {fileID: 950801421}
   m_Layer: 0
   m_Name: Lamp_PF
   m_TagString: Untagged
@@ -31826,6 +31971,29 @@ MeshFilter:
   m_PrefabInternal: {fileID: 765003104}
   m_GameObject: {fileID: 950801417}
   m_Mesh: {fileID: 4300002, guid: cedd7f6836c74a945954f828fe3d9003, type: 3}
+--- !u!114 &950801421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 1f8f1884173cb8d4da7b4fbc2078f2a8,
+    type: 2}
+  m_PrefabInternal: {fileID: 765003104}
+  m_GameObject: {fileID: 950801417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 0
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 1
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
+    blendTime: .25
 --- !u!1 &951952038
 GameObject:
   m_ObjectHideFlags: 0
@@ -35399,6 +35567,7 @@ GameObject:
   - 33: {fileID: 1054274913}
   - 23: {fileID: 1054274912}
   - 95: {fileID: 1054274916}
+  - 114: {fileID: 1054274915}
   m_Layer: 0
   m_Name: Candelabrum_PF
   m_TagString: Untagged
@@ -35451,6 +35620,29 @@ Transform:
   - {fileID: 2008161868}
   m_Father: {fileID: 1963300212}
   m_RootOrder: 2
+--- !u!114 &1054274915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 125c95f67cfd493469cdce6550c5dbbe,
+    type: 2}
+  m_PrefabInternal: {fileID: 1111552501}
+  m_GameObject: {fileID: 1054274911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 0
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 0
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
+    blendTime: .25
 --- !u!95 &1054274916
 Animator:
   serializedVersion: 3
@@ -39983,6 +40175,7 @@ GameObject:
   - 33: {fileID: 1219546472}
   - 23: {fileID: 1219546471}
   - 95: {fileID: 1219546470}
+  - 114: {fileID: 1219546473}
   m_Layer: 0
   m_Name: Candelabrum_PF
   m_TagString: Untagged
@@ -40050,6 +40243,29 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1335889519}
   m_GameObject: {fileID: 1219546468}
   m_Mesh: {fileID: 4300000, guid: 4cfac8a8a8ed9c24b965ef160b5ea95c, type: 3}
+--- !u!114 &1219546473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 125c95f67cfd493469cdce6550c5dbbe,
+    type: 2}
+  m_PrefabInternal: {fileID: 1335889519}
+  m_GameObject: {fileID: 1219546468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 0
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 1
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
+    blendTime: .25
 --- !u!1 &1220304410
 GameObject:
   m_ObjectHideFlags: 0
@@ -41673,7 +41889,7 @@ MeshFilter:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100002, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-  m_PrefabInternal: {fileID: 1299601216}
+  m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1294980566}
@@ -41689,7 +41905,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400002, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-  m_PrefabInternal: {fileID: 1299601216}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1294980565}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .5, y: .5, z: 0}
@@ -41702,7 +41918,7 @@ GUITexture:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13100000, guid: 1bb1666c31edce9459cc55653340e95f,
     type: 2}
-  m_PrefabInternal: {fileID: 1299601216}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1294980565}
   m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: 380c98ce87a73f748b525603709335d5, type: 3}
@@ -41877,58 +42093,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1956122014}
   m_GameObject: {fileID: 1299591091}
   m_Mesh: {fileID: 4300000, guid: 0ebeea1d96a1e7d48a8056e70b7d91ba, type: 3}
---- !u!1001 &1299601216
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-      propertyPath: LoadDebugMaps
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-  m_RootGameObject: {fileID: 1370564676}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1 &1300687845
 GameObject:
   m_ObjectHideFlags: 0
@@ -43827,7 +43991,7 @@ MonoBehaviour:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-  m_PrefabInternal: {fileID: 1299601216}
+  m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1370564678}
@@ -43844,7 +44008,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400000, guid: 1bb1666c31edce9459cc55653340e95f,
     type: 2}
-  m_PrefabInternal: {fileID: 1299601216}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1370564676}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -43870,16 +44034,15 @@ MonoBehaviour:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-  m_PrefabInternal: {fileID: 1299601216}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1370564676}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1426910284}
-  - {fileID: 551022904}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!1001 &1371685347
 Prefab:
   m_ObjectHideFlags: 0
@@ -45320,7 +45483,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -46188,7 +46351,7 @@ Transform:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100006, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-  m_PrefabInternal: {fileID: 1299601216}
+  m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1426910284}
@@ -46204,7 +46367,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400006, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
-  m_PrefabInternal: {fileID: 1299601216}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1426910283}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -46219,7 +46382,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400002, guid: 1bb1666c31edce9459cc55653340e95f,
     type: 2}
-  m_PrefabInternal: {fileID: 1299601216}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1426910283}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -50643,6 +50806,7 @@ GameObject:
   - 4: {fileID: 1576388643}
   - 33: {fileID: 1576388645}
   - 23: {fileID: 1576388644}
+  - 114: {fileID: 1576388646}
   m_Layer: 0
   m_Name: Lamp_PF
   m_TagString: Untagged
@@ -50694,6 +50858,29 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1835274583}
   m_GameObject: {fileID: 1576388642}
   m_Mesh: {fileID: 4300002, guid: cedd7f6836c74a945954f828fe3d9003, type: 3}
+--- !u!114 &1576388646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 1f8f1884173cb8d4da7b4fbc2078f2a8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1835274583}
+  m_GameObject: {fileID: 1576388642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 0
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 0
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
+    blendTime: .25
 --- !u!1001 &1578334572
 Prefab:
   m_ObjectHideFlags: 0
@@ -60999,6 +61186,7 @@ GameObject:
   - 4: {fileID: 1884815168}
   - 33: {fileID: 1884815167}
   - 23: {fileID: 1884815166}
+  - 114: {fileID: 1884815169}
   m_Layer: 0
   m_Name: Lamp_PF
   m_TagString: Untagged
@@ -61050,6 +61238,29 @@ Transform:
   - {fileID: 883916207}
   m_Father: {fileID: 1963300212}
   m_RootOrder: 8
+--- !u!114 &1884815169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 1f8f1884173cb8d4da7b4fbc2078f2a8,
+    type: 2}
+  m_PrefabInternal: {fileID: 460527411}
+  m_GameObject: {fileID: 1884815165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 0
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 0
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
+    blendTime: .25
 --- !u!1 &1886829088
 GameObject:
   m_ObjectHideFlags: 0
@@ -61127,7 +61338,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -61142,6 +61353,7 @@ GameObject:
   - 4: {fileID: 1886856782}
   - 33: {fileID: 1886856784}
   - 23: {fileID: 1886856783}
+  - 114: {fileID: 1886856785}
   m_Layer: 0
   m_Name: Lamp_PF
   m_TagString: Untagged
@@ -61193,6 +61405,29 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1474165134}
   m_GameObject: {fileID: 1886856781}
   m_Mesh: {fileID: 4300002, guid: cedd7f6836c74a945954f828fe3d9003, type: 3}
+--- !u!114 &1886856785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 1f8f1884173cb8d4da7b4fbc2078f2a8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1474165134}
+  m_GameObject: {fileID: 1886856781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 0
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 0
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
+    blendTime: .25
 --- !u!1 &1886883129
 GameObject:
   m_ObjectHideFlags: 0
@@ -61286,6 +61521,7 @@ GameObject:
   - 33: {fileID: 1889600622}
   - 23: {fileID: 1889600621}
   - 65: {fileID: 1889600624}
+  - 114: {fileID: 1889600625}
   m_Layer: 0
   m_Name: Estanteria_Baja_PF
   m_TagString: Untagged
@@ -61347,6 +61583,29 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.60000002, y: 1.12631679, z: 1.46227109}
   m_Center: {x: -1.1920929e-07, y: .563158274, z: 5.96046448e-08}
+--- !u!114 &1889600625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 8b9d8783c8dcbde43a76d3b4a8d5fa3e,
+    type: 2}
+  m_PrefabInternal: {fileID: 350508668}
+  m_GameObject: {fileID: 1889600620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 3
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 0
+  Blender:
+    CurrentSky: {fileID: 330015585}
+    PreviousSky: {fileID: 330015585}
+    blendTime: .25
 --- !u!1001 &1891081674
 Prefab:
   m_ObjectHideFlags: 0
@@ -63074,7 +63333,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -67215,7 +67474,7 @@ Transform:
   - {fileID: 1751998890}
   - {fileID: 296841480}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!114 &2058998614
 MonoBehaviour:
   m_ObjectHideFlags: 0
