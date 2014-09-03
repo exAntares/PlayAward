@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿//#define DEBUG_USERAY
+using UnityEngine;
 using System.Collections;
 
 public class UseRay : MonoBehaviour
@@ -19,7 +20,7 @@ public class UseRay : MonoBehaviour
 
 	void CreateCrossHair()
 	{
-        //HAC
+        //HACK
         Screen.showCursor = false;
         Screen.lockCursor = true;
         //---
@@ -118,12 +119,14 @@ public class UseRay : MonoBehaviour
 
 	void OnGUI()
 	{
+#if DEBUG_USERAY
 		if(UsableObject)
 		{
 			float xMin = (Screen.width / 2);
 			float yMin = (Screen.height / 2);
 			GUI.Label(new Rect(xMin, yMin, 100, 100), UsableObject.name, textStyle);
 		}
+#endif //UNITY_EDITOR
 
 		if (GuiTexture)
 		{

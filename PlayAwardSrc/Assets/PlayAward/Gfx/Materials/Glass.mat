@@ -7,8 +7,9 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Glass
-  m_Shader: {fileID: 2, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: []
+  m_Shader: {fileID: 4800000, guid: 83aaaf3a30c35f24ab01fc92b7d09fee, type: 3}
+  m_ShaderKeywords:
+  - MARMO_BOX_PROJECTION_ON
   m_CustomRenderQueue: -1
   m_SavedProperties:
     serializedVersion: 2
@@ -17,7 +18,7 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 2800000, guid: c57a1a52782e29249b34392e7d6da9cc, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -29,14 +30,14 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _Illum
+          name: _SpecTex
         second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 2800000, guid: 2eefa12913076934ea8262b0ea7d239b, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _SpecTex
+          name: _Illum
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -45,11 +46,7 @@ Material:
       data:
         first:
           name: _Shininess
-        second: 3.89558148
-      data:
-        first:
-          name: _EmissionLM
-        second: 0
+        second: 5.99050474
       data:
         first:
           name: _SpecInt
@@ -57,6 +54,10 @@ Material:
       data:
         first:
           name: _Fresnel
+        second: .285714298
+      data:
+        first:
+          name: _EmissionLM
         second: 0
       data:
         first:
@@ -66,7 +67,7 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: 1, g: 1, b: 1, a: .760784328}
+        second: {r: .810986161, g: .861681163, b: .882352948, a: 1}
       data:
         first:
           name: _SpecColor

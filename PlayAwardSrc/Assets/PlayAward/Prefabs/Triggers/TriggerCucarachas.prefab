@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.3722324, y: 0, z: -42.2084312}
+  m_LocalPosition: {x: 23.955307, y: -.0334883034, z: -42.1192436}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400002}
@@ -52,7 +52,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.1331997, y: .381139755, z: -11.4161186}
+  m_LocalPosition: {x: 33.5312309, y: 2.05492997, z: -53.5088997}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400000}
@@ -68,10 +68,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 792e98b2d2627cf45bc20162de9618c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ParticulasCucarachas: {fileID: 100000, guid: 8ce6fd0332394464b8e219423fc32e4e, type: 2}
-  Posicion_Particulas: {fileID: 400002}
-  LucesConAnimacion: []
-  AnimationName: NOMBRE_DE_LA_ANIMACION
+  ParticulasCucarachas: {fileID: 100000, guid: 985d5e721eb096e4c839f9ab27d1cc65, type: 2}
+  Posicion_Particulas: {fileID: 0}
+  LucesConAnimacion:
+  - {fileID: 0}
+  AnimationName: Light_on
 --- !u!135 &13500000
 SphereCollider:
   m_ObjectHideFlags: 1

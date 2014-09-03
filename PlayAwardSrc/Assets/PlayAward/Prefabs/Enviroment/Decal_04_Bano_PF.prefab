@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 400000}
   - 33: {fileID: 3300000}
   - 23: {fileID: 2300000}
+  - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: Decal_04_Bano_PF
   m_TagString: Untagged
@@ -23,9 +24,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 15, y: 3, z: 1}
+  m_LocalRotation: {x: .0032002111, y: -.996430457, z: -.003506243, w: .0842850655}
+  m_LocalPosition: {x: -14.6179504, y: 7.72528648, z: -29.4768295}
+  m_LocalScale: {x: 9, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -56,6 +57,28 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6aff7ff3e01e4fb8b6e1c5096e778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BindType: 0
+  AnchorTransform: {fileID: 0}
+  AnchorOffset: {x: 0, y: 0, z: 0}
+  AnchorSky: {fileID: 0}
+  CurrentApplicator: {fileID: 0}
+  HasLocalSky: 0
+  HasChanged: 1
+  Blender:
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
+    blendTime: .25
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

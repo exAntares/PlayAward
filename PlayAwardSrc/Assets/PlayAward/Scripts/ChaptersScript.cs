@@ -11,8 +11,9 @@ public class ChaptersScript : MonoBehaviour
         GameObject globalEvents = GameObject.FindGameObjectWithTag("GlobalEvents");
         if (globalEvents)
         {
+            globalEvents.RegisterFunctionToEvent(OnChapter1, "Capitulo 1");
             globalEvents.RegisterFunctionToEvent(OnChapter2, "Capitulo 2");
-            globalEvents.RegisterFunctionToEvent(OnChapter2, "Capitulo 3");
+            globalEvents.RegisterFunctionToEvent(OnChapter3, "Capitulo 3");
         }
     }
 
