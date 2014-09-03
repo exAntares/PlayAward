@@ -20,7 +20,7 @@ public class UseRay : MonoBehaviour
 
 	void CreateCrossHair()
 	{
-        //HAC
+        //HACK
         Screen.showCursor = false;
         Screen.lockCursor = true;
         //---
