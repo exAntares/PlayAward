@@ -15,8 +15,18 @@ public class GameMode : Singleton<GameMode>
     private GameMode() { } // guarantee this will be always a singleton only - can't use the constructor!
 
     // Use this for initialization
-    void Start()
+    override public void Awake()
     {
+        if (this != Instance)
+        {
+            //If a Singleton already exists and you find
+            //another reference in scene, destroy it!
+            DestroyImmediate(this.gameObject);
+            return;
+        }
+
+        DontDestroyOnLoad(this);
+        
         thisLevel = Application.loadedLevelName;
         print("Level Loaded " + thisLevel);
 
