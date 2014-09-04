@@ -1864,7 +1864,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -4049,7 +4049,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -6531,7 +6531,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -6758,7 +6758,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -6913,7 +6913,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -6955,7 +6955,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -7584,7 +7584,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -7740,8 +7740,8 @@ MonoBehaviour:
   HasLocalSky: 0
   HasChanged: 0
   Blender:
-    CurrentSky: {fileID: 0}
-    PreviousSky: {fileID: 0}
+    CurrentSky: {fileID: 298678418}
+    PreviousSky: {fileID: 298678418}
     blendTime: .25
 --- !u!1 &179912861
 GameObject:
@@ -7820,7 +7820,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -7918,8 +7918,8 @@ MonoBehaviour:
   HasLocalSky: 0
   HasChanged: 0
   Blender:
-    CurrentSky: {fileID: 0}
-    PreviousSky: {fileID: 0}
+    CurrentSky: {fileID: 298678418}
+    PreviousSky: {fileID: 298678418}
     blendTime: .25
 --- !u!1 &183446545
 GameObject:
@@ -8229,7 +8229,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -8944,6 +8944,64 @@ Prefab:
   m_RootGameObject: {fileID: 389515750}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &207145763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: d5d03c56ed6271e45a8bbc41ab5c9ca3, type: 2}
+  m_PrefabInternal: {fileID: 780693120}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 207145766}
+  - 33: {fileID: 207145765}
+  - 23: {fileID: 207145764}
+  m_Layer: 0
+  m_Name: Cuadro_Small_Gala_PF
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &207145764
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: d5d03c56ed6271e45a8bbc41ab5c9ca3,
+    type: 2}
+  m_PrefabInternal: {fileID: 780693120}
+  m_GameObject: {fileID: 207145763}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 443775eec802c3541b69ebf81f8526f0, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &207145765
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: d5d03c56ed6271e45a8bbc41ab5c9ca3,
+    type: 2}
+  m_PrefabInternal: {fileID: 780693120}
+  m_GameObject: {fileID: 207145763}
+  m_Mesh: {fileID: 4300000, guid: ef383bf96db07f649abdff77107d1933, type: 3}
+--- !u!4 &207145766
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: d5d03c56ed6271e45a8bbc41ab5c9ca3, type: 2}
+  m_PrefabInternal: {fileID: 780693120}
+  m_GameObject: {fileID: 207145763}
+  m_LocalRotation: {x: -.0979080349, y: -.991563201, z: .00834750105, w: .0845392272}
+  m_LocalPosition: {x: -3.07984853, y: 3.01762223, z: 21.9070797}
+  m_LocalScale: {x: .248506024, y: .417332977, z: .26826033}
+  m_Children: []
+  m_Father: {fileID: 245688627}
+  m_RootOrder: 43
 --- !u!1 &209020728
 GameObject:
   m_ObjectHideFlags: 0
@@ -9726,7 +9784,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -9803,7 +9861,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &245688627
 Transform:
   m_ObjectHideFlags: 0
@@ -9857,6 +9915,8 @@ Transform:
   - {fileID: 685920704}
   - {fileID: 439254197}
   - {fileID: 370831781}
+  - {fileID: 207145766}
+  - {fileID: 1640585289}
   m_Father: {fileID: 2135255092}
   m_RootOrder: 2
 --- !u!1001 &245887792
@@ -11018,8 +11078,8 @@ MonoBehaviour:
   HasLocalSky: 0
   HasChanged: 0
   Blender:
-    CurrentSky: {fileID: 298678418}
-    PreviousSky: {fileID: 298678418}
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
     blendTime: .25
 --- !u!1 &292669642
 GameObject:
@@ -11058,7 +11118,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -12303,7 +12363,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -13039,7 +13099,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -13166,8 +13226,8 @@ MonoBehaviour:
   HasLocalSky: 0
   HasChanged: 0
   Blender:
-    CurrentSky: {fileID: 298678418}
-    PreviousSky: {fileID: 298678418}
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
     blendTime: .25
 --- !u!1 &356523369
 GameObject:
@@ -13664,7 +13724,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -13751,7 +13811,7 @@ Transform:
   m_PrefabInternal: {fileID: 1406032779}
   m_GameObject: {fileID: 383577121}
   m_LocalRotation: {x: -.549945474, y: 7.34647621e-10, z: -1.1271128e-08, w: .835200667}
-  m_LocalPosition: {x: 1.99627483, y: -.886131763, z: -10.3358259}
+  m_LocalPosition: {x: 1.99627483, y: -1.08103895, z: -10.3358259}
   m_LocalScale: {x: 2.57279706, y: 27.3411846, z: 1.54940307}
   m_Children:
   - {fileID: 143128176}
@@ -14978,7 +15038,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -15060,7 +15120,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -15361,7 +15421,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -15403,7 +15463,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -15621,7 +15681,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -15663,7 +15723,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -15851,7 +15911,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -16097,7 +16157,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -16936,7 +16996,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -19609,8 +19669,8 @@ MonoBehaviour:
   HasLocalSky: 0
   HasChanged: 0
   Blender:
-    CurrentSky: {fileID: 298678418}
-    PreviousSky: {fileID: 298678418}
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
     blendTime: .25
 --- !u!1 &521757123
 GameObject:
@@ -21874,7 +21934,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -21997,6 +22057,80 @@ Prefab:
   m_RootGameObject: {fileID: 2079989662}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &565873977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 8af1d36feb853ad44a61d6f47ad08e40, type: 2}
+  m_PrefabInternal: {fileID: 966954400}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 565873981}
+  - 33: {fileID: 565873980}
+  - 23: {fileID: 565873979}
+  - 95: {fileID: 565873978}
+  m_Layer: 0
+  m_Name: Cuadro_Big_PortraitGala_PF
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &565873978
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9500000, guid: 8af1d36feb853ad44a61d6f47ad08e40,
+    type: 2}
+  m_PrefabInternal: {fileID: 966954400}
+  m_GameObject: {fileID: 565873977}
+  m_Enabled: 0
+  m_Avatar: {fileID: 9000000, guid: 26db791ff89dfe54f93d19e978e6970e, type: 3}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+--- !u!23 &565873979
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: 8af1d36feb853ad44a61d6f47ad08e40,
+    type: 2}
+  m_PrefabInternal: {fileID: 966954400}
+  m_GameObject: {fileID: 565873977}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 5c2f4cce094b48342832892e9eb75e64, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &565873980
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: 8af1d36feb853ad44a61d6f47ad08e40,
+    type: 2}
+  m_PrefabInternal: {fileID: 966954400}
+  m_GameObject: {fileID: 565873977}
+  m_Mesh: {fileID: 4300000, guid: 26db791ff89dfe54f93d19e978e6970e, type: 3}
+--- !u!4 &565873981
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 8af1d36feb853ad44a61d6f47ad08e40, type: 2}
+  m_PrefabInternal: {fileID: 966954400}
+  m_GameObject: {fileID: 565873977}
+  m_LocalRotation: {x: 0, y: .0849503502, z: 0, w: .996385217}
+  m_LocalPosition: {x: -16.9855289, y: 3.5900116, z: -48.7241936}
+  m_LocalScale: {x: .684684575, y: .684684336, z: .684684396}
+  m_Children: []
+  m_Father: {fileID: 1283401960}
+  m_RootOrder: 30
 --- !u!1001 &566712999
 Prefab:
   m_ObjectHideFlags: 0
@@ -22410,7 +22544,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -23068,6 +23202,58 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1509252326}
   m_RootOrder: 9
+--- !u!1001 &603246713
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 245688627}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 57b2e6fc4c60052459314f63eebaf54f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.86533463
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 57b2e6fc4c60052459314f63eebaf54f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 3.23985624
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 57b2e6fc4c60052459314f63eebaf54f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 21.7510166
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 57b2e6fc4c60052459314f63eebaf54f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 57b2e6fc4c60052459314f63eebaf54f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -.996385157
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 57b2e6fc4c60052459314f63eebaf54f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 57b2e6fc4c60052459314f63eebaf54f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: .0849503428
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 57b2e6fc4c60052459314f63eebaf54f, type: 2}
+      propertyPath: m_RootOrder
+      value: 44
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 57b2e6fc4c60052459314f63eebaf54f, type: 2}
+      propertyPath: m_LocalScale.x
+      value: .263743758
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 57b2e6fc4c60052459314f63eebaf54f, type: 2}
+      propertyPath: m_LocalScale.z
+      value: .284709394
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 57b2e6fc4c60052459314f63eebaf54f, type: 2}
+  m_RootGameObject: {fileID: 1640585286}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1001 &604328855
 Prefab:
   m_ObjectHideFlags: 0
@@ -23177,7 +23363,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -23781,7 +23967,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -27245,7 +27431,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -27693,7 +27879,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -28429,7 +28615,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -28929,6 +29115,62 @@ Prefab:
   m_RootGameObject: {fileID: 1514811589}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1001 &780693120
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 245688627}
+    m_Modifications:
+    - target: {fileID: 400000, guid: d5d03c56ed6271e45a8bbc41ab5c9ca3, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -3.07984853
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d5d03c56ed6271e45a8bbc41ab5c9ca3, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 3.01762223
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d5d03c56ed6271e45a8bbc41ab5c9ca3, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 21.9070797
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d5d03c56ed6271e45a8bbc41ab5c9ca3, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -.0979080349
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d5d03c56ed6271e45a8bbc41ab5c9ca3, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -.991563201
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d5d03c56ed6271e45a8bbc41ab5c9ca3, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: .00834750105
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d5d03c56ed6271e45a8bbc41ab5c9ca3, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: .0845392272
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d5d03c56ed6271e45a8bbc41ab5c9ca3, type: 2}
+      propertyPath: m_RootOrder
+      value: 43
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d5d03c56ed6271e45a8bbc41ab5c9ca3, type: 2}
+      propertyPath: m_LocalScale.x
+      value: .248506024
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d5d03c56ed6271e45a8bbc41ab5c9ca3, type: 2}
+      propertyPath: m_LocalScale.y
+      value: .417332977
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d5d03c56ed6271e45a8bbc41ab5c9ca3, type: 2}
+      propertyPath: m_LocalScale.z
+      value: .26826033
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d5d03c56ed6271e45a8bbc41ab5c9ca3, type: 2}
+  m_RootGameObject: {fileID: 207145763}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &782296063
 GameObject:
   m_ObjectHideFlags: 0
@@ -29194,7 +29436,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -30771,7 +31013,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -30853,7 +31095,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -31109,7 +31351,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -31902,7 +32144,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -32391,7 +32633,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -33261,7 +33503,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -33426,10 +33668,10 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
-    CurrentSky: {fileID: 0}
-    PreviousSky: {fileID: 0}
+    CurrentSky: {fileID: 298678418}
+    PreviousSky: {fileID: 298678418}
     blendTime: .25
 --- !u!65 &938591987
 BoxCollider:
@@ -34090,6 +34332,58 @@ Light:
   m_ShadowAngle: 0
   m_IndirectIntensity: 1
   m_AreaSize: {x: 1, y: 1}
+--- !u!1001 &966954400
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1283401960}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 8af1d36feb853ad44a61d6f47ad08e40, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -16.9855289
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8af1d36feb853ad44a61d6f47ad08e40, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 3.5900116
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8af1d36feb853ad44a61d6f47ad08e40, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -48.7241936
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8af1d36feb853ad44a61d6f47ad08e40, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8af1d36feb853ad44a61d6f47ad08e40, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: .0849503428
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8af1d36feb853ad44a61d6f47ad08e40, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8af1d36feb853ad44a61d6f47ad08e40, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: .996385157
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8af1d36feb853ad44a61d6f47ad08e40, type: 2}
+      propertyPath: m_RootOrder
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8af1d36feb853ad44a61d6f47ad08e40, type: 2}
+      propertyPath: m_LocalScale.x
+      value: .684684575
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8af1d36feb853ad44a61d6f47ad08e40, type: 2}
+      propertyPath: m_LocalScale.z
+      value: .684684396
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 8af1d36feb853ad44a61d6f47ad08e40, type: 2}
+  m_RootGameObject: {fileID: 565873977}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &969270485
 GameObject:
   m_ObjectHideFlags: 0
@@ -34167,7 +34461,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -34725,7 +35019,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -34821,7 +35115,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -37900,7 +38194,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -38666,7 +38960,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -40463,7 +40757,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -40691,7 +40985,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -41088,7 +41382,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -41213,7 +41507,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -41607,7 +41901,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -41693,7 +41987,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -42656,7 +42950,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -42810,7 +43104,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -44579,7 +44873,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -44598,7 +44892,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1283401960
 Transform:
   m_ObjectHideFlags: 0
@@ -44639,6 +44933,7 @@ Transform:
   - {fileID: 291489809}
   - {fileID: 1909676194}
   - {fileID: 1239740608}
+  - {fileID: 565873981}
   m_Father: {fileID: 2135255092}
   m_RootOrder: 0
 --- !u!1001 &1284205383
@@ -44862,7 +45157,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -45613,7 +45908,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -46167,7 +46462,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -46731,7 +47026,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -46813,7 +47108,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -46895,7 +47190,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -47549,7 +47844,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -.886131763
+      value: -1.08103895
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
       propertyPath: m_LocalPosition.z
@@ -47587,6 +47882,126 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1.54940307
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d05cf4e1d1f41042a3b9c5b7ecb52ef, type: 2}
+    - target: {fileID: 2300000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d05cf4e1d1f41042a3b9c5b7ecb52ef, type: 2}
+    - target: {fileID: 2300000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d05cf4e1d1f41042a3b9c5b7ecb52ef, type: 2}
+    - target: {fileID: 2300000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
+      propertyPath: m_Materials.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d05cf4e1d1f41042a3b9c5b7ecb52ef, type: 2}
+    - target: {fileID: 2300000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
+      propertyPath: m_Materials.Array.data[5]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d05cf4e1d1f41042a3b9c5b7ecb52ef, type: 2}
+    - target: {fileID: 2300000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
+      propertyPath: m_Materials.Array.data[6]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d05cf4e1d1f41042a3b9c5b7ecb52ef, type: 2}
+    - target: {fileID: 2300000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
+      propertyPath: m_Materials.Array.data[7]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d05cf4e1d1f41042a3b9c5b7ecb52ef, type: 2}
+    - target: {fileID: 2300000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
+      propertyPath: m_Materials.Array.data[8]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d05cf4e1d1f41042a3b9c5b7ecb52ef, type: 2}
+    - target: {fileID: 2300000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
+      propertyPath: m_Materials.Array.data[9]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d05cf4e1d1f41042a3b9c5b7ecb52ef, type: 2}
+    - target: {fileID: 2300000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
+      propertyPath: m_Materials.Array.data[10]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d05cf4e1d1f41042a3b9c5b7ecb52ef, type: 2}
+    - target: {fileID: 2300000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
+      propertyPath: m_Materials.Array.data[11]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d05cf4e1d1f41042a3b9c5b7ecb52ef, type: 2}
+    - target: {fileID: 2300000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
+      propertyPath: m_Materials.Array.data[12]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d05cf4e1d1f41042a3b9c5b7ecb52ef, type: 2}
+    - target: {fileID: 2300000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
+      propertyPath: m_Materials.Array.data[13]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d05cf4e1d1f41042a3b9c5b7ecb52ef, type: 2}
+    - target: {fileID: 2300000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
+      propertyPath: m_Materials.Array.data[14]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d05cf4e1d1f41042a3b9c5b7ecb52ef, type: 2}
+    - target: {fileID: 2300000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
+      propertyPath: m_Materials.Array.data[15]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d05cf4e1d1f41042a3b9c5b7ecb52ef, type: 2}
+    - target: {fileID: 2300000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
+      propertyPath: m_Materials.Array.data[16]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d05cf4e1d1f41042a3b9c5b7ecb52ef, type: 2}
+    - target: {fileID: 2300000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
+      propertyPath: m_Materials.Array.data[17]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d05cf4e1d1f41042a3b9c5b7ecb52ef, type: 2}
+    - target: {fileID: 2300000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
+      propertyPath: m_Materials.Array.data[18]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d05cf4e1d1f41042a3b9c5b7ecb52ef, type: 2}
+    - target: {fileID: 2300000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
+      propertyPath: m_Materials.Array.data[19]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d05cf4e1d1f41042a3b9c5b7ecb52ef, type: 2}
+    - target: {fileID: 2300000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
+      propertyPath: m_Materials.Array.data[20]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d05cf4e1d1f41042a3b9c5b7ecb52ef, type: 2}
+    - target: {fileID: 2300000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
+      propertyPath: m_Materials.Array.data[21]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d05cf4e1d1f41042a3b9c5b7ecb52ef, type: 2}
+    - target: {fileID: 2300000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
+      propertyPath: m_Materials.Array.data[22]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d05cf4e1d1f41042a3b9c5b7ecb52ef, type: 2}
+    - target: {fileID: 2300000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
+      propertyPath: m_Materials.Array.data[23]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d05cf4e1d1f41042a3b9c5b7ecb52ef, type: 2}
+    - target: {fileID: 2300000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
+      propertyPath: m_Materials.Array.data[24]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d05cf4e1d1f41042a3b9c5b7ecb52ef, type: 2}
+    - target: {fileID: 2300000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
+      propertyPath: m_Materials.Array.data[25]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d05cf4e1d1f41042a3b9c5b7ecb52ef, type: 2}
+    - target: {fileID: 2300000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
+      propertyPath: m_Materials.Array.data[26]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d05cf4e1d1f41042a3b9c5b7ecb52ef, type: 2}
+    - target: {fileID: 2300000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
+      propertyPath: m_Materials.Array.data[27]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d05cf4e1d1f41042a3b9c5b7ecb52ef, type: 2}
+    - target: {fileID: 2300000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
+      propertyPath: m_Materials.Array.data[28]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d05cf4e1d1f41042a3b9c5b7ecb52ef, type: 2}
+    - target: {fileID: 2300000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
+      propertyPath: m_Materials.Array.data[29]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d05cf4e1d1f41042a3b9c5b7ecb52ef, type: 2}
+    - target: {fileID: 2300000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
+      propertyPath: m_Materials.Array.data[30]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d05cf4e1d1f41042a3b9c5b7ecb52ef, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
   m_RootGameObject: {fileID: 383577121}
@@ -47771,7 +48186,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -49564,7 +49979,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -50943,7 +51358,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -51154,7 +51569,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -52731,7 +53146,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -52999,7 +53414,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -54377,6 +54792,64 @@ MonoBehaviour:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
     blendTime: .25
+--- !u!1 &1640585286
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 57b2e6fc4c60052459314f63eebaf54f, type: 2}
+  m_PrefabInternal: {fileID: 603246713}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1640585289}
+  - 33: {fileID: 1640585288}
+  - 23: {fileID: 1640585287}
+  m_Layer: 0
+  m_Name: Cuadro_Small_Gala_2_PF
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &1640585287
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: 57b2e6fc4c60052459314f63eebaf54f,
+    type: 2}
+  m_PrefabInternal: {fileID: 603246713}
+  m_GameObject: {fileID: 1640585286}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 58c9c4ffdbf508346b125d09e9e2df7e, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &1640585288
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: 57b2e6fc4c60052459314f63eebaf54f,
+    type: 2}
+  m_PrefabInternal: {fileID: 603246713}
+  m_GameObject: {fileID: 1640585286}
+  m_Mesh: {fileID: 4300000, guid: ef383bf96db07f649abdff77107d1933, type: 3}
+--- !u!4 &1640585289
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 57b2e6fc4c60052459314f63eebaf54f, type: 2}
+  m_PrefabInternal: {fileID: 603246713}
+  m_GameObject: {fileID: 1640585286}
+  m_LocalRotation: {x: 0, y: -.996385217, z: 0, w: .0849503502}
+  m_LocalPosition: {x: -1.86533463, y: 3.23985624, z: 21.7510166}
+  m_LocalScale: {x: .263743758, y: .442922652, z: .284709394}
+  m_Children: []
+  m_Father: {fileID: 245688627}
+  m_RootOrder: 44
 --- !u!1 &1642312517
 GameObject:
   m_ObjectHideFlags: 0
@@ -55300,7 +55773,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -55996,7 +56469,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -56348,7 +56821,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -56832,7 +57305,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -57459,7 +57932,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -57541,7 +58014,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -57623,7 +58096,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -57865,7 +58338,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -58382,7 +58855,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -58682,7 +59155,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -60049,11 +60522,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -.950088024
+      value: -.950090408
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -7.35357952
+      value: -7.35358715
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
       propertyPath: m_LocalRotation.x
@@ -60085,7 +60558,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
       propertyPath: m_LocalScale.z
-      value: 1.5494051
+      value: 2.8747406
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 654101093415c8c4ba05f10493e80313, type: 2}
@@ -60273,7 +60746,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -60373,7 +60846,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1bb1666c31edce9459cc55653340e95f, type: 2}
@@ -60587,8 +61060,8 @@ MonoBehaviour:
   HasLocalSky: 0
   HasChanged: 0
   Blender:
-    CurrentSky: {fileID: 298678418}
-    PreviousSky: {fileID: 298678418}
+    CurrentSky: {fileID: 0}
+    PreviousSky: {fileID: 0}
     blendTime: .25
 --- !u!1001 &1910691091
 Prefab:
@@ -60827,7 +61300,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -63703,7 +64176,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -64241,7 +64714,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -64410,7 +64883,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -64634,7 +65107,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 298678418}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 298678418}
     PreviousSky: {fileID: 298678418}
@@ -64866,8 +65339,8 @@ Transform:
   m_PrefabInternal: {fileID: 1898207760}
   m_GameObject: {fileID: 2083804680}
   m_LocalRotation: {x: -.549935818, y: -.00327733555, z: -.00497753546, w: .835185707}
-  m_LocalPosition: {x: 10.5025444, y: -.950088024, z: -7.35357952}
-  m_LocalScale: {x: 1.89535093, y: 27.3412189, z: 1.5494051}
+  m_LocalPosition: {x: 10.5025444, y: -.950090408, z: -7.35358715}
+  m_LocalScale: {x: 1.89535093, y: 27.3412189, z: 2.8747406}
   m_Children:
   - {fileID: 469348189}
   m_Father: {fileID: 1867367004}
@@ -65316,7 +65789,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -65671,7 +66144,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 0
+  HasChanged: 1
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
@@ -65979,7 +66452,7 @@ MonoBehaviour:
   AnchorSky: {fileID: 0}
   CurrentApplicator: {fileID: 0}
   HasLocalSky: 0
-  HasChanged: 1
+  HasChanged: 0
   Blender:
     CurrentSky: {fileID: 0}
     PreviousSky: {fileID: 0}
