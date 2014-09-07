@@ -3,6 +3,8 @@ using UnityEditor;
 using System.Collections;
 using System.Collections.Generic;
 
+using Actions;
+
 namespace Core.ContextualActions.Actions
 {
     [CustomPropertyDrawer(typeof(CAction), true)]

@@ -1,14 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[System.Serializable]
-public abstract class CAction : PlayCoreBehaviour
+namespace Actions
 {
-    protected ContextualAction _ca;
-    public void Init(ContextualAction ca)
+    [System.Serializable]
+    public abstract class CAction : PlayCoreBehaviour
     {
-        _ca = ca;
+        protected ContextualAction _ca;
+        public void Init(ContextualAction ca)
+        {
+            _ca = ca;
+        }
+        public abstract void Play();
+        public abstract void Stop();
     }
-    public abstract void Play();
-    public abstract void Stop();
 }

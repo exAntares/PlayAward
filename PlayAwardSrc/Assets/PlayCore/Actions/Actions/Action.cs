@@ -2,23 +2,25 @@
 using System.Collections;
 
 
-
-public class ActiveAction : CAction
+namespace Actions
 {
-    
-
-    [SerializeField]
-    private bool Inverse;
-    public GameObject ObjectTarget;
-
-    public override void Play()
+    public class ActiveAction : CAction
     {
-        ObjectTarget.SetActive(!Inverse);
-    }
 
-    public override void Stop()
-    {
-        ObjectTarget.SetActive(Inverse);
+
+        [SerializeField]
+        private bool Inverse;
+        public GameObject ObjectTarget;
+
+        public override void Play()
+        {
+            ObjectTarget.SetActive(!Inverse);
+        }
+
+        public override void Stop()
+        {
+            ObjectTarget.SetActive(Inverse);
+        }
     }
 }
 

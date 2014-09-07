@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Actions;
 
 enum Condition
 {
@@ -43,4 +44,6 @@ public class TriggerCondition : CCondition
             action.Play();
         }
     }
+
 }
+

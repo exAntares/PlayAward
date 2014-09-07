@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System;
+
 /*
  * Use gameObject.SendMessage("BroadCastEvent","OnEvent")
  * where OnEvent its the event you want to let know
@@ -135,7 +136,12 @@ public class EventsHandler : MonoBehaviour
 	{
 		gameObject.BroadCastEvent("OnTriggerExit");
 	}
-	
+
+    void OnTriggerEnter(Collider other)
+    {
+        gameObject.BroadCastEvent("OnTriggerEnter");
+    }
+
 	#endregion
 
 }
