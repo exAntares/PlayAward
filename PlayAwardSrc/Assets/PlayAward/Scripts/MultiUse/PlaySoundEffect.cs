@@ -2,12 +2,19 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class PlaySoundEffect : MonoBehaviour {
-	public List<AudioClip> Sounds;
+public class PlaySoundEffect : MonoBehaviour
+{
 
+    public bool PlayOnStart = false;
+    public List<AudioClip> Sounds;
+    
 	// Use this for initialization
-	void Start () {
-	
+	void Start ()
+    {
+        if (PlayOnStart)
+        {
+            AudioSource.PlayClipAtPoint(Sounds[0], transform.position);
+        }
 	}
 	
 	// Update is called once per frame
