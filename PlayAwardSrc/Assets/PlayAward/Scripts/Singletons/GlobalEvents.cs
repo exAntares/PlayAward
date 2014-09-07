@@ -17,6 +17,17 @@ public class GlobalEvents : Singleton<GlobalEvents>
     
     void Start()
     {
+        /*Invoke later since the flow its
+         * Load scenes
+         * Spawn Default Objects
+         * Start of default objects
+         * start of loaded scenes objects
+        */ 
+        Invoke("StartChapter", 0.1f);
+    }
+
+    void StartChapter()
+    {
         switch (StartingChapter)
         {
             case Chapters.Chapter1:
@@ -32,7 +43,6 @@ public class GlobalEvents : Singleton<GlobalEvents>
                 Cap3();
                 break;
         }
-
     }
 
     #region EditorHelpers;
