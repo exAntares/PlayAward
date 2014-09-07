@@ -3,12 +3,36 @@ using System.Collections;
 
 public class GlobalEvents : Singleton<GlobalEvents>
 {
+
+    public Chapters StartingChapter = Chapters.Chapter1;
+
     private GlobalEvents() { } // guarantee this will be always a singleton only - can't use the constructor!
 
+    public enum Chapters
+    {
+        Chapter1,
+        Chapter2,
+        Chapter3
+    }     
+    
     void Start()
     {
-        //Start Game on chapter 1
-        Cap1();
+        switch (StartingChapter)
+        {
+            case Chapters.Chapter1:
+                //Start Game on chapter 1
+                Cap1();
+                break;
+            case Chapters.Chapter2:
+                //Start Game on chapter 1
+                Cap2();
+                break;
+            case Chapters.Chapter3:
+                //Start Game on chapter 1
+                Cap3();
+                break;
+        }
+
     }
 
     #region EditorHelpers;
